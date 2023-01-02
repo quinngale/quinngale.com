@@ -42,7 +42,7 @@
 	:root {
 		--background: var(--dark);
 		--text: var(--light);
-		--shadow: 0 0 var(--space-lg) var(--black);
+		--shadow: 0 0 var(--space-lg) hsl(0, 0%, 0%);
 
 		--highlight: var(--gold);
 	}
