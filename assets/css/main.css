@@ -9,7 +9,7 @@
 
 	--background: var(--light);
 	--text: var(--dark);
-	--shadow: 0 0 1rem hsl(0, 0%, 65%);
+	--shadow: 0 0 1rem hsl(0, 0%, 75%);
 
 	--gold-semi: hsla(32, 44%, 60%, 80%);
 	--blue-semi: hsla(182, 44%, 60%, 80%);
