@@ -126,9 +126,17 @@ body {
 	display: block;
 }
 
+.nav .nav-link:nth-child(2) {
+	margin-top: var(--space-lg);
+}
+
+.nav .nav-link:last-child {
+	margin-bottom: var(--space-lg);
+}
+
 .nav .nav-link a {
 	display: block;
-	padding: 0.25rem 0;
+	padding: var(--space) 0;
 }
 
 .nav button {
@@ -144,8 +152,4 @@ body {
 
 .nav button:hover {
 	opacity: 85%;
-}
-
-.nav.expanded button {
-	margin-top: 0.5rem;
 }
