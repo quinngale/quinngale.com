@@ -223,12 +223,17 @@ footer {
 
 footer ul {
 	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: var(--space);
 }
 
 footer a {
 	display: block;
 	padding: var(--space-sm) 0;
 	color: var(--text);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
 }
 
 footer a:hover {
@@ -242,7 +247,7 @@ footer a:visited {
 
 .icon {
 	display: inline-block;
-	margin-right: var(--space-sm);
+	margin-right: var(--space);
 }
 
 @media screen and (min-width: 1000px) {
