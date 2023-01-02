@@ -1,5 +1,5 @@
 <template>
-    <nav id="site-nav" class="nav" :class="{ collapsed: isNavCollapsed }">
+    <nav id="site-nav" class="nav" :class="{ expanded: isNavExpanded }">
         <ul>
             <li class="nav-brand">
                 <Logo />
@@ -17,9 +17,9 @@
                 <NuxtLink>Contact</NuxtLink>
             </li>
         </ul>
-        <button @click="isNavCollapsed = !isNavCollapsed">
-            <font-awesome-icon icon='fa-regular fa-bars' />
-            <span>Menu</span>
+        <button @click="isNavExpanded = !isNavExpanded">
+            <font-awesome-icon icon="fa-regular fa-bars" />
+            Menu
         </button>
     </nav>
 </template>
@@ -28,7 +28,7 @@
 export default {
     data() {
         return {
-            isNavCollapsed: false
+            isNavExpanded: false
         }
     }
 }
