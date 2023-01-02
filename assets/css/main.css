@@ -14,6 +14,8 @@
 	--gold-semi: hsla(32, 44%, 60%, 80%);
 	--blue-semi: hsla(182, 44%, 60%, 80%);
 
+	--blue-dark: hsl(182, 44%, 25%);
+
 	--highlight: var(--text);
 
 	--text-heading-1: 2.011rem;
@@ -59,6 +61,13 @@ body {
 	font-size: var(--text-normal);
 }
 
+body > :first-child {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+}
+
 h1,
 h2,
 h3,
@@ -95,14 +104,35 @@ h1 {
 	font-size: var(--text-heading-1);
 }
 
+p {
+	line-height: 1.35;
+	margin-bottom: var(--space);
+}
+
+p.no-space {
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+	color: var(--gold);
+}
+
+a:hover {
+	color: var(--gold-semi);
+	text-decoration: none;
+}
+
 main {
 	margin: 0 auto;
 	min-height: 20rem;
 	padding: var(--text-normal);
+	width: 100%;
 }
 
-main.container {
+.container {
 	max-width: 1280px;
+	margin: 0 auto;
 }
 
 nav,
@@ -111,11 +141,6 @@ footer {
 	box-shadow: var(--shadow);
 	margin-bottom: var(--space);
 	font-size: var(--text-lg);
-}
-
-footer {
-	margin-top: var(--space);
-	margin-bottom: 0;
 }
 
 nav ul {
@@ -188,6 +213,36 @@ nav button {
 
 nav button:hover {
 	opacity: var(--hover--opacity);
+}
+
+footer {
+	margin-top: var(--space);
+	margin-bottom: 0;
+	padding: var(--space-xl);
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer a {
+	display: block;
+	padding: var(--space-sm) 0;
+	color: var(--text);
+}
+
+footer a:hover {
+	color: var(--text);
+	opacity: var(--hover--opacity);
+}
+
+footer a:visited {
+	color: var(--blue-dark);
+}
+
+.icon {
+	display: inline-block;
+	margin-right: var(--space-sm);
 }
 
 @media screen and (min-width: 1000px) {
