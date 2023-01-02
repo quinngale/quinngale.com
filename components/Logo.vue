@@ -1,3 +1,5 @@
 <template>
-    Logo
+    <NuxtLink href="/">
+        <strong>Quinn</strong> Gale
+    </NuxtLink>
 </template>
