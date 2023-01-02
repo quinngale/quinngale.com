@@ -18,7 +18,8 @@
             </li>
         </ul>
         <button @click="isNavExpanded = !isNavExpanded">
-            <font-awesome-icon icon="fa-regular fa-bars" />
+            <font-awesome-icon :icon="['fa-regular', 'angle-up']" v-if="isNavExpanded" />
+            <font-awesome-icon :icon="['fa-regular', 'angle-down']" v-else />
             Menu
         </button>
     </nav>
@@ -32,4 +33,4 @@ export default {
         }
     }
 }
-</script>
+</script> 
