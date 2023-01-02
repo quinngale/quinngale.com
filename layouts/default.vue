@@ -1,5 +1,5 @@
 <template>
     <Header />
-    <slot />
+    <NuxtPage />
     <Footer />
 </template>
