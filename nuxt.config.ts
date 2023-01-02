@@ -5,4 +5,16 @@ export default defineNuxtConfig({
 	build: {
 		transpile: ['@fortawesome/vue-fontawesome', '@fortawesome/fontawesome-svg-core', '@fortawesome/pro-regular-svg-icons'],
 	},
+
+	app: {
+		head: {
+			link: [
+				{
+					rel: 'icon',
+					type: 'image/x-icon',
+					href: '/favicon.svg',
+				},
+			],
+		},
+	},
 });
