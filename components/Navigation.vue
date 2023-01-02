@@ -5,16 +5,16 @@
                 <Logo />
             </li>
             <li class="nav-link">
-                <NuxtLink>Home</NuxtLink>
+                <NuxtLink href="/">Home</NuxtLink>
             </li>
             <li class="nav-link">
-                <NuxtLink>About</NuxtLink>
+                <NuxtLink href="/about">About</NuxtLink>
             </li>
             <li class="nav-link">
-                <NuxtLink>Portfolio</NuxtLink>
+                <NuxtLink href="/portfolio">Portfolio</NuxtLink>
             </li>
             <li class="nav-link">
-                <NuxtLink>Contact</NuxtLink>
+                <NuxtLink href="/contact">Contact</NuxtLink>
             </li>
         </ul>
         <button @click="isNavExpanded = !isNavExpanded">
