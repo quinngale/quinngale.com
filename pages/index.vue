@@ -1,4 +1,9 @@
 <template>
-    <p>Hello,</p>
-    <p>My name is Quinn Gale</p>
+    <main>
+        <h1>
+            Hello,
+            <br>
+            My name is Quinn Gale
+        </h1>
+    </main>
 </template>
