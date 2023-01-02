@@ -233,6 +233,7 @@ footer a {
 	color: var(--text);
 	text-decoration: underline;
 	text-decoration-thickness: 1px;
+	width: fit-content;
 }
 
 footer a:hover {
