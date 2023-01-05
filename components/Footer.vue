@@ -7,7 +7,7 @@
                         <span class="icon">
                             <font-awesome-icon :icon="['regular', 'at']" />
                         </span>
-                        <span>q.gale@live.com</span>
+                        <span>quinn@quinngale.com</span>
                     </NuxtLink>
                 </li>
                 <li>
