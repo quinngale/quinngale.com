@@ -7,14 +7,16 @@
 	--light: hsl(0, 0%, 100%);
 	--dark: hsl(0, 0%, 15%);
 
-	--background: var(--light);
-	--text: var(--dark);
-	--shadow: 0 0 1rem hsl(0, 0%, 75%);
-
 	--gold-semi: hsla(32, 44%, 60%, 80%);
 	--blue-semi: hsla(182, 44%, 60%, 80%);
 
 	--blue-dark: hsl(182, 44%, 25%);
+	--blue-light: hsl(182, 44%, 65%);
+
+	--background: var(--light);
+	--text: var(--dark);
+	--shadow: 0 0 1rem hsl(0, 0%, 75%);
+	--link: var(--blue-dark);
 
 	--highlight: var(--text);
 
@@ -43,6 +45,7 @@
 		--background: var(--dark);
 		--text: var(--light);
 		--shadow: 0 0 var(--space-lg) hsl(0, 0%, 0%);
+		--link: var(--blue-light);
 
 		--highlight: var(--gold);
 	}
@@ -115,12 +118,18 @@ p.no-space {
 
 a {
 	text-decoration: none;
-	color: var(--gold);
+	color: var(--text);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
 }
 
 a:hover {
-	color: var(--gold-semi);
-	text-decoration: none;
+	text-decoration: underline;
+	opacity: var(--hover--opacity);
+}
+
+a:visited {
+	color: var(--link);
 }
 
 main {
@@ -229,20 +238,8 @@ footer ul {
 
 footer a {
 	display: block;
-	padding: var(--space-sm) 0;
-	color: var(--text);
-	text-decoration: underline;
-	text-decoration-thickness: 1px;
 	width: fit-content;
-}
-
-footer a:hover {
-	color: var(--text);
-	opacity: var(--hover--opacity);
-}
-
-footer a:visited {
-	color: var(--blue-dark);
+	padding: var(--space-sm) 0;
 }
 
 .icon {
