@@ -139,14 +139,13 @@ main {
 }
 
 .container {
-	max-width: 1280px;
+	max-width: 1024px;
 	margin: 0 auto;
 }
 
 nav,
 footer {
 	padding: var(--space) var(--space-lg);
-	box-shadow: var(--shadow);
 	margin-bottom: var(--space);
 	font-size: var(--text-lg);
 }
@@ -221,6 +220,15 @@ nav button {
 
 nav button:hover {
 	opacity: var(--hover--opacity);
+}
+
+main {
+	box-shadow: var(--shadow);
+}
+
+article img {
+	width: 100%;
+	height: auto;
 }
 
 footer {
