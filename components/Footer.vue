@@ -3,7 +3,7 @@
         <section class="container">
             <ul>
                 <li>
-                    <NuxtLink href="mailto:q.gale@live.com">
+                    <NuxtLink href="mailto:quinn@quinngale.com">
                         <span class="icon">
                             <font-awesome-icon :icon="['regular', 'at']" />
                         </span>
