@@ -5,7 +5,7 @@
                 <li>
                     <NuxtLink href="mailto:quinn@quinngale.com">
                         <span class="icon">
-                            <font-awesome-icon :icon="['regular', 'at']" />
+                            <font-awesome-icon :icon="['solid', 'envelope']" />
                         </span>
                         <span>quinn@quinngale.com</span>
                     </NuxtLink>
