@@ -1,6 +1,7 @@
 :root {
 	--white: hsl(0, 0, 100%);
 	--black: hsl(0, 0, 0%);
+	--middle-grey: hsl(0, 0, 50%);
 
 	--gold: hsl(32, 44%, 60%);
 	--blue: hsl(182, 44%, 60%);
