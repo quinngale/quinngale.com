@@ -149,7 +149,7 @@ Usage:
 	font-style: normal;
 	font-named-instance: 'Regular';
 	src: url('Inter-roman.var.woff2?v=3.19') format('woff2');
-	font-feature-settings: 'ss01';
+	font-feature-settings: 'ss01', 'frac';
 }
 @font-face {
 	font-family: 'Inter var';
@@ -158,7 +158,7 @@ Usage:
 	font-style: italic;
 	font-named-instance: 'Italic';
 	src: url('Inter-italic.var.woff2?v=3.19') format('woff2');
-	font-feature-settings: 'ss01';
+	font-feature-settings: 'ss01', 'frac';
 }
 
 /* --------------------------------------------------------------------------
