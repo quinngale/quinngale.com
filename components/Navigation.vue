@@ -18,8 +18,7 @@
             </li>
         </ul>
         <button @click="isNavExpanded = !isNavExpanded">
-            <font-awesome-icon :icon="['fa-regular', 'angle-up']" v-if="isNavExpanded" />
-            <font-awesome-icon :icon="['fa-regular', 'angle-down']" v-else />
+            <font-awesome-icon :icon="['fa-regular', 'angle-down']" :rotation="180 * isNavExpanded" />
             Menu
         </button>
     </nav>
