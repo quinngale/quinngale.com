@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 		transpile: ['@fortawesome/vue-fontawesome', '@fortawesome/fontawesome-svg-core', '@fortawesome/pro-regular-svg-icons'],
 	},
 
-	css: ['@fortawesome/fontawesome-svg-core/styles.css', '~/assets/fonts/Inter/inter.css', '~/assets/css/main.css'],
+	css: ['@fortawesome/fontawesome-svg-core/styles.css', '~/assets/fonts/Inter/inter.css', '~/assets/scss/main.scss'],
 
 	modules: ['@nuxt/content'],
 
