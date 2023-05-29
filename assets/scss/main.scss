@@ -1,21 +1,23 @@
-@use 'abstracts';
-@use 'vendors';
-@use 'base';
-@use 'layouts';
-@use 'components';
-@use 'themes';
+//@import 'abstracts';
+//@import 'vendors';
+
+@import 'base/reset', 'base/typography', 'base/colors';
+
+//@import 'layouts';
+//@import 'components';
+//@import 'themes';
 
 :root {
-	--white: hsl(0, 0, 100%);
+	--white: $white;
 	--black: hsl(0, 0, 0%);
 	--middle-grey: hsl(0, 0, 50%);
 
-	--gold: hsl(32, 44%, 60%);
+	--gold: #{$gold};
 	--blue: hsl(182, 44%, 60%);
-	--light: hsl(0, 0%, 100%);
-	--dark: hsl(0, 0%, 5%);
+	--light: #{$light};
+	--dark: #{$dark};
 
-	--gold-semi: hsla(32, 44%, 60%, 80%);
+	--gold-semi: #{$gold-dark};
 	--blue-semi: hsla(182, 44%, 60%, 80%);
 
 	--blue-dark: hsl(182, 44%, 25%);
@@ -57,12 +59,6 @@
 
 		--highlight: var(--gold);
 	}
-}
-
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
 }
 
 body {
