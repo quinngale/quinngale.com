@@ -1,0 +1,49 @@
+@use 'sass:color';
+
+/*********************************/
+/* Color definitions             */
+/*********************************/
+
+$white: hsl(0 0 100%);
+$black: hsl(0 0 0%);
+$grey: hsl(0 0 50%);
+
+$light: color.adjust($white, $lightness: -10%);
+$dark: color.adjust($black, $lightness: 10%);
+
+$gold: hsl(32 44% 60%);
+
+$gold-light-er: color.adjust($gold, $lightness: 15%);
+$gold-light: color.adjust($gold, $lightness: 5%);
+$gold-dark: color.adjust($gold, $lightness: -5%);
+$gold-dark-er: color.adjust($gold, $lightness: -15%);
+
+$teal: hsl(182 44% 60%);
+
+$teal-light-er: color.adjust($teal, $lightness: 15%);
+$teal-light: color.adjust($teal, $lightness: 5%);
+$teal-dark: color.adjust($teal, $lightness: -5%);
+$teal-dark-er: color.adjust($teal, $lightness: -15%);
+
+/*********************************/
+/* Element colors                */
+/*********************************/
+
+$background-color: $light;
+
+$heading-color: $gold;
+$text-color: $black;
+
+$link: $teal-dark;
+$link-hover: $teal-dark-er;
+$link-visited: $teal-dark-er;
+
+/*********************************/
+/* Spacing                       */
+/*********************************/
+
+$block-spacing: 0.5rem;
+$section-margin: 4rem 0.5rem;
+
+$line-height: 1.35;
+$text-size: 1rem;
