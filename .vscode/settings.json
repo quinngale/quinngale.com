@@ -1,0 +1,6 @@
+{
+    "scss.lint.duplicateProperties": "warning",
+    "scss.format.maxPreserveNewLines": 2,
+    "scss.hover.documentation": true,
+    "scss.format.spaceAroundSelectorSeparator": true
+}
