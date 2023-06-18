@@ -1,49 +1,90 @@
 @use 'sass:color';
+@use 'sass:map';
 
 /*********************************/
 /* Color definitions             */
 /*********************************/
 
-$white: hsl(0 0 100%);
-$black: hsl(0 0 0%);
-$grey: hsl(0 0 50%);
+$colors: (
+	'white': hsl(0 0% 100%),
+	'black': hsl(0 0% 0%),
+	'grey': hsl(0 0% 50%),
+	'gold': hsl(32 44% 60%),
+	'teal': hsl(182 44% 60%),
+);
 
-$light: color.adjust($white, $lightness: -10%);
-$dark: color.adjust($black, $lightness: 10%);
+$color-shades: (
+	'light-er': 15%,
+	'light': 5%,
+	'normal': 0%,
+	'dark': -5%,
+	'dark-er': -15%,
+);
 
-$gold: hsl(32 44% 60%);
+@each $color-name, $color-value in $colors {
+	$tmp-color: ();
+	@each $shade-name, $shade-value in $color-shades {
+		$tmp-shade: color.adjust($color-value, $lightness: $shade-value);
+		$tmp-color: map.set($tmp-color, $shade-name, $tmp-shade);
+	}
 
-$gold-light-er: color.adjust($gold, $lightness: 15%);
-$gold-light: color.adjust($gold, $lightness: 5%);
-$gold-dark: color.adjust($gold, $lightness: -5%);
-$gold-dark-er: color.adjust($gold, $lightness: -15%);
-
-$teal: hsl(182 44% 60%);
-
-$teal-light-er: color.adjust($teal, $lightness: 15%);
-$teal-light: color.adjust($teal, $lightness: 5%);
-$teal-dark: color.adjust($teal, $lightness: -5%);
-$teal-dark-er: color.adjust($teal, $lightness: -15%);
-
-/*********************************/
-/* Element colors                */
-/*********************************/
-
-$background-color: $light;
-
-$heading-color: $gold;
-$text-color: $black;
-
-$link: $teal-dark;
-$link-hover: $teal-dark-er;
-$link-visited: $teal-dark-er;
+	$colors: map.set($colors, $color-name, $tmp-color);
+}
 
 /*********************************/
 /* Spacing                       */
 /*********************************/
 
-$block-spacing: 0.5rem;
-$section-margin: 4rem 0.5rem;
+$space-multiplier: 1rem;
+
+$space: (
+	'small': 0.5,
+	'normal': 1,
+	'medium': 1.5,
+	'large': 2,
+	'x-large': 4,
+	'xx-large': 6,
+);
+
+@each $space-name, $space-value in $space {
+	$space: map.set($space, $space-name, $space-value * $space-multiplier);
+}
+
+/*********************************/
+/* Text styles                   */
+/*********************************/
+
+$text-weight: (
+	'text': 400,
+	'heading': 600,
+);
+
+$text-size: (
+	'small': 0.75em,
+	'normal': 1rem,
+	'large': 1.15em,
+	'h6': 1rem,
+	'h5': 1.15rem,
+	'h4': 1.323rem,
+	'h3': 1.521rem,
+	'h2': 1.749rem,
+	'h1': 2.011rem,
+);
 
 $line-height: 1.35;
-$text-size: 1rem;
+
+/*********************************/
+/* Font choices                  */
+/*********************************/
+
+$text-font: 'Inter var', system-ui, sans-serif;
+
+/*********************************/
+/* Border weights                */
+/*********************************/
+
+$borders: (
+	'thin': 1px,
+	'medium': 2px,
+	'thick': 4px,
+);
