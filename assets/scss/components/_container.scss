@@ -3,5 +3,5 @@
 .container {
 	max-width: 1024px;
 	margin: 0 auto;
-	padding: 0 map.get($space, 'large');
+	padding: map.get($space, 'large') map.get($space, 'normal');
 }
