@@ -1,7 +1,7 @@
 @use 'sass:map';
 
 a {
-	color: var(--link);
+	color: var(--link-color);
 	text-decoration: underline dotted 1px var(--link-color);
 	// text-decoration-thickness: 1px;
 	// text-decoration-color: $link;
@@ -9,15 +9,11 @@ a {
 
 a:hover {
 	text-decoration: underline;
-	color: var(--link-hover-color);
+	color: var(--link-color--hover);
 }
 
 a:visited {
-	color: var(--link-visited-color);
-}
-
-p a {
-	color: currentColor;
+	color: var(--link-color--visited);
 }
 
 h1,
@@ -28,7 +24,7 @@ h5,
 h6 {
 	color: var(--heading-color);
 	font-weight: map.get($text-weight, 'heading');
-	line-height: 1;
+	line-height: $line-height;
 	margin: map.get($space, 'medium') 0;
 }
 
@@ -45,8 +41,4 @@ p {
 
 p.--no-space {
 	margin-bottom: 0;
-}
-
-section {
-	margin: map.get($space, 'x-large') 0;
 }
