@@ -3,6 +3,7 @@
 .header {
 	text-align: center;
 	color: var(--heading-color);
+	margin-bottom: map.get($space, 'large');
 }
 
 .header:has(.header__image) {
