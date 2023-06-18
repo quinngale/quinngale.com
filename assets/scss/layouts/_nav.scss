@@ -2,7 +2,6 @@
 
 .nav {
 	padding: map.get($space, 'normal') map.get($space, 'large');
-	margin-bottom: map.get($space, 'normal');
 	font-size: map.get($text-size, 'large');
 }
 
@@ -46,7 +45,7 @@
 	opacity: var(--hover-opacity);
 }
 
-.nav.nav__expanded .nav__item {
+.nav.nav--expanded .nav__item {
 	display: block;
 }
 
