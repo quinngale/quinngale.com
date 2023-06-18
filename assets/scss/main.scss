@@ -1,8 +1,21 @@
 @import 'abstracts/variables';
+
 //@import 'vendors';
 
-@import 'base/reset', 'base/typography', 'base/variables', 'base/base', 'base/elements';
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/variables';
+@import 'base/elements';
 
 @import 'layouts/nav';
-@import 'components/container', 'components/header';
-@import 'themes/default', 'themes/dark';
+@import 'layouts/footer';
+
+@import 'components/container';
+@import 'components/header';
+@import 'components/section';
+@import 'components/main';
+@import 'components/link';
+
+@import 'themes/default';
+@import 'themes/dark';
