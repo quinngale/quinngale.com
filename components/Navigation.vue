@@ -1,20 +1,25 @@
 <template>
     <nav id="site-nav" class="nav" :class="{ 'nav--expanded': isNavExpanded }">
-        <ul class="nav__list">
-            <li class="nav__brand">
+        <ul>
+            <li>
                 <Logo @click="isNavExpanded = false" />
             </li>
-            <li class="nav__item">
-                <NuxtLink href="/" @click="isNavExpanded = false">Home</NuxtLink>
+            <li>
+                <NuxtLink href="/" @click="isNavExpanded = false" active-class="--active"
+                    exact-active-class="--active-exact">Home</NuxtLink>
             </li>
-            <li class="nav__item">
-                <NuxtLink href="/about" @click="isNavExpanded = false">About</NuxtLink>
+            <li>
+                <NuxtLink href="/about" @click="isNavExpanded = false" active-class="--active"
+                    exact-active-class="--active-exact">About</NuxtLink>
             </li>
-            <li class="nav__item">
-                <NuxtLink href="/portfolio" @click="isNavExpanded = false">Portfolio</NuxtLink>
+            <li>
+                <NuxtLink href="/portfolio" @click="isNavExpanded = false" active-class="--active"
+                    exact-active-class="--active-exact">Portfolio
+                </NuxtLink>
             </li>
-            <li class="nav__item">
-                <NuxtLink href="/blog" @click="isNavExpanded = false">Blog</NuxtLink>
+            <li>
+                <NuxtLink href="/blog" @click="isNavExpanded = false" active-class="--active"
+                    exact-active-class="--active-exact">Blog</NuxtLink>
             </li>
         </ul>
         <button @click="isNavExpanded = !isNavExpanded">
