@@ -1,0 +1,18 @@
+@use 'sass:map';
+
+.list-group {
+	.list-group__item {
+		margin-inline: -1 * map.get($space, 'normal');
+		padding-inline: map.get($space, 'normal');
+		padding-block: map.get($space, 'normal');
+		overflow: hidden;
+	}
+
+	.list-group__item:not(:last-child) {
+		border-bottom: 2px solid var(--white-dark-er);
+	}
+
+	.list-group__section:not(:last-child) {
+		margin-bottom: map.get($space, 'small');
+	}
+}
