@@ -37,8 +37,8 @@ h6 {
 p {
 	line-height: $line-height;
 	margin-bottom: map.get($space, 'normal');
-}
 
-p.--no-space {
-	margin-bottom: 0;
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
