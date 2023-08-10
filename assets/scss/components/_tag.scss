@@ -1,0 +1,31 @@
+@use 'sass:map';
+
+.tag {
+	background-color: var(--tag-background);
+	padding: map.get($space, 'x-small');
+	padding-right: map.get($space, 'small');
+	margin: map.get($space, 'x-small');
+	display: inline-block;
+	font-size: 1em;
+	border-radius: map.get($space, 'small');
+	overflow: hidden;
+	color: var(--text-color);
+
+	&:first-of-type {
+		margin-left: 0;
+	}
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+
+	.tag__icon {
+		display: inline-block;
+		margin: -1 * map.get($space, 'x-small');
+		margin-right: map.get($space, 'x-small');
+		padding: map.get($space, 'x-small');
+		background-color: var(--accent-background);
+		color: var(--accent-color);
+		border-right: var(--tag-separator);
+	}
+}
