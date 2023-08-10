@@ -1,4 +1,7 @@
 :root {
+	--text-color: var(--black-dark);
+	--background-color: var(--white-normal);
+
 	--heading-color: var(--gold-normal);
 	--hover-opacity: 0.7;
 
@@ -6,5 +9,7 @@
 	--link-color--hover: var(--teal-dark-er);
 	--link-color--visited: var(--teal-dark-er);
 
-	--text-color: var(--black-dark);
+	--tag-background: var(--white-dark);
+	--tag-accent: var(--white-dark-er);
+	--tag-separator: 2px solid var(--tag-accent);
 }
