@@ -64,57 +64,58 @@
                 </p>
 
                 <p>
-                    
+
                 </p>
             </section>
 
             <section>
                 <h2>Degrees and certificates</h2>
-                <ul class="list-group">
-                    <li class="list-group__item">
-                        <div class="list-group__section">
+                <ListGroup>
+                    <ListGroupItem>
+                        <ListGroupSection>
                             <strong>Bachelor of Science in Web and User Experience</strong>
-                        </div>
-                        <div class="list-group__section">
+                        </ListGroupSection>
+                        <ListGroupSection>
                             <em>April 2023</em>
-                        </div>
-                        <div class="list-group__section">
+                        </ListGroupSection>
+                        <ListGroupSection>
                             <BadgesWSU />
-                        </div>
-                    </li>
-                    <li class="list-group__item">
-                        <div class="list-group__section">
+                        </ListGroupSection>
+                    </ListGroupItem>
+                    <ListGroupItem>
+                        <ListGroupSection>
                             <strong>Certificate of Proficiency in Web and User Experience</strong>
-                        </div>
-                        <div class="list-group__section">
+                        </ListGroupSection>
+                        <ListGroupSection>
                             <em>April 2022</em>
-                        </div>
-                        <div class="list-group__section">
+                        </ListGroupSection>
+                        <ListGroupSection>
                             <BadgesWSU />
-                        </div>
-                    </li>
-                </ul>
+                        </ListGroupSection>
+                    </ListGroupItem>
+                </ListGroup>
             </section>
 
             <section>
                 <h2>Work history</h2>
 
-                <ul class="list-group">
-                    <li class="list-group__item">
-                        <div class="list-group__section">
+                <ListGroup>
+                    <ListGroupItem>
+                        <ListGroupSection>
                             <span class="icon">
                                 <font-awesome-icon :icon="['solid', 'headset']" fixed-width />
                             </span>
                             <strong>Technical Support Specialist</strong>
-                        </div>
-                        <div class="list-group__section">
-                            <em>2016–Now
+                        </ListGroupSection>
+                        <ListGroupSection>
+                            <em>
+                                2016–Now
                             </em>
-                        </div>
-                        <div class="list-group__section">
+                        </ListGroupSection>
+                        <ListGroupSection>
                             <BadgesWSU />
-                        </div>
-                        <div class="list-group__section">
+                        </ListGroupSection>
+                        <ListGroupSection>
                             <p>
                                 The brief version of the job description is to assist faculty, staff, and students with
                                 their technical
@@ -137,9 +138,9 @@
                                 My job descrition shifted a little bit from being a strictly front-line support position to
                                 also including some level 2 support, resolving harder tickets, and quality assurance.
                             </p>
-                        </div>
-                    </li>
-                </ul>
+                        </ListGroupSection>
+                    </ListGroupItem>
+                </ListGroup>
             </section>
         </article>
     </main>
