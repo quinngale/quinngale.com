@@ -12,56 +12,56 @@
                     The following are programming languages and systems I would consider myself as being knowledgable in:
                 </p>
 
-                <p>
-                    <span class="tag">
-                        <span class="tag__icon">
+                <Tags>
+                    <Tag>
+                        <template #icon>
                             <font-awesome-icon :icon="['fab', 'html5']" fixed-width />
-                        </span>
+                        </template>
                         <span>HTML</span>
-                    </span>
-                    <span class="tag">
+                    </Tag>
+                    <Tag>
                         <span class="tag__icon">
                             <font-awesome-icon :icon="['brands', 'css3']" fixed-width />
                         </span>
                         <span>CSS</span>
-                    </span>
-                    <span class="tag">
+                    </Tag>
+                    <Tag>
                         <span class="tag__icon">
                             <font-awesome-icon :icon="['brands', 'js']" fixed-width />
                         </span>
                         <span>Javascript</span>
-                    </span>
-                    <span class="tag">
+                    </Tag>
+                    <Tag>
                         <span class="tag__icon">
                             <font-awesome-icon :icon="['brands', 'python']" fixed-width />
                         </span>
                         <span>Python</span>
-                    </span>
-                    <span class="tag">
+                    </Tag>
+                    <Tag>
                         <span class="tag__icon">
                             <font-awesome-icon :icon="['solid', 'database']" fixed-width />
                         </span>
                         <span>SQL</span>
-                    </span>
-                    <span class="tag">
+                    </Tag>
+                    <Tag>
                         <span class="tag__icon">
                             <font-awesome-icon :icon="['brands', 'linux']" fixed-width />
                         </span>
                         <span>Linux</span>
-                    </span>
-                    <span class="tag">
+                    </Tag>
+                    <Tag>
                         <span class="tag__icon">
                             <font-awesome-icon :icon="['brands', 'microsoft']" fixed-width />
                         </span>
                         <span>Microsoft Office</span>
-                    </span>
-                    <span class="tag">
+                    </Tag>
+                    <Tag>
                         <span class="tag__icon">
                             <font-awesome-icon :icon="['brands', 'vuejs']" fixed-width />
                         </span>
                         <span>VueJS</span>
-                    </span>
-                </p>
+                    </Tag>
+                </Tags>
 
                 <p>
 

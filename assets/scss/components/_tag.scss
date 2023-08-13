@@ -1,23 +1,21 @@
 @use 'sass:map';
 
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: map.get($space, 'small');
+}
+
 .tag {
 	background-color: var(--tag-background);
 	padding: map.get($space, 'x-small');
 	padding-right: map.get($space, 'small');
-	margin: map.get($space, 'x-small');
 	display: inline-block;
 	font-size: 1em;
 	border-radius: map.get($space, 'small');
 	overflow: hidden;
 	color: var(--text-color);
-
-	&:first-of-type {
-		margin-left: 0;
-	}
-
-	&:last-of-type {
-		margin-right: 0;
-	}
+	vertical-align: middle;
 
 	.tag__icon {
 		display: inline-block;
