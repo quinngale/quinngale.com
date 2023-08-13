@@ -8,22 +8,11 @@
 
 .tag {
 	background-color: var(--tag-background);
-	padding: map.get($space, 'x-small');
-	padding-right: map.get($space, 'small');
 	display: inline-block;
 	font-size: 1em;
 	border-radius: map.get($space, 'small');
 	overflow: hidden;
 	color: var(--text-color);
 	vertical-align: middle;
-
-	.tag__icon {
-		display: inline-block;
-		margin: -1 * map.get($space, 'x-small');
-		margin-right: map.get($space, 'x-small');
-		padding: map.get($space, 'x-small');
-		background-color: var(--accent-background);
-		color: var(--accent-color);
-		border-right: var(--tag-separator);
-	}
+	padding: map.get($space, 'x-small') map.get($space, 'small');
 }
