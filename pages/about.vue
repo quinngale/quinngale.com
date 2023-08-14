@@ -16,6 +16,26 @@
                     <Tag>
                         <template #icon>
                             <Icon>
+                                <FontAwesomeIcon :icon="['brands', 'css3']" fixed-width />
+                            </Icon>
+                        </template>
+                        CSS
+                    </Tag>
+                    <Tag>
+                        <template #icon>
+                            <FontAwesomeIcon :icon="['brands', 'git']" fixed-width />
+                        </template>
+                        Git
+                    </Tag>
+                    <Tag>
+                        <template #icon>
+                            <FontAwesomeIcon :icon="['solid', 'cat']" fixed-width />
+                        </template>
+                        Herding cats
+                    </Tag>
+                    <Tag>
+                        <template #icon>
+                            <Icon>
                                 <FontAwesomeIcon :icon="['fab', 'html5']" fixed-width />
                             </Icon>
                         </template>
@@ -23,11 +43,9 @@
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <Icon>
-                                <FontAwesomeIcon :icon="['brands', 'css3']" fixed-width />
-                            </Icon>
+                            <FontAwesomeIcon :icon="['brands', 'apple']" fixed-width />
                         </template>
-                        CSS
+                        iOS
                     </Tag>
                     <Tag>
                         <template #icon>
@@ -40,32 +58,16 @@
                     <Tag>
                         <template #icon>
                             <Icon>
-                                <FontAwesomeIcon :icon="['brands', 'python']" fixed-width />
-                            </Icon>
-                        </template>
-                        Python
-                    </Tag>
-                    <Tag>
-                        <template #icon>
-                            <Icon>
-                                <FontAwesomeIcon :icon="['solid', 'database']" fixed-width />
-                            </Icon>
-                        </template>
-                        SQL
-                    </Tag>
-                    <Tag>
-                        <template #icon>
-                            <FontAwesomeIcon :icon="['solid', 'cat']" fixed-width />
-                        </template>
-                        Cat herding
-                    </Tag>
-                    <Tag>
-                        <template #icon>
-                            <Icon>
                                 <FontAwesomeIcon :icon="['brands', 'linux']" fixed-width />
                             </Icon>
                         </template>
                         Linux
+                    </Tag>
+                    <Tag>
+                        <template #icon>
+                            <FontAwesomeIcon :icon="['brands', 'apple']" fixed-width />
+                        </template>
+                        macOS
                     </Tag>
                     <Tag>
                         <template #icon>
@@ -77,35 +79,9 @@
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <Icon>
-                                <FontAwesomeIcon :icon="['brands', 'vuejs']" fixed-width />
-                            </Icon>
-                        </template>
-                        VueJS
-                    </Tag>
-                    <Tag>
-                        <template #icon>
                             <FontAwesomeIcon :icon="['brands', 'windows']" fixed-width />
                         </template>
-                        Windows
-                    </Tag>
-                    <Tag>
-                        <template #icon>
-                            <FontAwesomeIcon :icon="['brands', 'apple']" fixed-width />
-                        </template>
-                        macOS
-                    </Tag>
-                    <Tag>
-                        <template #icon>
-                            <FontAwesomeIcon :icon="['brands', 'apple']" fixed-width />
-                        </template>
-                        iOS
-                    </Tag>
-                    <Tag>
-                        <template #icon>
-                            <FontAwesomeIcon :icon="['brands', 'git']" fixed-width />
-                        </template>
-                        Git
+                        Microsoft Windows
                     </Tag>
                     <Tag>
                         <template #icon>
@@ -115,9 +91,33 @@
                     </Tag>
                     <Tag>
                         <template #icon>
+                            <Icon>
+                                <FontAwesomeIcon :icon="['brands', 'python']" fixed-width />
+                            </Icon>
+                        </template>
+                        Python
+                    </Tag>
+                    <Tag>
+                        <template #icon>
                             <FontAwesomeIcon :icon="['brands', 'sass']" fixed-width />
                         </template>
                         SASS
+                    </Tag>
+                    <Tag>
+                        <template #icon>
+                            <Icon>
+                                <FontAwesomeIcon :icon="['solid', 'database']" fixed-width />
+                            </Icon>
+                        </template>
+                        SQL
+                    </Tag>
+                    <Tag>
+                        <template #icon>
+                            <Icon>
+                                <FontAwesomeIcon :icon="['brands', 'vuejs']" fixed-width />
+                            </Icon>
+                        </template>
+                        VueJS
                     </Tag>
                 </Tags>
 
