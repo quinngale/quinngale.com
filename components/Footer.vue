@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer">
+    <footer>
         <section class="container">
             <p>
                 <NuxtLink href="mailto:quinn@quinngale.com" class="link">

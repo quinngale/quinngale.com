@@ -1,7 +1,7 @@
 <template>
-    <main class="main">
+    <main>
         <article class="container">
-            <section class="section">
+            <section>
                 <div>
                     <img src="/profile.jpg" id="profile-image" />
                     <h1>
@@ -11,14 +11,14 @@
                     </h1>
                 </div>
             </section>
-            <section class="section">
+            <section>
                 <h2>Who I am</h2>
 
             </section>
-            <section class="section">
+            <section>
                 <h2>Projects</h2>
             </section>
-            <section class="section">
+            <section>
                 <h2>How to contact me</h2>
             </section>
         </article>

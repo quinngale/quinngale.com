@@ -1,5 +1,5 @@
 <template>
-    <main class="main">
+    <main>
         <article class="container">
             <header class="header">
                 <h1 class="header__title">About</h1>
