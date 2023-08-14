@@ -6,10 +6,10 @@
 		padding-inline: map.get($space, 'normal');
 		padding-block: map.get($space, 'normal');
 		overflow: hidden;
-	}
 
-	.list-group__item:not(:last-child) {
-		border-bottom: 2px solid var(--white-dark-er);
+		&:not(:last-child) {
+			border-bottom: 2px solid var(--list-group--separator);
+		}
 	}
 
 	.list-group__section:not(:last-child) {
