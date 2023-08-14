@@ -16,7 +16,7 @@
                     <Tag>
                         <template #icon>
                             <Icon>
-                                <font-awesome-icon :icon="['fab', 'html5']" fixed-width />
+                                <FontAwesomeIcon :icon="['fab', 'html5']" fixed-width />
                             </Icon>
                         </template>
                         HTML
@@ -24,7 +24,7 @@
                     <Tag>
                         <template #icon>
                             <Icon>
-                                <font-awesome-icon :icon="['brands', 'css3']" fixed-width />
+                                <FontAwesomeIcon :icon="['brands', 'css3']" fixed-width />
                             </Icon>
                         </template>
                         CSS
@@ -32,7 +32,7 @@
                     <Tag>
                         <template #icon>
                             <Icon>
-                                <font-awesome-icon :icon="['brands', 'js']" fixed-width />
+                                <FontAwesomeIcon :icon="['brands', 'js']" fixed-width />
                             </Icon>
                         </template>
                         Javascript
@@ -40,7 +40,7 @@
                     <Tag>
                         <template #icon>
                             <Icon>
-                                <font-awesome-icon :icon="['brands', 'python']" fixed-width />
+                                <FontAwesomeIcon :icon="['brands', 'python']" fixed-width />
                             </Icon>
                         </template>
                         Python
@@ -48,7 +48,7 @@
                     <Tag>
                         <template #icon>
                             <Icon>
-                                <font-awesome-icon :icon="['solid', 'database']" fixed-width />
+                                <FontAwesomeIcon :icon="['solid', 'database']" fixed-width />
                             </Icon>
                         </template>
                         SQL
@@ -56,7 +56,7 @@
                     <Tag>
                         <template #icon>
                             <Icon>
-                                <font-awesome-icon :icon="['brands', 'linux']" fixed-width />
+                                <FontAwesomeIcon :icon="['brands', 'linux']" fixed-width />
                             </Icon>
                         </template>
                         Linux
@@ -64,7 +64,7 @@
                     <Tag>
                         <template #icon>
                             <Icon>
-                                <font-awesome-icon :icon="['brands', 'microsoft']" fixed-width />
+                                <FontAwesomeIcon :icon="['brands', 'microsoft']" fixed-width />
                             </Icon>
                         </template>
                         Microsoft Office
@@ -72,7 +72,7 @@
                     <Tag>
                         <template #icon>
                             <Icon>
-                                <font-awesome-icon :icon="['brands', 'vuejs']" fixed-width />
+                                <FontAwesomeIcon :icon="['brands', 'vuejs']" fixed-width />
                             </Icon>
                         </template>
                         VueJS
@@ -92,7 +92,7 @@
                             <CardTitle>
                                 <strong>
                                     <Icon>
-                                        <font-awesome-icon :icon="['fas', 'graduation-cap']" />
+                                        <FontAwesomeIcon :icon="['fas', 'graduation-cap']" />
                                     </Icon>
                                     Bachelor of Science in Web and User Experience
                                 </strong>
@@ -111,7 +111,7 @@
                                 <strong>
 
                                     <Icon>
-                                        <font-awesome-icon :icon="['fas', 'file-certificate']" />
+                                        <FontAwesomeIcon :icon="['fas', 'file-certificate']" />
                                     </Icon>
                                     Certificate of Proficiency in Web and User Experience
                                 </strong>
@@ -134,7 +134,7 @@
                     <ListGroupItem>
                         <ListGroupSection>
                             <Icon>
-                                <font-awesome-icon :icon="['solid', 'headset']" fixed-width />
+                                <FontAwesomeIcon :icon="['solid', 'headset']" fixed-width />
                             </Icon>
                             <strong>Technical Support Specialist</strong>
                         </ListGroupSection>

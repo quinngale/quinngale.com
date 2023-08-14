@@ -16,5 +16,5 @@ library.add(faAngleDown, faArrowUpRightFromSquare);
 library.add(faCss3, faGithub, faHtml5, faLinux, faJs, faMicrosoft, faPython, faVuejs);
 
 export default defineNuxtPlugin((nuxtApp) => {
-    nuxtApp.vueApp.component('font-awesome-icon', FontAwesomeIcon, {});
+    nuxtApp.vueApp.component('FontAwesomeIcon', FontAwesomeIcon, {});
 })

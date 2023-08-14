@@ -23,7 +23,7 @@
             </li>
         </ul>
         <button @click="isNavExpanded = !isNavExpanded">
-            <font-awesome-icon :icon="['fa-regular', 'angle-down']" :rotation="180 * isNavExpanded" />
+            <FontAwesomeIcon :icon="['fa-regular', 'angle-down']" :rotation="180 * isNavExpanded" />
             Menu
         </button>
     </nav>
