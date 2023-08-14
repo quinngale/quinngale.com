@@ -43,6 +43,10 @@ p {
 	}
 }
 
+main {
+	box-shadow: 0 0 map.get($space, 'normal') var(--shadow-color);
+}
+
 section {
 	margin: map.get($space, 'x-large') 0;
 }
