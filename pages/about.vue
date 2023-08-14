@@ -118,9 +118,9 @@
                 <ListGroup>
                     <ListGroupItem>
                         <ListGroupSection>
-                            <span class="icon">
+                            <Icon>
                                 <font-awesome-icon :icon="['solid', 'headset']" fixed-width />
-                            </span>
+                            </Icon>
                             <strong>Technical Support Specialist</strong>
                         </ListGroupSection>
                         <ListGroupSection>

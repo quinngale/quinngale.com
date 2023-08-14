@@ -1,0 +1,31 @@
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary: var(--gold-50);
+		--primary-light: var(--gold-60);
+		--primary-lighter: var(--gold-70);
+		--primary-dark: var(--gold-40);
+		--primary-darker: var(--gold-30);
+
+		--secondary: var(--teal-50);
+		--secondary-light: var(--teal-60);
+		--secondary-lighter: var(--teal-70);
+		--secondary-dark: var(--teal-40);
+		--secondary-darker: var(--teal-30);
+
+		--text-color: var(--light-35);
+		--background-color: var(--dark-60);
+
+		--shadow-color: var(--dark-00);
+
+		--heading-color: var(--primary);
+		--hover-opacity: 0.7;
+
+		--link-color: var(--secondary-dark);
+		--link-color--hover: var(--secondary-dark);
+		--link-color--visited: var(--secondary-darker);
+
+		--tag-background: var(--dark-70);
+
+		--icon-color: var(--black-light-er);
+	}
+}
