@@ -86,30 +86,45 @@
 
             <section>
                 <h2>Degrees and certificates</h2>
-                <ListGroup>
-                    <ListGroupItem>
-                        <ListGroupSection>
-                            <strong>Bachelor of Science in Web and User Experience</strong>
-                        </ListGroupSection>
-                        <ListGroupSection>
-                            <em>April 2023</em>
-                        </ListGroupSection>
-                        <ListGroupSection>
-                            <a href="http://weber.edu">Weber State University</a>
-                        </ListGroupSection>
-                    </ListGroupItem>
-                    <ListGroupItem>
-                        <ListGroupSection>
-                            <strong>Certificate of Proficiency in Web and User Experience</strong>
-                        </ListGroupSection>
-                        <ListGroupSection>
-                            <em>April 2022</em>
-                        </ListGroupSection>
-                        <ListGroupSection>
-                            <a href="http://weber.edu">Weber State University</a>
-                        </ListGroupSection>
-                    </ListGroupItem>
-                </ListGroup>
+                <Columns>
+                    <Column>
+                        <Card>
+                            <CardTitle>
+                                <strong>
+                                    <Icon>
+                                        <font-awesome-icon :icon="['fas', 'graduation-cap']" />
+                                    </Icon>
+                                    Bachelor of Science in Web and User Experience
+                                </strong>
+                            </CardTitle>
+                            <CardSection>
+                                <em>April 2023</em>
+                            </CardSection>
+                            <CardSection>
+                                <a href="http://weber.edu">Weber State University</a>
+                            </CardSection>
+                        </Card>
+                    </Column>
+                    <Column>
+                        <Card>
+                            <CardTitle>
+                                <strong>
+
+                                    <Icon>
+                                        <font-awesome-icon :icon="['fas', 'file-certificate']" />
+                                    </Icon>
+                                    Certificate of Proficiency in Web and User Experience
+                                </strong>
+                            </CardTitle>
+                            <CardSection>
+                                <em>April 2022</em>
+                            </CardSection>
+                            <CardSection>
+                                <a href="http://weber.edu">Weber State University</a>
+                            </CardSection>
+                        </Card>
+                    </Column>
+                </Columns>
             </section>
 
             <section>
