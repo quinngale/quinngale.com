@@ -18,6 +18,7 @@
 
 	--background-color: var(--light-50);
 	--background-color--accent: var(--light-40);
+	--background-color--accent--dark: var(--light-35);
 
 	--shadow-color: var(--grey-50);
 
@@ -30,6 +31,9 @@
 
 	--list-group--separator--color: var(--background-color--accent);
 	--list-group--separator: 2px solid var(--list-group--separator--color);
+
+	--card--background-color: var(--background-color--accent);
+	--card__title--background-color: transparent;
 
 	--tag-background: var(--background-color--accent);
 

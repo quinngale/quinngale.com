@@ -16,6 +16,7 @@
 
 		--background-color: var(--dark-60);
 		--background-color--accent: var(--dark-70);
+		--background-color--accent--dark: var(--light-75);
 
 		--shadow-color: var(--dark-00);
 
@@ -25,6 +26,9 @@
 		--link-color: var(--secondary-dark);
 		--link-color--hover: var(--secondary-dark);
 		--link-color--visited: var(--secondary-darker);
+
+		--card--background-color: var(--background-color--accent);
+		--card__title--background-color: transparent;
 
 		--tag-background: var(--dark-70);
 
