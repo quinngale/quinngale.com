@@ -1,5 +1,0 @@
-@use 'sass:map';
-
-.main {
-	box-shadow: 0 0 map.get($space, 'normal') var(--shadow-color);
-}
