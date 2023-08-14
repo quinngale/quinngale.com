@@ -77,7 +77,7 @@ nav {
 	}
 }
 
-@media screen and (min-width: $breakpoint) {
+@media screen and (min-width: map.get($breakpoint, 'medium')) {
 	nav,
 	nav.nav--expanded {
 		padding: 0;
