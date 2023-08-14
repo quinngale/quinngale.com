@@ -14,7 +14,10 @@
 	--secondary-darker: var(--teal-30);
 
 	--text-color: var(--dark-60);
+	--text-color--accent: var(--dark-70);
+
 	--background-color: var(--light-50);
+	--background-color--accent: var(--light-40);
 
 	--shadow-color: var(--grey-50);
 
@@ -25,7 +28,9 @@
 	--link-color--hover: var(--secondary-dark);
 	--link-color--visited: var(--secondary-darker);
 
-	--tag-background: var(--white-dark);
+	--list-group--separator: var(--background-color--accent);
 
-	--icon-color: var(--black-light-er);
+	--tag-background: var(--background-color--accent);
+
+	--icon-color: var(--text-color--accent);
 }
