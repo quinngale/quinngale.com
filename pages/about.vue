@@ -95,7 +95,7 @@
                             <em>April 2023</em>
                         </ListGroupSection>
                         <ListGroupSection>
-                            <BadgesWSU />
+                            <a href="http://weber.edu">Weber State University</a>
                         </ListGroupSection>
                     </ListGroupItem>
                     <ListGroupItem>
@@ -106,7 +106,7 @@
                             <em>April 2022</em>
                         </ListGroupSection>
                         <ListGroupSection>
-                            <BadgesWSU />
+                            <a href="http://weber.edu">Weber State University</a>
                         </ListGroupSection>
                     </ListGroupItem>
                 </ListGroup>
@@ -129,7 +129,7 @@
                             </em>
                         </ListGroupSection>
                         <ListGroupSection>
-                            <BadgesWSU />
+                            <a href="http://weber.edu">Weber State University</a>
                         </ListGroupSection>
                         <ListGroupSection>
                             <p>
