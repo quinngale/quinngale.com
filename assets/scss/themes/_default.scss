@@ -28,7 +28,8 @@
 	--link-color--hover: var(--secondary-dark);
 	--link-color--visited: var(--secondary-darker);
 
-	--list-group--separator: var(--background-color--accent);
+	--list-group--separator--color: var(--background-color--accent);
+	--list-group--separator: 2px solid var(--list-group--separator--color);
 
 	--tag-background: var(--background-color--accent);
 
