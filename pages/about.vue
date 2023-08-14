@@ -55,6 +55,12 @@
                     </Tag>
                     <Tag>
                         <template #icon>
+                            <FontAwesomeIcon :icon="['solid', 'cat']" fixed-width />
+                        </template>
+                        Cat herding
+                    </Tag>
+                    <Tag>
+                        <template #icon>
                             <Icon>
                                 <FontAwesomeIcon :icon="['brands', 'linux']" fixed-width />
                             </Icon>
@@ -76,6 +82,42 @@
                             </Icon>
                         </template>
                         VueJS
+                    </Tag>
+                    <Tag>
+                        <template #icon>
+                            <FontAwesomeIcon :icon="['brands', 'windows']" fixed-width />
+                        </template>
+                        Windows
+                    </Tag>
+                    <Tag>
+                        <template #icon>
+                            <FontAwesomeIcon :icon="['brands', 'apple']" fixed-width />
+                        </template>
+                        macOS
+                    </Tag>
+                    <Tag>
+                        <template #icon>
+                            <FontAwesomeIcon :icon="['brands', 'apple']" fixed-width />
+                        </template>
+                        iOS
+                    </Tag>
+                    <Tag>
+                        <template #icon>
+                            <FontAwesomeIcon :icon="['brands', 'git']" fixed-width />
+                        </template>
+                        Git
+                    </Tag>
+                    <Tag>
+                        <template #icon>
+                            <FontAwesomeIcon :icon="['brands', 'php']" fixed-width />
+                        </template>
+                        PHP
+                    </Tag>
+                    <Tag>
+                        <template #icon>
+                            <FontAwesomeIcon :icon="['brands', 'sass']" fixed-width />
+                        </template>
+                        SASS
                     </Tag>
                 </Tags>
 
