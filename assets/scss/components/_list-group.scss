@@ -7,8 +7,8 @@
 		padding-block: map.get($space, 'normal');
 		overflow: hidden;
 
-		&:nth-child(even) {
-			background-color: var(--list-group--separator);
+		&:not(:last-child) {
+			border-bottom: var(--list-group--separator);
 		}
 	}
 
