@@ -2,6 +2,18 @@
 @use 'sass:map';
 
 /*********************************/
+/* Breakpoints                   */
+/* ----------------------------- */
+/* For simplicity and because I  */
+/* am the way that I am, there   */
+/* only one breakpoint that      */
+/* decides if we are on a mobile */
+/* or desktop view               */
+/*********************************/
+
+$breakpoint: 1000px;
+
+/*********************************/
 /* Color definitions             */
 /*********************************/
 
