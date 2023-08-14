@@ -15,49 +15,65 @@
                 <Tags>
                     <Tag>
                         <template #icon>
-                            <font-awesome-icon :icon="['fab', 'html5']" fixed-width />
+                            <Icon>
+                                <font-awesome-icon :icon="['fab', 'html5']" fixed-width />
+                            </Icon>
                         </template>
                         HTML
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <font-awesome-icon :icon="['brands', 'css3']" fixed-width />
+                            <Icon>
+                                <font-awesome-icon :icon="['brands', 'css3']" fixed-width />
+                            </Icon>
                         </template>
                         CSS
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <font-awesome-icon :icon="['brands', 'js']" fixed-width />
+                            <Icon>
+                                <font-awesome-icon :icon="['brands', 'js']" fixed-width />
+                            </Icon>
                         </template>
                         Javascript
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <font-awesome-icon :icon="['brands', 'python']" fixed-width />
+                            <Icon>
+                                <font-awesome-icon :icon="['brands', 'python']" fixed-width />
+                            </Icon>
                         </template>
                         Python
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <font-awesome-icon :icon="['solid', 'database']" fixed-width />
+                            <Icon>
+                                <font-awesome-icon :icon="['solid', 'database']" fixed-width />
+                            </Icon>
                         </template>
                         SQL
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <font-awesome-icon :icon="['brands', 'linux']" fixed-width />
+                            <Icon>
+                                <font-awesome-icon :icon="['brands', 'linux']" fixed-width />
+                            </Icon>
                         </template>
                         Linux
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <font-awesome-icon :icon="['brands', 'microsoft']" fixed-width />
+                            <Icon>
+                                <font-awesome-icon :icon="['brands', 'microsoft']" fixed-width />
+                            </Icon>
                         </template>
                         Microsoft Office
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <font-awesome-icon :icon="['brands', 'vuejs']" fixed-width />
+                            <Icon>
+                                <font-awesome-icon :icon="['brands', 'vuejs']" fixed-width />
+                            </Icon>
                         </template>
                         VueJS
                     </Tag>
