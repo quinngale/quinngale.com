@@ -23,13 +23,17 @@
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <FontAwesomeIcon :icon="['brands', 'git']" fixed-width />
+                            <Icon>
+                                <FontAwesomeIcon :icon="['brands', 'git']" fixed-width />
+                            </Icon>
                         </template>
                         Git
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <FontAwesomeIcon :icon="['solid', 'cat']" fixed-width />
+                            <Icon>
+                                <FontAwesomeIcon :icon="['solid', 'cat']" fixed-width />
+                            </Icon>
                         </template>
                         Herding cats
                     </Tag>
@@ -43,7 +47,9 @@
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <FontAwesomeIcon :icon="['brands', 'apple']" fixed-width />
+                            <Icon>
+                                <FontAwesomeIcon :icon="['brands', 'apple']" fixed-width />
+                            </Icon>
                         </template>
                         iOS
                     </Tag>
@@ -65,7 +71,9 @@
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <FontAwesomeIcon :icon="['brands', 'apple']" fixed-width />
+                            <Icon>
+                                <FontAwesomeIcon :icon="['brands', 'apple']" fixed-width />
+                            </Icon>
                         </template>
                         macOS
                     </Tag>
@@ -79,13 +87,17 @@
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <FontAwesomeIcon :icon="['brands', 'windows']" fixed-width />
+                            <Icon>
+                                <FontAwesomeIcon :icon="['brands', 'windows']" fixed-width />
+                            </Icon>
                         </template>
                         Microsoft Windows
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <FontAwesomeIcon :icon="['brands', 'php']" fixed-width />
+                            <Icon>
+                                <FontAwesomeIcon :icon="['brands', 'php']" fixed-width />
+                            </Icon>
                         </template>
                         PHP
                     </Tag>
@@ -99,7 +111,9 @@
                     </Tag>
                     <Tag>
                         <template #icon>
-                            <FontAwesomeIcon :icon="['brands', 'sass']" fixed-width />
+                            <Icon>
+                                <FontAwesomeIcon :icon="['brands', 'sass']" fixed-width />
+                            </Icon>
                         </template>
                         SASS
                     </Tag>
@@ -130,7 +144,7 @@
                 <h2>Degrees and certificates</h2>
                 <Columns>
                     <Column>
-                        <Card>
+                        <Card emphasis>
                             <CardTitle>
                                 <strong>
                                     <Icon>
