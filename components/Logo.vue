@@ -1,5 +1,5 @@
 <template>
     <NuxtLink href="/">
-        <strong>Quinn</strong> Gale
+        <strong>Quinn</strong>&nbsp;Gale
     </NuxtLink>
 </template>
