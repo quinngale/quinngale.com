@@ -1,7 +1,0 @@
-:root {
-	@each $color-name, $shades in $colors {
-		@each $shade-name, $shade-value in $shades {
-			--#{$color-name}-#{$shade-name}: #{$shade-value};
-		}
-	}
-}

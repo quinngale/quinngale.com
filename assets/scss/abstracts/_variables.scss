@@ -1,5 +1,6 @@
 @use 'sass:color';
 @use 'sass:map';
+@use 'sass:math';
 
 /*********************************/
 /* Breakpoints                   */
@@ -15,43 +16,62 @@ $breakpoint: (
 /* Color definitions             */
 /*********************************/
 
+$light: hsl(0 0% 94%); // l(0 0% 100%);
+$dark: hsl(0 0% 6%); //hsl(0 0% 0%);
+
 $colors: (
-	'light': hsl(0 0% 100%),
-	'dark': hsl(0 0% 0%),
-	'grey': hsl(0 0% 50%),
-	'gold': hsl(32 44% 60%),
-	'teal': hsl(182 44% 60%),
+	'light': $light,
+	'dark': $dark,
+	'red': hsl(2 65% 60%),
+	'gold': hsl(32 65% 60%),
+	'yellow': hsl(62 65% 60%),
+	'yellowgreen': hsl(92 65% 60%),
+	'green': hsl(122 65% 60%),
+	'grassgreen': hsl(152 65% 60%),
+	'teal': hsl(182 65% 60%),
+	'blue': hsl(212 65% 60%),
+	'indigo': hsl(242 65% 60%),
+	'purple': hsl(272 65% 60%),
+	'magenta': hsl(302 65% 60%),
+	'pink': hsl(332 65% 60%),
 );
 
 $color-shades: (
-	'00': -50%,
-	'05': -45%,
-	'10': -40%,
-	'15': -35%,
-	'20': -30%,
-	'25': -25%,
-	'30': -20%,
-	'35': -15%,
-	'40': -10%,
-	'45': -5%,
+	'00': -100,
+	'05': -90%,
+	'10': -80%,
+	'15': -70%,
+	'20': -60%,
+	'25': -50%,
+	'30': -40%,
+	'35': -30%,
+	'40': -20%,
+	'45': -10%,
 	'50': 0%,
-	'55': 5%,
-	'60': 10%,
-	'65': 15%,
-	'70': 20%,
-	'75': 25%,
-	'80': 30%,
-	'85': 35%,
-	'90': 40%,
-	'95': 45%,
-	'100': 50%,
+	'55': 10%,
+	'60': 20%,
+	'65': 30%,
+	'70': 40%,
+	'75': 50%,
+	'80': 60%,
+	'85': 70%,
+	'90': 80%,
+	'95': 90%,
+	'100': 100%,
 );
 
 @each $color-name, $color-value in $colors {
 	$tmp-color: ();
 	@each $shade-name, $shade-value in $color-shades {
-		$tmp-shade: color.adjust($color-value, $lightness: $shade-value);
-		$tmp-color: map.set($tmp-color, $shade-name, $tmp-shade);
+		@if ($shade-value > 0%) {
+			$tmp-shade: color.mix($light, $color-value, $weight: $shade-value);
+			$tmp-color: map.set($tmp-color, $shade-name, $tmp-shade);
+		} @else if ($shade-value < 0%) {
+			$tmp-shade: color.mix($dark, $color-value, $weight: $shade-value * -1);
+			$tmp-color: map.set($tmp-color, $shade-name, $tmp-shade);
+		} @else {
+			$tmp-color: map.set($tmp-color, $shade-name, $color-value);
+		}
 	}
 
 	$colors: map.set($colors, $color-name, $tmp-color);
