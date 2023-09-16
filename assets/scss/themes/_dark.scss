@@ -1,37 +1,31 @@
-@media (prefers-color-scheme: dark) {
+@use 'sass:map';
+
+@media screen and (prefers-color-scheme: dark) {
 	:root {
-		--primary: var(--gold-50);
-		--primary-light: var(--gold-60);
-		--primary-lighter: var(--gold-70);
-		--primary-dark: var(--gold-40);
-		--primary-darker: var(--gold-30);
+		--text-color: #{map.get($colors, 'light', '50')};
 
-		--secondary: var(--teal-50);
-		--secondary-light: var(--teal-60);
-		--secondary-lighter: var(--teal-70);
-		--secondary-dark: var(--teal-40);
-		--secondary-darker: var(--teal-30);
+		--background-color: #{map.get($colors, 'dark', '50')};
 
-		--text-color: var(--light-35);
+		--main--background: #{map.get($colors, 'light', '55')};
 
-		--background-color: var(--dark-60);
-		--background-color--accent: var(--dark-70);
-		--background-color--accent--dark: var(--light-75);
-
-		--shadow-color: var(--dark-00);
-
-		--heading-color: var(--primary);
+		--heading-color: #{map.get($colors, 'blue', '60')};
 		--hover-opacity: 0.7;
 
-		--link-color: var(--secondary-dark);
-		--link-color--hover: var(--secondary-dark);
-		--link-color--visited: var(--secondary-darker);
+		--link-color: #{map.get($colors, 'blue', '65')};
+		--link-color--hover: #{map.get($colors, 'blue', '80')};
+		--link-color--visited: #{map.get($colors, 'blue', '65 ')};
 
-		--card--background-color: var(--background-color--accent);
-		--card__title--background-color: transparent;
+		--card-background: #{map.get($colors, 'blue', '10')};
+		--card-color: #{map.get($colors, 'blue', '80')};
+		--card--emphasis-background: #{map.get($colors, 'blue', '60')};
+		--card--emphasis-color: #{map.get($colors, 'blue', '00')};
+		--card__title--separator-color: var(--background-color);
 
-		--tag-background: var(--dark-70);
+		--tag-background: #{map.get($colors, 'blue', '10')};
+		--tag-color: #{map.get($colors, 'blue', '80')};
+		--tag--emphasis-background: #{map.get($colors, 'blue', '60')};
+		--tag--emphasis-color: #{map.get($colors, 'blue', '00')};
 
-		--icon-color: var(--black-light-er);
+		--icon-color: #{map.get($colors, 'blue', '65')};
 	}
 }

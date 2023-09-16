@@ -1,41 +1,29 @@
 @use 'sass:map';
 
 :root {
-	--primary: var(--gold-50);
-	--primary-light: var(--gold-60);
-	--primary-lighter: var(--gold-70);
-	--primary-dark: var(--gold-40);
-	--primary-darker: var(--gold-30);
+	--text-color: #{map.get($colors, 'dark', '50')};
 
-	--secondary: var(--teal-50);
-	--secondary-light: var(--teal-60);
-	--secondary-lighter: var(--teal-70);
-	--secondary-dark: var(--teal-40);
-	--secondary-darker: var(--teal-30);
+	--background-color: #{map.get($colors, 'light', '50')};
 
-	--text-color: var(--dark-60);
-	--text-color--accent: var(--dark-70);
+	--main--background: #{map.get($colors, 'light', '55')};
 
-	--background-color: var(--light-50);
-	--background-color--accent: var(--light-40);
-	--background-color--accent--dark: var(--light-35);
+	--heading-color: #{map.get($colors, 'blue', '40')};
 
-	--shadow-color: var(--grey-50);
+	--link-hover-opacity: 0.7;
+	--link-color: #{map.get($colors, 'blue', '35')};
+	--link-color--hover: #{map.get($colors, 'blue', '25')};
+	--link-color--visited: #{map.get($colors, 'blue', '35 ')};
 
-	--heading-color: var(--primary);
-	--hover-opacity: 0.7;
+	--card-background: #{map.get($colors, 'blue', '90')};
+	--card-color: #{map.get($colors, 'blue', '25')};
+	--card--emphasis-background: #{map.get($colors, 'blue', '40')};
+	--card--emphasis-color: #{map.get($colors, 'blue', '100')};
+	--card__title--separator-color: var(--background-color);
 
-	--link-color: var(--secondary-dark);
-	--link-color--hover: var(--secondary-dark);
-	--link-color--visited: var(--secondary-darker);
+	--tag-background: #{map.get($colors, 'blue', '90')};
+	--tag-color: #{map.get($colors, 'blue', '25')};
+	--tag--emphasis-background: #{map.get($colors, 'blue', '40')};
+	--tag--emphasis-color: #{map.get($colors, 'blue', '100')};
 
-	--list-group--separator--color: var(--background-color--accent);
-	--list-group--separator: 2px solid var(--list-group--separator--color);
-
-	--card--background-color: var(--background-color--accent);
-	--card__title--background-color: transparent;
-
-	--tag-background: var(--background-color--accent);
-
-	--icon-color: var(--text-color--accent);
+	--icon-color: #{map.get($colors, 'blue', '35')};
 }
