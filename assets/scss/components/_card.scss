@@ -1,7 +1,9 @@
 @use 'sass:map';
 
-.card {
-	background-color: var(--card--background-color);
+.card,
+.card--emphasis {
+	background: var(--card-background);
+	color: var(--card-color);
 	border-radius: map.get($space, 'normal');
 	padding: map.get($space, 'normal');
 	display: flex;
@@ -10,9 +12,13 @@
 	overflow: hidden;
 
 	.card__title {
-		background-color: var(--card__title--background-color);
 		margin: -1 * map.get($space, 'normal');
 		margin-bottom: 0;
 		padding: map.get($space, 'normal');
 	}
+}
+
+.card--emphasis {
+	color: var(--card--emphasis-color);
+	background: var(--card--emphasis-background);
 }

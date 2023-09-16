@@ -6,13 +6,19 @@
 	gap: map.get($space, 'small');
 }
 
-.tag {
-	background-color: var(--tag-background);
+.tag,
+.tag--emphasis {
+	background: var(--tag-background);
 	display: inline-block;
 	font-size: 1em;
 	border-radius: map.get($space, 'small');
 	overflow: hidden;
-	color: var(--text-color);
+	color: var(--tag-color);
 	vertical-align: middle;
 	padding: map.get($space, 'x-small') map.get($space, 'small');
+}
+
+.tag--emphasis {
+	background: var(--tag--emphasis-background);
+	color: var(--tag--emphasis-color);
 }
