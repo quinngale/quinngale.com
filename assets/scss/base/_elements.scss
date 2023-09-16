@@ -1,15 +1,15 @@
 @use 'sass:map';
 
 a {
-	color: var(--link-color);
-	text-decoration: underline dotted 1px var(--link-color);
+	color: currentColor;
+	text-decoration: underline solid 1px currentColor;
 	// text-decoration-thickness: 1px;
 	// text-decoration-color: $link;
 }
 
 a:hover {
-	text-decoration: underline;
-	color: var(--link-color--hover);
+	opacity: var(--link-hover-opacity);
+	text-decoration-thickness: 2px;
 }
 
 a:visited {
@@ -43,10 +43,6 @@ p {
 	}
 }
 
-main {
-	box-shadow: 0 0 map.get($space, 'normal') var(--shadow-color);
-}
-
 section {
 	margin: map.get($space, 'x-large') 0;
 }
@@ -57,4 +53,21 @@ section:first-of-type {
 
 section:last-of-type {
 	margin-bottom: 0;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+figure {
+	margin: -1 * map.get($space, 'normal');
+	width: calc(100% + 2 * map.get($space, 'normal'));
+	padding: 1rem;
+
+	img,
+	table {
+		margin: 0 -1 * map.get($space, 'normal');
+		width: calc(100% + 2 * map.get($space, 'normal'));
+	}
 }
