@@ -25,6 +25,7 @@ nav {
 		}
 
 		a:hover {
+			text-decoration: none;
 			opacity: var(--hover-opacity);
 			color: currentColor;
 		}
@@ -86,7 +87,11 @@ nav {
 			display: flex;
 			flex-direction: row;
 			align-items: baseline;
-			margin: 0 auto;
+			justify-items: stretch;
+
+			li {
+				width: auto;
+			}
 		}
 
 		li:nth-child(n) {
