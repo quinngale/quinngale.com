@@ -10,7 +10,7 @@
                 </NuxtLink>
             </p>
             <p>
-                <NuxtLink href="https://github.com/gabeauim/quinngale.com" class="link">
+                <NuxtLink href="https://github.com/quinngale/quinngale.com" class="link">
                     <span class="link__icon">
                         <FontAwesomeIcon :icon="['brands', 'github']" />
                     </span>
