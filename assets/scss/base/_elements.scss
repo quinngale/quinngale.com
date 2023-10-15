@@ -44,7 +44,11 @@ p {
 }
 
 section {
-	margin: map.get($space, 'x-large') 0;
+	margin: map.get($space, 'xx-large') 0;
+
+	& > *:not(:last-child) {
+		margin-bottom: map.get($space, 'normal');
+	}
 }
 
 section:first-of-type {
