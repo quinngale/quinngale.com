@@ -2,6 +2,29 @@
 
 .list-group {
 	.list-group__item {
+		&.has-image {
+			display: grid;
+			grid-template-columns: auto 1fr;
+			grid-template-areas: 'image content';
+
+			&:nth-of-type(even) {
+				grid-template-areas: 'content image';
+				grid-template-columns: 1fr auto;
+			}
+
+			gap: map.get($space, 'normal');
+			place-items: center stretch;
+		}
+
+		.list-group__item__image {
+			display: block;
+			grid-area: image;
+			img {
+				display: block;
+				max-height: 12rem;
+			}
+		}
+
 		margin-inline: -1 * map.get($space, 'normal');
 		padding-inline: map.get($space, 'normal');
 		padding-block: map.get($space, 'normal');
