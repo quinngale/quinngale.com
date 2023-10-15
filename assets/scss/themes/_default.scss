@@ -1,29 +1,33 @@
 @use 'sass:map';
 
+$primary: 'blue';
+$light: 'light';
+$dark: 'dark';
+
 :root {
-	--text-color: #{map.get($colors, 'dark', '50')};
+	--text-color: #{map.get($colors, $dark, '50')};
 
-	--background-color: #{map.get($colors, 'light', '50')};
+	--background-color: #{map.get($colors, $light, '50')};
 
-	--main--background: #{map.get($colors, 'light', '55')};
+	--main--background: #{map.get($colors, $light, '55')};
 
-	--heading-color: #{map.get($colors, 'blue', '40')};
+	--heading-color: #{map.get($colors, $primary, '40')};
 
 	--link-hover-opacity: 0.7;
-	--link-color: #{map.get($colors, 'blue', '35')};
-	--link-color--hover: #{map.get($colors, 'blue', '25')};
-	--link-color--visited: #{map.get($colors, 'blue', '35 ')};
+	--link-color: #{map.get($colors, $primary, '35')};
+	--link-color--hover: #{map.get($colors, $primary, '25')};
+	--link-color--visited: #{map.get($colors, $primary, '35 ')};
 
-	--card-background: #{map.get($colors, 'blue', '90')};
-	--card-color: #{map.get($colors, 'blue', '25')};
-	--card--emphasis-background: #{map.get($colors, 'blue', '40')};
-	--card--emphasis-color: #{map.get($colors, 'blue', '100')};
+	--card-background: #{map.get($colors, $primary, '90')};
+	--card-color: #{map.get($colors, $primary, '25')};
+	--card--emphasis-background: #{map.get($colors, $primary, '40')};
+	--card--emphasis-color: #{map.get($colors, $primary, '100')};
 	--card__title--separator-color: var(--background-color);
 
-	--tag-background: #{map.get($colors, 'blue', '90')};
-	--tag-color: #{map.get($colors, 'blue', '25')};
-	--tag--emphasis-background: #{map.get($colors, 'blue', '40')};
-	--tag--emphasis-color: #{map.get($colors, 'blue', '100')};
+	--tag-background: #{map.get($colors, $primary, '90')};
+	--tag-color: #{map.get($colors, $primary, '15')};
+	--tag--emphasis-background: #{map.get($colors, $primary, '40')};
+	--tag--emphasis-color: #{map.get($colors, $primary, '100')};
 
-	--icon-color: #{map.get($colors, 'blue', '35')};
+	--icon-color: #{map.get($colors, $primary, '35')};
 }

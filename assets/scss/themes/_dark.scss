@@ -1,31 +1,35 @@
 @use 'sass:map';
 
+$primary: 'blue';
+$light: 'light';
+$dark: 'dark';
+
 @media screen and (prefers-color-scheme: dark) {
 	:root {
-		--text-color: #{map.get($colors, 'light', '50')};
+		--text-color: #{map.get($colors, $light, '50')};
 
-		--background-color: #{map.get($colors, 'dark', '50')};
+		--background-color: #{map.get($colors, $dark, '50')};
 
-		--main--background: #{map.get($colors, 'light', '55')};
+		--main--background: #{map.get($colors, $light, '55')};
 
-		--heading-color: #{map.get($colors, 'blue', '60')};
+		--heading-color: #{map.get($colors, $primary, '60')};
 		--hover-opacity: 0.7;
 
-		--link-color: #{map.get($colors, 'blue', '65')};
-		--link-color--hover: #{map.get($colors, 'blue', '80')};
-		--link-color--visited: #{map.get($colors, 'blue', '65 ')};
+		--link-color: #{map.get($colors, $primary, '65')};
+		--link-color--hover: #{map.get($colors, $primary, '80')};
+		--link-color--visited: #{map.get($colors, $primary, '65 ')};
 
-		--card-background: #{map.get($colors, 'blue', '10')};
-		--card-color: #{map.get($colors, 'blue', '80')};
-		--card--emphasis-background: #{map.get($colors, 'blue', '60')};
-		--card--emphasis-color: #{map.get($colors, 'blue', '00')};
+		--card-background: #{map.get($colors, $primary, '10')};
+		--card-color: #{map.get($colors, $primary, '85')};
+		--card--emphasis-background: #{map.get($colors, $primary, '60')};
+		--card--emphasis-color: #{map.get($colors, $primary, '00')};
 		--card__title--separator-color: var(--background-color);
 
-		--tag-background: #{map.get($colors, 'blue', '10')};
-		--tag-color: #{map.get($colors, 'blue', '80')};
-		--tag--emphasis-background: #{map.get($colors, 'blue', '60')};
-		--tag--emphasis-color: #{map.get($colors, 'blue', '00')};
+		--tag-background: #{map.get($colors, $primary, '10')};
+		--tag-color: #{map.get($colors, $primary, '85')};
+		--tag--emphasis-background: #{map.get($colors, $primary, '60')};
+		--tag--emphasis-color: #{map.get($colors, $primary, '00')};
 
-		--icon-color: #{map.get($colors, 'blue', '65')};
+		--icon-color: #{map.get($colors, $primary, '65')};
 	}
 }
