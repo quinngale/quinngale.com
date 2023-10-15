@@ -32,6 +32,22 @@
                     challenging, but they solved a need I had at that moment in time. I'm making them public here in hopes
                     that
                     maybe someone else will find them useful in the future.</p>
+
+                <ListGroup>
+                    <ContentList path="/one-off" v-slot="{ list }">
+                        <ListGroupItem v-for="item in list" class="has-image">
+                            <ListGroupItemImage v-if="item.image">
+                                <img :src="item.image" :alt="item.image_alt">
+                            </ListGroupItemImage>
+                            <ListGroupItemSection>
+                                <h3>{{ item.title }}</h3>
+                                <p>{{ item.description }}</p>
+                                <br />
+                                <a :href="item._path">Read more</a>
+                            </ListGroupItemSection>
+                        </ListGroupItem>
+                    </ContentList>
+                </ListGroup>
             </section>
         </article>
     </main>
