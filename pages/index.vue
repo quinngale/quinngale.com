@@ -201,21 +201,21 @@
 
                 <ListGroup>
                     <ListGroupItem>
-                        <ListGroupSection>
+                        <ListGroupItemSection>
                             <Icon>
                                 <FontAwesomeIcon :icon="['solid', 'headset']" fixed-width />
                             </Icon>
                             <strong>Technical Support Specialist</strong>
-                        </ListGroupSection>
-                        <ListGroupSection>
+                        </ListGroupItemSection>
+                        <ListGroupItemSection>
                             <em>
                                 2016–Now
                             </em>
-                        </ListGroupSection>
-                        <ListGroupSection>
+                        </ListGroupItemSection>
+                        <ListGroupItemSection>
                             <a href="http://weber.edu">Weber State University</a>
-                        </ListGroupSection>
-                        <ListGroupSection>
+                        </ListGroupItemSection>
+                        <ListGroupItemSection>
                             <p>
                                 The brief version of the job description is to assist faculty, staff, and students with
                                 their technical
@@ -238,7 +238,7 @@
                                 My job descrition shifted a little bit from being a strictly front-line support position to
                                 also including some level 2 support, resolving harder tickets, and quality assurance.
                             </p>
-                        </ListGroupSection>
+                        </ListGroupItemSection>
                     </ListGroupItem>
                 </ListGroup>
             </section>
