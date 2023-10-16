@@ -28,10 +28,11 @@
             <section>
                 <h2>One-offs</h2>
 
-                <p>A collection of small projects and nearly-one-liners that I have created. None of these are technically
-                    challenging, but they solved a need I had at that moment in time. I'm making them public here in hopes
-                    that
-                    maybe someone else will find them useful in the future.</p>
+                <p>
+                    A collection of small projects and nearly-one-liners that I have created. None of these are very
+                    technically challenging, but they solved a need I had at that moment in time. I'm making them public
+                    here in hopes that maybe someone else will find them useful in the future.
+                </p>
 
                 <ListGroup>
                     <ContentList path="/one-off" v-slot="{ list }">
