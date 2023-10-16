@@ -75,3 +75,20 @@ figure {
 		width: calc(100% + 2 * map.get($space, 'normal'));
 	}
 }
+
+ol, ul {
+    margin-block: map.get($space, 'large');
+
+    li {
+        margin-left: 3ch;
+
+        &:not(:last-of-type) {
+            margin-bottom: map.get($space, 'normal');
+        }
+    }
+}
+
+pre {
+    margin-block: map.get($space, 'normal');
+    overflow-x: scroll
+}
