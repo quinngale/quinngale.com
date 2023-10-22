@@ -37,8 +37,8 @@
                 <ListGroup>
                     <ContentList path="/one-off" v-slot="{ list }">
                         <ListGroupItem v-for="item in list" class="has-image">
-                            <ListGroupItemImage v-if="item.image">
-                                <img :src="item.image" :alt="item.image_alt">
+                            <ListGroupItemImage v-if="item.thumbnail">
+                                <img :src="item.thumbnail" :alt="item.alt_text">
                             </ListGroupItemImage>
                             <ListGroupItemSection>
                                 <h3>{{ item.title }}</h3>
