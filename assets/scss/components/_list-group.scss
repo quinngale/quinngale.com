@@ -4,15 +4,8 @@
 	.list-group__item {
 		&.has-image {
 			display: grid;
-			grid-template-columns: auto 1fr;
-			grid-template-areas: 'image content';
-
-			&:nth-of-type(even) {
-				grid-template-areas: 'content image';
-				grid-template-columns: 1fr auto;
-			}
-
-			gap: map.get($space, 'normal');
+			grid-template-columns: 1fr;
+			grid-template-areas: 'image' 'content';
 			place-items: center stretch;
 		}
 
@@ -21,7 +14,9 @@
 			grid-area: image;
 			img {
 				display: block;
-				max-height: 12rem;
+                width: calc(100% + 2 * map.get($space, 'normal'));
+                margin: 0 -1 * map.get($space, 'normal');
+                object-fit: cover;
 			}
 		}
 
@@ -38,4 +33,31 @@
 	.list-group__section:not(:last-child) {
 		margin-bottom: map.get($space, 'small');
 	}
+}
+
+@media screen and (min-width: map.get($breakpoint, 'medium')) {
+    .list-group {
+        .list-group__item {
+            &.has-image {
+			    gap: map.get($space, 'normal');
+            }
+
+            .list-group__item__image {
+                height: 12rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    overflow: hidden;
+                    margin: 0;
+                }
+            }
+
+			&:nth-of-type(even) {
+				grid-template-areas: 'content image';
+				grid-template-columns: 1fr auto;
+			}
+        }
+    }
 }
