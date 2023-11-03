@@ -2,6 +2,9 @@
 
 .list-group {
 	.list-group__item {
+
+        margin-block: map.get($space, 'large');
+
 		&.has-image {
 			display: grid;
 			grid-template-columns: 1fr;
@@ -40,6 +43,8 @@
         .list-group__item {
             &.has-image {
 			    gap: map.get($space, 'normal');
+				grid-template-areas: 'image content';
+                grid-template-columns: auto 1fr;
             }
 
             .list-group__item__image {
