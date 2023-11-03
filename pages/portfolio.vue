@@ -5,14 +5,6 @@
                 <h1 class="header__title">Portfolio</h1>
             </header>
 
-
-            <section>
-                <p>
-                    The portfolio is a collection of projects and short scripts that I have worked on. Most of these are personal projects
-                    that contribute something of dubious usefulness to my life.
-                </p>
-            </section>
-
             <!-- <ContentList path="/project" v-slot="{ list }" find>
                 <section v-if="list">
                         <h2>Projects</h2>
