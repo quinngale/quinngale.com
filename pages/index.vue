@@ -3,10 +3,10 @@
         <article class="container">
             <section>
                 <div class="columns">
-                    <div class="column">
+                    <div class="column" id="profile-image-container">
                         <img src="/profile.jpg" id="profile-image" />
                     </div>
-                    <div class="column--span-2 column--medium--span-1" id="header-text">
+                    <div class="column" id="header-text">
                         <div>
                             <h1>
                                 Hello
@@ -15,7 +15,7 @@
                             </h1>
                             <p>
                                 I am a Web and User Experience major in the Salt Lake City, Utah area. I also have a
-                                strong background in desktop technical support and customer service.
+                                strong background in technical support and customer service.
                             </p>
                         </div>
                     </div>
@@ -23,11 +23,55 @@
             </section>
 
             <section>
-                <h2>Recent Projects</h2>
+                <h2>Recent Project</h2>
+
+                <p></p>
+
+                <ContentDoc path="/one-off/time" v-slot="{ doc }" :excerpt="true">
+                    <h3>{{ doc.title }}</h3>
+                    <div class="columns columns--reverse">
+                        <div class="column">
+                            <figure>
+                                <img :src="doc.thumbnail" :alt="doc.alt_text">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p>{{ doc.description }}</p>
+                            <p><a :href="doc._path">Read More</a></p>
+                        </div>
+                    </div>
+                </ContentDoc>
+
             </section>
 
             <section>
                 <h2>Skills</h2>
+
+                <p>
+                    Through my work and school experience I have picked up a set of soft skills—mostly centered around
+                    technical communication and troubleshooting. I have been told that I am good at communicating technical
+                    information to my end users in a way that they understand.
+                </p>
+                <p>
+                    My philosophy on that point is that as a rule, people work better when they have information about how
+                    the system they are using works. Further: Anytime someone doesn't understand an application or process
+                    in their system it is an education issue and not a user issue. To put that another way, anyone can write
+                    a program in Python that prints "Hello world!"—copy and paste <code>print("Hello world!")</code> into a
+                    file with a .py extension—but understanding why that works and how Python makes that happen behind the
+                    curtains allows one to write better scripts and programs in Python. To that end, I have gearned my
+                    processes toward prioritizing education.
+                </p>
+
+                <p>
+                    Education is a two-way street. Just like the person on the other end of your phone call doesn't usually have
+                    your context, you don't have theirs. It is your responsiblity to understand their life and how
+                    you fit into it <em>before</em> any meaningful problem solving and solutions can start happening.
+                </p>
+
+                <p>
+                    With that in mind, here's the obligatory list of hard skills. Pick and choose from that list what you
+                    want.
+                </p>
 
                 <Tags>
                     <Tag>
@@ -248,7 +292,11 @@
 
 <style lang="scss" scoped>
 #profile-image {
+    display: block;
     border-radius: 50%;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 #header-text {
