@@ -58,12 +58,13 @@
                     in their system it is an education issue and not a user issue. To put that another way, anyone can write
                     a program in Python that prints "Hello world!"—copy and paste <code>print("Hello world!")</code> into a
                     file with a .py extension—but understanding why that works and how Python makes that happen behind the
-                    curtains allows one to write better scripts and programs in Python. To that end, I have gearned my
+                    curtains allows one to write better scripts and programs. To that end, I have geared my
                     processes toward prioritizing education.
                 </p>
 
                 <p>
-                    Education is a two-way street. Just like the person on the other end of your phone call doesn't usually have
+                    Education is a two-way street. Just like the person on the other end of your phone call doesn't usually
+                    have
                     your context, you don't have theirs. It is your responsiblity to understand their life and how
                     you fit into it <em>before</em> any meaningful problem solving and solutions can start happening.
                 </p>
