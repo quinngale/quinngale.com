@@ -76,19 +76,35 @@ figure {
 	}
 }
 
-ol, ul {
-    margin-block: map.get($space, 'large');
+ol,
+ul {
+	margin-block: map.get($space, 'normal');
 
-    li {
-        margin-left: 3ch;
+	li {
+		margin-left: 3ch;
 
-        &:not(:last-of-type) {
-            margin-bottom: map.get($space, 'normal');
-        }
-    }
+		&:not(:last-of-type) {
+			margin-bottom: map.get($space, 'normal');
+		}
+	}
 }
 
 pre {
-    margin-block: map.get($space, 'normal');
-    overflow-x: scroll
+	margin-block: map.get($space, 'normal');
+	overflow-x: scroll;
+}
+
+@media screen and (min-width: map.get($breakpoint, 'large')) {
+	figure {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+
+		img,
+		table {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+	}
 }
