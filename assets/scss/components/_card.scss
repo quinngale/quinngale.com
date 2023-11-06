@@ -16,6 +16,11 @@
 		margin-bottom: 0;
 		padding: map.get($space, 'normal');
 	}
+
+	.card__icon {
+		font-size: 6rem;
+		text-align: center;
+	}
 }
 
 .card--emphasis {
