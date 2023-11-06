@@ -28,16 +28,26 @@
 
                 <ListGroup>
                     <ContentList path="/one-off" v-slot="{ list }">
-                        <ListGroupItem v-for="item in list" class="has-image">
-                            <ListGroupItemImage v-if="item.thumbnail">
-                                <img :src="item.thumbnail" :alt="item.alt_text">
-                            </ListGroupItemImage>
+                        <ListGroupItem v-for="(item, index) in list" :key="index">
                             <ListGroupItemSection>
                                 <h3>{{ item.title }}</h3>
-                                <p>{{ item.description }}</p>
-                                <br />
-                                <a :href="item._path">Read more</a>
                             </ListGroupItemSection>
+                            <div class="columns" :class="{ 'columns--reverse': index % 2 }">
+                                <div class="column">
+                                    <ListGroupItemSection>
+                                        <figure>
+                                            <img :src="item.thumbnail" :alt="item.alt_text">
+                                        </figure>
+                                    </ListGroupItemSection>
+                                </div>
+                                <div class="column">
+                                    <ListGroupItemSection>
+                                        <p>{{ item.description }}</p>
+                                        <br />
+                                        <a :href="item._path">Read more</a>
+                                    </ListGroupItemSection>
+                                </div>
+                            </div>
                         </ListGroupItem>
                     </ContentList>
                 </ListGroup>
