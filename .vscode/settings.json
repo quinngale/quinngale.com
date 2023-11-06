@@ -3,5 +3,8 @@
     "scss.format.maxPreserveNewLines": 2,
     "scss.hover.documentation": true,
     "scss.format.spaceAroundSelectorSeparator": true,
-    "css.format.braceStyle": "collapse"
+    "css.format.braceStyle": "collapse",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
