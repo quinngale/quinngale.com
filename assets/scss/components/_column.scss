@@ -15,42 +15,14 @@
 			}
 		}
 	}
-}
 
-@media screen and (min-width: map.get($breakpoint, 'medium')) {
-	.columns {
-		grid-template-columns: repeat(2, 1fr);
-
-		.column {
-			@for $span from 1 through 3 {
-				&--span-#{$span} {
-					grid-column: span math.min($span, 2);
-				}
-			}
-		}
+	&.columns--reverse > :last-child {
+		order: -1;
 	}
 }
 
 @media screen and (min-width: map.get($breakpoint, 'large')) {
 	.columns {
-		grid-template-columns: repeat(3, 1fr);
-
-		.column {
-			@for $span from 1 through 3 {
-				&--span-#{$span} {
-					grid-column: span math.min($span, 3);
-				}
-			}
-		}
-	}
-}
-
-@each $break, $value in $breakpoint {
-	@media screen and (min-width: $value) {
-		@for $span from 1 through 3 {
-			.column--#{$break}--span-#{$span} {
-				grid-column: span $span !important;
-			}
-		}
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
