@@ -12,6 +12,13 @@ $breakpoint: (
 	'large': 800px,
 );
 
+$grid: (
+	'content': 60ch,
+	'enwiden': 10ch,
+);
+
+$grid: map.set($grid, 'callout', map.get($grid, 'content') + map.get($grid, 'enwiden') * 2);
+
 /*********************************/
 /* Color definitions             */
 /*********************************/

@@ -43,22 +43,6 @@ p {
 	}
 }
 
-section {
-	margin: map.get($space, 'xx-large') 0;
-
-	& > *:not(:last-child) {
-		margin-bottom: map.get($space, 'normal');
-	}
-}
-
-section:first-of-type {
-	margin-top: 0;
-}
-
-section:last-of-type {
-	margin-bottom: 0;
-}
-
 img {
 	width: 100%;
 	height: auto;
