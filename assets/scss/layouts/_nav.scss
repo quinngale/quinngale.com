@@ -37,7 +37,7 @@ nav {
 				}
 
 				&:visited {
-					color: currentColor;
+					color: $nav_foreground-color;
 				}
 
 				&:hover {
