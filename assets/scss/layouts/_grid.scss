@@ -6,12 +6,7 @@ $super-overhang: calc(($super-width - $content-width) / 2);
 
 .grid,
 .grid > .full-width {
-	--padding-inline: 1rem;
-
-	--breakout-size: calc((var($super-width) - $content-width) / 2);
-
 	align-items: start;
-
 	display: grid;
 	grid-template-columns:
 		[full-width-start]
