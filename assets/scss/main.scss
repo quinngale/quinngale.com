@@ -1,24 +1,34 @@
-@import 'abstracts/variables';
+//@import 'utilities';
+@import 'utilities/variables';
+@import 'utilities/mixins';
+
+$nav_background-color: $teal;
 
 //@import 'vendors';
 
+//@import 'base';
 @import 'base/reset';
-@import 'base/base';
 @import 'base/typography';
-@import 'base/elements';
 
+@import 'elements/headings';
+@import 'elements/main';
+@import 'elements/p';
+@import 'elements/body';
+@import 'elements/section';
+@import 'elements/article';
+@import 'elements/em';
+@import 'elements/pre';
+@import 'elements/a';
+
+//@import 'layouts';
 @import 'layouts/nav';
 @import 'layouts/footer';
 @import 'layouts/grid';
 
-@import 'components/container';
-@import 'components/header';
-@import 'components/link';
-@import 'components/list-group';
-@import 'components/tag';
-@import 'components/icon';
+//@import 'components';
+@import 'components/tags';
+@import 'components/columns';
 @import 'components/card';
-@import 'components/column';
-
-@import 'themes/default';
-@import 'themes/dark';
+@import 'components/button';
+//@import 'pages';
+//@import 'themes';

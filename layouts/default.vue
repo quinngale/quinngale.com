@@ -1,5 +1,5 @@
 <template>
     <Navigation />
-    <NuxtPage />
+    <NuxtPage class="grid" />
     <Footer />
 </template>

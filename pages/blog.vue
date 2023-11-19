@@ -28,7 +28,7 @@
                                 <div class="column">
                                     <p>{{ item.description }}</p>
                                     <p>
-                                        <a :href="item._path">Read more</a>
+                                        <a class="button--inline" :href="item._path">Read more</a>
                                     </p>
                                 </div>
                             </div>

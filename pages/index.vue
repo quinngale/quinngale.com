@@ -7,7 +7,7 @@
                 </div>
                 <div class="column" id="header-text">
                     <div>
-                        <h1>
+                        <h1 class="no-highlight">
                             Hello
                             <br>
                             My name is Quinn.
@@ -21,7 +21,7 @@
             </div>
         </section>
 
-        <section class="full-width">
+        <section>
             <h2>Recent Project</h2>
 
             <ContentDoc path="/one-off/time" v-slot="{ doc }" :excerpt="true">
@@ -35,7 +35,7 @@
                         </div>
                         <div class="column">
                             <p>{{ doc.description }}</p>
-                            <p><a :href="doc._path">Read More</a></p>
+                            <p><a class="button--inline" :href="doc._path">Read More</a></p>
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
 
         </section>
 
-        <section>
+        <section class="full-width grid">
             <h2>Skills</h2>
 
             <p>
@@ -73,7 +73,7 @@
                 want.
             </p>
 
-            <Tags>
+            <Tags class="super">
                 <Tag>
                     <template #icon>
                         <Icon>
@@ -197,9 +197,9 @@
             </Tags>
         </section>
 
-        <section>
+        <section class="full-width grid">
             <h2>Education</h2>
-            <Columns>
+            <Columns class="super">
                 <Column>
                     <Card emphasis>
                         <CardTitle>
@@ -211,7 +211,7 @@
                             </strong>
                         </CardTitle>
                         <CardSection>
-                            <em>April 2023</em>
+                            <em class="--no-highlight">April 2023</em>
                         </CardSection>
                         <CardSection>
                             <a href="http://weber.edu">Weber State University</a>
@@ -230,7 +230,7 @@
                             </strong>
                         </CardTitle>
                         <CardSection>
-                            <em>April 2022</em>
+                            <em class="--no-highlight">April 2022</em>
                         </CardSection>
                         <CardSection>
                             <a href="http://weber.edu">Weber State University</a>
@@ -252,7 +252,7 @@
                         <strong>Technical Support Specialist</strong>
                     </ListGroupItemSection>
                     <ListGroupItemSection>
-                        <em>
+                        <em class="--no-highlight">
                             2016–Now
                         </em>
                     </ListGroupItemSection>
@@ -288,20 +288,3 @@
         </section>
     </main>
 </template>
-
-<style lang="scss" scoped>
-#profile-image {
-    display: block;
-    border-radius: 50%;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-#header-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-}
-</style>

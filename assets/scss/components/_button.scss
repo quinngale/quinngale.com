@@ -1,0 +1,18 @@
+$button--inline_background-color: $black !default;
+$button--inline_foreground-color: $pink !default;
+
+.button {
+	&--inline {
+		font-weight: bold;
+		background-color: $button--inline_background-color;
+		color: $button--inline_foreground-color;
+		text-decoration: none;
+		margin: -0.25rem;
+		padding: 0.25rem;
+
+		&:hover {
+			background-color: $button--inline_foreground-color;
+			color: $button--inline_background-color;
+		}
+	}
+}

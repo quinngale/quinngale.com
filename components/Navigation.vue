@@ -1,9 +1,7 @@
 <template>
     <nav id="site-nav" :class="{ 'nav--expanded': isNavExpanded }">
+        <Logo @click="isNavExpanded = false" />
         <ul>
-            <li>
-                <Logo @click="isNavExpanded = false" />
-            </li>
             <li>
                 <NuxtLink href="/" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">Home</NuxtLink>

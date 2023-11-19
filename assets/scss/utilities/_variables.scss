@@ -1,0 +1,25 @@
+@use 'sass:color';
+@use 'sass:map';
+@use 'sass:math';
+
+$skyblue: #b6ddf2 !default;
+$gold: #f1ac48 !default;
+$mauve: #926081 !default;
+$yellow: #f2e349 !default;
+$purple: #9283b3 !default;
+$navy: #2a5486 !default;
+$orange: #ee7236 !default;
+$blue: #3b9cd3 !default;
+$teal: #63aaaf !default;
+$goldenrod: #f7e87b !default;
+$red: #e9544c !default;
+$camogreen: #5d7540 !default;
+$grassgreen: #abb541 !default;
+$pink: #efb2cc !default;
+$magenta: #b47dbc !default;
+$tan: #edd6b3 !default;
+$white: #fff !default;
+$black: #000 !default;
+
+$background: $white !default;
+$foreground: $black !default;

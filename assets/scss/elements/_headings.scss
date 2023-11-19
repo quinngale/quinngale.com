@@ -1,0 +1,54 @@
+$heading_foreground-color: $black !default;
+
+$h1_background-color: $orange !default;
+$h1_foreground-color: $white !default;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1;
+	display: inline-block;
+	margin-block: 2rem;
+	place-self: start;
+	color: $heading_foreground-color;
+
+	> a {
+		color: currentColor !important;
+		text-decoration: none;
+	}
+}
+
+h1 {
+	font-size: 3.052rem;
+	width: auto;
+
+	&:not(.no-highlight) {
+		margin-inline: -0.5rem;
+		padding: 0.5rem;
+		background-color: $h1_background-color;
+		color: $h1_foreground-color;
+	}
+}
+
+h2 {
+	font-size: 2.441rem;
+}
+
+h3 {
+	font-size: 1.953rem;
+}
+
+h4 {
+	font-size: 1.563rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+h6 {
+	font-size: 1rem;
+}

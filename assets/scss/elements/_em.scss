@@ -1,0 +1,7 @@
+$em_background-color: $goldenrod !default;
+
+em:not(.--no-highlight) {
+	margin: -0.25rem;
+	padding: 0.25rem;
+	background-color: $em_background-color;
+}

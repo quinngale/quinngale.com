@@ -1,0 +1,24 @@
+$a_foreground-color: $magenta !default;
+$a--hover_foreground-color: $magenta !default;
+$a--active_foreground-color: $red !default;
+
+a {
+	text-decoration: underline;
+	text-decoration-color: currentColor;
+
+	> .link__icon {
+		display: inline-block;
+		width: 1.5rem;
+		height: 1rem;
+		text-align: center;
+	}
+
+	&:hover,
+	&:visited {
+		color: $a--hover_foreground-color;
+	}
+
+	&:active {
+		color: $a--active_foreground-color;
+	}
+}

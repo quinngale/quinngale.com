@@ -1,0 +1,24 @@
+$card_background-color: $skyblue;
+$card_foreground-color: $navy;
+$card--emphasis_background-color: $navy;
+$card--emphasis_foreground-color: $skyblue;
+
+.card,
+.card--emphasis {
+	background-color: $card_background-color;
+	color: $card_foreground-color;
+	padding: 1rem;
+
+	a {
+		color: $card_foreground-color;
+	}
+}
+
+.card--emphasis {
+	background-color: $card--emphasis_background-color;
+	color: $card--emphasis_foreground-color;
+
+	a {
+		color: $card--emphasis_foreground-color;
+	}
+}

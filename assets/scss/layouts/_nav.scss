@@ -1,120 +1,107 @@
-@use 'sass:map';
+$nav_background-color: $foreground !default;
+$nav_foreground-color: $background !default;
+$nav_logo_background-color: $background !default;
+$nav_hover-background: $skyblue !default;
+$nav_hover-color: $navy !default;
 
 nav {
-	padding: map.get($space, 'normal') map.get($space, 'large');
-	font-size: map.get($text-size, 'large');
+	background-color: $nav_background-color;
+	display: grid;
+	grid-template-columns: [nav-start] auto [nav-end] 1fr;
+	place-items: start;
+	padding: 1rem;
+	gap: 0.5rem;
+	color: $nav_foreground-color !important;
+	container: sitenav / inline-size;
+
+	> * {
+		grid-column: nav;
+	}
 
 	ul {
-		list-style: none;
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-		width: fit-content;
-		flex: 0 0 auto;
-	}
-
-	li {
 		display: none;
+		list-style: none;
+		width: 100%;
 
-		a,
-		a:visited {
-			text-decoration: none;
-			color: var(--text-color);
-			display: block;
-			padding: map.get($space, 'x-small') 0;
-		}
+		li {
+			a {
+				color: $nav_foreground-color;
+				text-decoration: none;
+				display: block;
+				padding: 0.25rem;
+				font-size: 1.25rem;
+				line-height: 1em;
 
-		a:hover {
-			text-decoration: none;
-			opacity: var(--hover-opacity);
-			color: currentColor;
-		}
+				&.--active {
+					font-weight: bold;
+				}
 
-		a.--active {
-			font-weight: bold;
+				&:visited {
+					color: currentColor;
+				}
+
+				&:hover {
+					background-color: $nav_hover-background;
+					color: $nav_hover-color;
+				}
+			}
 		}
 	}
 
-	li:first-child {
+	> .logo {
 		display: block;
-		font-size: map.get($text-size, 'h2');
-		margin: 0;
-		padding: 0;
+		width: auto;
+		background-color: $nav_logo_background-color;
+		line-height: 1em;
+		font-size: 2rem;
 
-		a,
-		a:visited {
-			text-decoration: none;
-			color: var(--heading-color);
+		> a {
 			display: block;
-			padding: 0;
+			text-decoration: none;
+			padding: 0.25em;
+			color: $nav_background-color;
+
+			&:hover {
+				background-color: $nav_hover-color;
+				color: $nav_hover-background;
+			}
 		}
-
-		a:hover {
-			opacity: var(--hover-opacity);
-		}
-	}
-
-	li:nth-child(2) {
-		margin-top: map.get($space, 'small');
-	}
-
-	&.nav--expanded li {
-		display: block;
 	}
 
 	button {
-		border: none;
-		background-color: transparent;
 		display: block;
-		width: 100%;
-		font-size: var(--text-lg);
-		color: var(--text);
-		cursor: pointer;
-		padding: map.get($space, 'small');
+		background-color: transparent;
+		border: none;
+		color: $nav_foreground-color;
+		font-size: 1.25rem;
+		font-weight: normal;
+	}
 
-		&:hover {
-			opacity: var(--hover-opacity);
+	&.nav--expanded {
+		ul {
+			display: block;
 		}
 	}
 }
 
-@media screen and (min-width: map.get($breakpoint, 'large')) {
-	nav,
-	nav.nav--expanded {
-		padding: 0;
+@media screen and (min-width: 80ch) {
+	nav {
+		align-items: baseline;
+		display: grid;
+		grid-template-columns: [logo-start] auto [logo-end nav-start] auto [nav-end] 1fr;
 
-		ul {
+		> .logo {
+			grid-column: logo;
+		}
+
+		> ul {
+			grid-column: nav;
 			display: flex;
-			flex-direction: row;
-			align-items: baseline;
-			justify-items: stretch;
-
-			li {
-				width: auto;
-			}
-		}
-
-		li:nth-child(n) {
-			display: block;
-			margin: 0;
-			padding: map.get($space, 'normal');
-			text-align: center;
-		}
-
-		li:nth-child(-n + 3) {
-			order: 1;
-		}
-
-		li:first-child {
-			order: 2;
-		}
-
-		li:nth-last-child(-n + 2) {
-			order: 3;
+			gap: 0.25rem;
 		}
 
 		button {
-			display: none;
+			display: none !important;
 		}
 	}
 }
