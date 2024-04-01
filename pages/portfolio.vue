@@ -1,6 +1,6 @@
 <template>
     <main>
-        <article class="container">
+        <article class="grid">
             <header class="header">
                 <h1 class="header__title">Portfolio</h1>
             </header>
@@ -17,7 +17,7 @@
                 </section>
             </ContentList> -->
 
-            <section>
+            <section class="full-width grid">
                 <h2>One-offs</h2>
 
                 <p>
@@ -26,12 +26,10 @@
                     here in hopes that maybe someone else will find them useful in the future.
                 </p>
 
-                <ListGroup>
+                <ListGroup class="full-width grid">
                     <ContentList path="/one-off" v-slot="{ list }">
-                        <ListGroupItem v-for="(item, index) in list" :key="index">
-                            <ListGroupItemSection>
-                                <h3>{{ item.title }}</h3>
-                            </ListGroupItemSection>
+                        <ListGroupItem v-for="(item, index) in list" :key="index"
+                            :class="{ 'super-right': index % 2, 'super-left': (index + 1) % 2 }">
                             <div class="columns" :class="{ 'columns--reverse': index % 2 }">
                                 <div class="column">
                                     <ListGroupItemSection>
@@ -42,6 +40,7 @@
                                 </div>
                                 <div class="column">
                                     <ListGroupItemSection>
+                                        <h3>{{ item.title }}</h3>
                                         <p>{{ item.description }}</p>
                                         <br />
                                         <a :href="item._path">Read more</a>
@@ -61,3 +60,6 @@ const components = {
     h1: 'strong'
 }
 </script>
+
+<style>
+</style>

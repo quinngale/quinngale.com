@@ -1,6 +1,6 @@
 <template>
     <main class="grid">
-        <section class="full-width">
+        <section class="full-width --shade">
             <div class="columns">
                 <div class="column" id="profile-image-container">
                     <img src="/profile.jpg" id="profile-image" />
@@ -8,9 +8,9 @@
                 <div class="column" id="header-text">
                     <div>
                         <h1>
-                            Hello
+                            Hello,
                             <br>
-                            My name is Quinn.
+                            My name is Quinn
                         </h1>
                         <p>
                             I am a Web and User Experience major in the Salt Lake City, Utah area. I also have a
@@ -19,28 +19,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="full-width">
-            <h2>Recent Project</h2>
-
-            <ContentDoc path="/one-off/time" v-slot="{ doc }" :excerpt="true">
-                <div class="super-right">
-                    <h3>{{ doc.title }}</h3>
-                    <div class="columns columns--reverse">
-                        <div class="column">
-                            <figure>
-                                <img :src="doc.thumbnail" :alt="doc.alt_text">
-                            </figure>
-                        </div>
-                        <div class="column">
-                            <p>{{ doc.description }}</p>
-                            <p><a :href="doc._path">Read More</a></p>
-                        </div>
-                    </div>
-                </div>
-            </ContentDoc>
-
         </section>
 
         <section>

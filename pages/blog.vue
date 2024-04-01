@@ -1,6 +1,6 @@
 <template>
     <main>
-        <article class="container">
+        <article class="grid">
             <header class="header">
                 <h1 class="header__title">Blog</h1>
             </header>

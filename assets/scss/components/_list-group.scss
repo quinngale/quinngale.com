@@ -4,7 +4,7 @@
 	list-style: none;
 
 	.list-group__item {
-		margin-block: map.get($space, 'large');
+		margin-block: map.get($space, 'normal');
 
 		margin-inline: 0;
 		padding-inline: 0;
@@ -17,8 +17,12 @@
 			margin-bottom: 0;
 		}
 	}
-
-	.list-group__section:not(:last-child) {
-		margin-bottom: map.get($space, 'small');
+	& h1,
+	& h2,
+	& h3,
+	& h4,
+	& h5,
+	& h6 {
+		margin-top: 0;
 	}
 }

@@ -13,6 +13,8 @@ $dark: 'dark';
 
 	--heading-color: #{map.get($colors, $primary, '40')};
 
+	--shade-background: #{map.get($colors, $primary, '90')};
+
 	--link-hover-opacity: 0.7;
 	--link-color: #{map.get($colors, $primary, '35')};
 	--link-color--hover: #{map.get($colors, $primary, '25')};
@@ -30,4 +32,7 @@ $dark: 'dark';
 	--tag--emphasis-color: #{map.get($colors, $primary, '100')};
 
 	--icon-color: #{map.get($colors, $primary, '35')};
+
+	--code-background: #{map.get($colors, $light, '45')};
+	--code-color: #{map.get($colors, $dark, '60')};
 }

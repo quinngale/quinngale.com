@@ -82,6 +82,7 @@ nav {
 	nav,
 	nav.nav--expanded {
 		padding: 0;
+		margin-block: map.get($space, 'normal');
 
 		ul {
 			display: flex;

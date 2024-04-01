@@ -1,0 +1,6 @@
+@use 'sass:map';
+
+.--shade {
+	background-color: var(--shade-background);
+	padding-block: map.get($space, 'large');
+}

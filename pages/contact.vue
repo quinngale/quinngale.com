@@ -1,6 +1,6 @@
 <template>
     <main>
-        <article class="container">
+        <article class="grid">
             <header class="header">
                 <h1 class="header__title">Contact</h1>
             </header>

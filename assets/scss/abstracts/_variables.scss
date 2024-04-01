@@ -23,7 +23,7 @@ $grid: map.set($grid, 'callout', map.get($grid, 'content') + map.get($grid, 'enw
 /* Color definitions             */
 /*********************************/
 
-$light: hsl(0 0% 94%); // l(0 0% 100%);
+$light: hsl(0 0% 94%); // hsl(0 0% 100%);
 $dark: hsl(0 0% 6%); //hsl(0 0% 0%);
 
 $colors: (

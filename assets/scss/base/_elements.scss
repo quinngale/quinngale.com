@@ -92,3 +92,23 @@ pre {
 		}
 	}
 }
+
+pre,
+code {
+	background-color: var(--code-background);
+	color: var(--code-color);
+	border-radius: map.get($space, 'small');
+}
+
+code {
+	padding: 0 map.get($space, 'small');
+}
+
+pre {
+	padding: map.get($space, 'small');
+	> code {
+		background-color: unset;
+		color: unset;
+		padding: 0;
+	}
+}

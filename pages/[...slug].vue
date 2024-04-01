@@ -1,5 +1,5 @@
 <template>
     <main>
-        <ContentDoc tag="article" class="container" />
+        <ContentDoc tag="article" class="grid" />
     </main>
 </template>

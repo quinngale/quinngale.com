@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <section class="container">
+        <section class="grid">
             <p>
                 <NuxtLink href="mailto:quinn@quinngale.com" class="link">
                     <span class="link__icon">
