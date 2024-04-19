@@ -1,0 +1,16 @@
+@use 'sass:map';
+@use './breakpoints';
+
+@media screen and (min-width: map.get($breakpoints, 'small')) {
+	.page {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		grid-template-rows: repeat(auto, 2);
+		grid-template-areas: 'nav main' 'nav footer';
+		min-height: 100vh;
+
+		> nav {
+			grid-area: nav;
+		}
+	}
+}

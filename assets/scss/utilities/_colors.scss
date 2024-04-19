@@ -1,0 +1,24 @@
+@use 'sass:color';
+@use './variables';
+
+.background {
+	@each $name, $value in $colors {
+		&--#{$name} {
+			background-color: $value;
+
+			@if (color.blackness($value) > 50%) {
+				color: $black;
+			} @else {
+				color: $white;
+			}
+		}
+	}
+}
+
+.foreground {
+	@each $name, $value in $colors {
+		&--#{$name} {
+			color: $value;
+		}
+	}
+}

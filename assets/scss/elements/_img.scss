@@ -1,0 +1,11 @@
+img {
+	@each $value in (1, 2, 3, 4, 5, 6) {
+		$value: $value * 10;
+
+		&.--#{$value} {
+			height: #{$value}vh;
+			width: auto;
+			object-fit: cover;
+		}
+	}
+}

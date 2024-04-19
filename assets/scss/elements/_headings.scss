@@ -1,7 +1,5 @@
-$heading_foreground-color: $black !default;
-
 $h1_background-color: $orange !default;
-$h1_foreground-color: $white !default;
+$h1_foreground-color: currentColor !default;
 
 h1,
 h2,
@@ -13,7 +11,7 @@ h6 {
 	display: inline-block;
 	margin-block: 2rem;
 	place-self: start;
-	color: $heading_foreground-color;
+	color: currentColor;
 
 	> a {
 		color: currentColor !important;

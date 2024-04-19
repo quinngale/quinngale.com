@@ -21,5 +21,26 @@ $tan: #edd6b3 !default;
 $white: #fff !default;
 $black: #000 !default;
 
-$background: $white !default;
-$foreground: $black !default;
+$dark: $white !default;
+$light: $black !default;
+
+$colors: (
+	'skyblue': $skyblue,
+	'gold': $gold,
+	'mauve': $mauve,
+	'yellow': $yellow,
+	'purple': $purple,
+	'navy': $navy,
+	'orange': $orange,
+	'blue': $blue,
+	'teal': $teal,
+	'goldenrod': $goldenrod,
+	'red': $red,
+	'camogreen': $camogreen,
+	'grassgreen': $grassgreen,
+	'pink': $pink,
+	'magenta': $magenta,
+	'tan': $tan,
+	'white': $white,
+	'black': $black,
+);

@@ -1,25 +1,17 @@
 <template>
-    <main class="grid">
-        <section class="full-width">
-            <div class="columns">
-                <div class="column" id="profile-image-container">
-                    <img src="/profile.jpg" id="profile-image" />
-                </div>
-                <div class="column" id="header-text">
-                    <div>
-                        <h1 class="no-highlight">
-                            Hello
-                            <br>
-                            My name is Quinn.
-                        </h1>
-                        <p>
-                            I am a Web and User Experience major in the Salt Lake City, Utah area. I also have a
-                            strong background in technical support and customer service.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main class="grid background--teal foreground--white">
+        <article class="full-width grid">
+            <img src="/profile.jpg" id="profile-image" class="align--center --60 full-width" />
+            <h1 class="no-highlight">
+                Hello
+                <br>
+                My name is Quinn.
+            </h1>
+            <p>
+                I am a Web and User Experience major in the Salt Lake City, Utah area. I also have a
+                strong background in technical support and customer service.
+            </p>
+        </article>
 
         <section>
             <h2>Recent Project</h2>

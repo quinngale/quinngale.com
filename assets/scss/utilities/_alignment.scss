@@ -1,0 +1,14 @@
+.align {
+	&--right {
+		text-align: right;
+		justify-self: end;
+	}
+	&--center {
+		text-align: center;
+		justify-self: center;
+	}
+	&--left {
+		text-align: left;
+		justify-self: stretch;
+	}
+}

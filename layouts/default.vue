@@ -1,5 +1,7 @@
 <template>
-    <Navigation />
-    <NuxtPage class="grid" />
-    <Footer />
+    <div class="page">
+        <Navigation />
+        <NuxtPage class="grid" />
+        <Footer />
+    </div>
 </template>
