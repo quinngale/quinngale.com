@@ -21,7 +21,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="full-width">
             <h2>Skills</h2>
 
             <p>
