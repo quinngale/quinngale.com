@@ -12,110 +12,54 @@ $breakpoint: (
 	'large': 800px,
 );
 
-$grid: (
-	'content': 60ch,
-	'enwiden': 10ch,
-);
-
-$grid: map.set($grid, 'callout', map.get($grid, 'content') + map.get($grid, 'enwiden') * 2);
-
 /*********************************/
 /* Color definitions             */
 /*********************************/
 
-$light: hsl(0 0% 94%); // hsl(0 0% 100%);
-$dark: hsl(0 0% 6%); //hsl(0 0% 0%);
-
 $colors: (
-	'light': $light,
-	'dark': $dark,
-	'red': hsl(2 65% 60%),
-	'gold': hsl(32 65% 60%),
-	'yellow': hsl(62 65% 60%),
-	'yellowgreen': hsl(92 65% 60%),
-	'green': hsl(122 65% 60%),
-	'grassgreen': hsl(152 65% 60%),
-	'teal': hsl(182 65% 60%),
-	'blue': hsl(212 65% 60%),
-	'indigo': hsl(242 65% 60%),
-	'purple': hsl(272 65% 60%),
-	'magenta': hsl(302 65% 60%),
-	'pink': hsl(332 65% 60%),
+	'light': #f3efde,
+	'dark': #181816,
+	'red': #c61010,
 );
-
-$color-shades: (
-	'00': -100,
-	'05': -90%,
-	'10': -80%,
-	'15': -70%,
-	'20': -60%,
-	'25': -50%,
-	'30': -40%,
-	'35': -30%,
-	'40': -20%,
-	'45': -10%,
-	'50': 0%,
-	'55': 10%,
-	'60': 20%,
-	'65': 30%,
-	'70': 40%,
-	'75': 50%,
-	'80': 60%,
-	'85': 70%,
-	'90': 80%,
-	'95': 90%,
-	'100': 100%,
-);
-
-@each $color-name, $color-value in $colors {
-	$tmp-color: ();
-	@each $shade-name, $shade-value in $color-shades {
-		@if ($shade-value > 0%) {
-			$tmp-shade: color.mix($light, $color-value, $weight: $shade-value);
-			$tmp-color: map.set($tmp-color, $shade-name, $tmp-shade);
-		} @else if ($shade-value < 0%) {
-			$tmp-shade: color.mix($dark, $color-value, $weight: $shade-value * -1);
-			$tmp-color: map.set($tmp-color, $shade-name, $tmp-shade);
-		} @else {
-			$tmp-color: map.set($tmp-color, $shade-name, $color-value);
-		}
-	}
-
-	$colors: map.set($colors, $color-name, $tmp-color);
-}
 
 /*********************************/
 /* Spacing                       */
 /*********************************/
 
-$space-multiplier: 1rem;
-
 $space: (
-	'x-small': 0.25,
-	'small': 0.5,
-	'normal': 1,
-	'medium': 1.5,
-	'large': 2,
-	'x-large': 4,
-	'xx-large': 6,
+	'1px': 1px,
+	'2px': 2px,
+	'4px': 4px,
+	'x-small': 0.25rem,
+	'small': 0.5rem,
+	'normal': 1rem,
+	'medium': 1.5rem,
+	'large': 2rem,
+	'x-large': 4rem,
+	'xx-large': 6rem,
 );
-
-@each $space-name, $space-value in $space {
-	$space: map.set($space, $space-name, $space-value * $space-multiplier);
-}
 
 /*********************************/
 /* Text styles                   */
 /*********************************/
 
-$text-weight: (
+$font-weight: (
+	'thin': 100,
+	'extra-light': 200,
+	'light': 300,
+	'normal': 400,
+	'medium': 500,
+	'semi-bold': 600,
+	'bold': 700,
+	'extra-bold': 800,
+	'black': 900,
 	'text': 400,
 	'heading': 800,
 );
 
-$text-size: (
-	'small': 0.75em,
-	'normal': 1.15rem,
+$font-size: (
+	'small': 0.8em,
+	'normal': 1rem,
 	'large': 1.15em,
 	'h6': 1rem,
 	'h5': 1.15rem,
@@ -125,20 +69,8 @@ $text-size: (
 	'h1': 2.011rem,
 );
 
-$line-height: 1.35;
+$font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 /*********************************/
 /* Font choices                  */
 /*********************************/
-
-$text-font: 'Inter var', system-ui, sans-serif;
-
-/*********************************/
-/* Border weights                */
-/*********************************/
-
-$borders: (
-	'thin': 1px,
-	'normal': 2px,
-	'thick': 4px,
-);

@@ -1,0 +1,24 @@
+hr {
+	--hr-gap: 2rem;
+	--hr-width: 4px;
+
+	height: var(--hr-width);
+	background-color: var(--hr-color, var(--color-light--alt));
+	border: none;
+	width: calc(100% - 4rem);
+	margin: 1rem auto;
+	clip-path: polygon(
+		var(--hr-width) 100%,
+		0 0,
+		var(--hr-gap) 0,
+		calc(var(--hr-gap) + var(--hr-width)) 100%,
+		calc((var(--hr-gap) * 2) + var(--hr-width)) 100%,
+		calc(var(--hr-gap) * 2) 0,
+		calc(100% - var(--hr-gap) * 2) 0,
+		calc(100% - (var(--hr-width) + var(--hr-gap) * 2)) 100%,
+		calc(100% - (var(--hr-gap) + var(--hr-width))) 100%,
+		calc(100% - var(--hr-gap)) 0,
+		100% 0,
+		calc(100% - var(--hr-width)) 100%
+	);
+}

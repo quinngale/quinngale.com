@@ -2,11 +2,11 @@
     <footer>
         <section class="grid">
             <p>
-                <NuxtLink href="mailto:quinn@quinngale.com" class="link">
+                <NuxtLink href="mailto:q.gale@live.com" class="link">
                     <span class="link__icon">
                         <FontAwesomeIcon :icon="['solid', 'envelope']" />
                     </span>
-                    <span>quinn@quinngale.com</span>
+                    <span>q.gale@live.com</span>
                 </NuxtLink>
             </p>
             <p>
@@ -18,7 +18,7 @@
                 </NuxtLink>
             </p>
 
-            <p>© 2023 Quinn Gale</p>
+            <p>© 2024 Quinn Gale</p>
         </section>
     </footer>
 </template>

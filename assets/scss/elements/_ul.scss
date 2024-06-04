@@ -1,0 +1,19 @@
+ul {
+	list-style: none;
+	list-style-position: inside;
+	margin-block: 1rem;
+
+	li::before {
+		content: '▪';
+		display: inline-block;
+		text-align: center;
+		font-variant-numeric: tabular-nums;
+		width: 2.5ch;
+		font-weight: bold;
+		color: var(--ul-counter-color, var(--color-light--alt));
+	}
+
+	&:last-child {
+		margin-block-end: 0;
+	}
+}

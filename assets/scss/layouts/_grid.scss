@@ -1,57 +1,47 @@
 @use 'sass:map';
 
-.grid {
+.grid,
+.grid > .full-width {
 	display: grid;
 	grid-template-columns:
 		[full-width-start]
-		minmax(map.get($space, 'normal'), 1fr)
+		minmax(1rem, 1fr)
 		[super-left-start]
 		0
 		[super-start]
-		minmax(0, map.get($grid, 'enwiden'))
+		minmax(0, 10ch)
 		[super-right-start]
 		0
 		[content-start]
-		min(100% - (map.get($space, 'normal') * 2), map.get($grid, 'callout'))
+		min(100% - (1rem * 2), 70ch)
 		[content-end]
 		0
 		[super-left-end]
-		minmax(0, map.get($grid, 'enwiden'))
+		minmax(0, 10ch)
 		[super-end]
 		0
 		[super-right-end]
-		minmax(map.get($space, 'normal'), 1fr)
+		minmax(1rem, 1fr)
 		[full-width-end];
-}
 
-.grid > *,
-.full-width > * {
-	grid-column: content;
-}
+	> * {
+		grid-column: content;
+		grid-template-columns: subgrid;
+	}
 
-.grid > .super {
-	grid-column: super;
-}
+	> .super {
+		grid-column: super;
+	}
 
-.grid > .super-left {
-	grid-column: super-left;
-}
+	> .super-left {
+		grid-column: super-left;
+	}
 
-.grid > .super-right {
-	grid-column: super-right;
-}
+	> .super-right {
+		grid-column: super-right;
+	}
 
-.grid > .full-width {
-	grid-column: full-width;
-}
-
-img.full-width {
-	width: 100%;
-	max-height: 45vh;
-	object-fit: cover;
-}
-
-.grid section {
-	display: grid;
-	grid-template-columns: subgrid;
+	> .full-width {
+		grid-column: full-width;
+	}
 }

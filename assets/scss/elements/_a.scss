@@ -1,0 +1,15 @@
+a {
+	color: currentColor;
+	text-decoration: underline solid 1px currentColor;
+	// text-decoration-thickness: 1px;
+	// text-decoration-color: $link;
+}
+
+a:hover {
+	opacity: var(--link-hover-opacity);
+	text-decoration-thickness: 2px;
+}
+
+a:visited {
+	color: var(--link-color--visited);
+}

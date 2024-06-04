@@ -3,22 +3,30 @@
 .tags {
 	display: flex;
 	flex-wrap: wrap;
-	gap: map.get($space, 'small');
+	gap: 0.5rem;
 }
 
 .tag,
 .tag--emphasis {
-	background: var(--tag-background);
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	background: var(--tag-background, var(--color-dark));
 	font-size: 1em;
-	border-radius: map.get($space, 'small');
-	overflow: hidden;
-	color: var(--tag-color);
-	vertical-align: middle;
-	padding: map.get($space, 'x-small') map.get($space, 'small');
-}
+	color: var(--tag-text-color, var(--color-light));
+	border: 2px solid var(--tag-text-color, var(--color-light));
+	line-height: 1;
+	padding-inline-end: 0.25rem;
 
-.tag--emphasis {
-	background: var(--tag--emphasis-background);
-	color: var(--tag--emphasis-color);
+	&:has(.icon) {
+		clip-path: polygon(0 0.5rem, 0.5rem 0, 100% 0, 100% 100%, 0.5rem 100%, 0 calc(100% - 0.5rem));
+	}
+
+	> .icon {
+		display: block;
+		background-color: var(--tag-text-color, var(--color-light));
+		color: var(--tag-background, var(--color-dark));
+		padding: 0.25rem;
+		margin-inline-end: 0.25rem;
+	}
 }

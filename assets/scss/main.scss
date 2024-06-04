@@ -3,15 +3,26 @@
 //@import 'vendors';
 
 @import 'base/reset';
-@import 'base/base';
 @import 'base/typography';
 @import 'base/elements';
 
+@import 'elements/html';
+@import 'elements/h1';
+@import 'elements/h2';
+@import 'elements/h3';
+@import 'elements/hr';
+@import 'elements/p';
+@import 'elements/article';
+@import 'elements/a';
+@import 'elements/img';
+@import 'elements/ol';
+@import 'elements/ul';
+@import 'elements/footer';
+
+@import 'layouts/body';
 @import 'layouts/nav';
-@import 'layouts/footer';
 @import 'layouts/grid';
 
-@import 'components/colors';
 @import 'components/header';
 @import 'components/link';
 @import 'components/list-group';
@@ -21,4 +32,3 @@
 @import 'components/column';
 
 @import 'themes/default';
-@import 'themes/dark';

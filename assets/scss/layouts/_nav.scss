@@ -1,8 +1,8 @@
 @use 'sass:map';
 
 nav {
-	padding: map.get($space, 'normal') map.get($space, 'large');
-	font-size: map.get($text-size, 'large');
+	padding: 1rem 2rem;
+	font-size: 1.15rem;
 
 	ul {
 		list-style: none;
@@ -11,6 +11,10 @@ nav {
 		margin: 0 auto;
 		width: fit-content;
 		flex: 0 0 auto;
+
+		li::before {
+			content: unset;
+		}
 	}
 
 	li {
@@ -19,47 +23,46 @@ nav {
 		a,
 		a:visited {
 			text-decoration: none;
-			color: var(--text-color);
+			color: var(--nav-color, var(--color-light));
 			display: block;
-			padding: map.get($space, 'x-small') 0;
+			padding: 0.5rem 0;
+			border-block-end: 4px solid transparent;
 		}
 
 		a:hover {
-			text-decoration: none;
-			opacity: var(--hover-opacity);
-			color: currentColor;
+			opacity: unset;
+			border-block-end-color: var(--nav-hover-color, var(--color-light--alt));
 		}
 
 		a.--active {
-			font-weight: bold;
+			border-block-end-color: var(--nav-color, var(--color-light));
 		}
 	}
 
 	li:first-child {
 		display: block;
-		font-size: map.get($text-size, 'h2');
+		font-size: 1.749rem;
 		margin: 0;
 		padding: 0;
 
 		a,
-		a:visited {
+		a:visited,
+		a:hover {
 			text-decoration: none;
-			color: var(--heading-color);
+			color: var(--nav-color, var(--color-light));
 			display: block;
 			padding: 0;
-		}
-
-		a:hover {
-			opacity: var(--hover-opacity);
+			border: unset;
 		}
 	}
 
 	li:nth-child(2) {
-		margin-top: map.get($space, 'small');
+		margin-top: 0.5rem;
 	}
 
 	&.nav--expanded li {
 		display: block;
+		margin-block-end: 0.25rem;
 	}
 
 	button {
@@ -67,10 +70,10 @@ nav {
 		background-color: transparent;
 		display: block;
 		width: 100%;
-		font-size: var(--text-lg);
-		color: var(--text);
+		font-size: 1.5rem;
+		color: var(--color-light);
 		cursor: pointer;
-		padding: map.get($space, 'small');
+		padding: 0.5rem 1rem;
 
 		&:hover {
 			opacity: var(--hover-opacity);
@@ -82,7 +85,7 @@ nav {
 	nav,
 	nav.nav--expanded {
 		padding: 0;
-		margin-block: map.get($space, 'normal');
+		margin-block: 1rem;
 
 		ul {
 			display: flex;
@@ -93,25 +96,31 @@ nav {
 			li {
 				width: auto;
 			}
-		}
 
-		li:nth-child(n) {
-			display: block;
-			margin: 0;
-			padding: map.get($space, 'normal');
-			text-align: center;
-		}
+			li:first-child {
+				a {
+					font-size: 1.749rem;
+				}
+			}
 
-		li:nth-child(-n + 3) {
-			order: 1;
-		}
+			li:nth-child(n) {
+				display: block;
+				margin: 0;
+				padding: 1rem;
+				text-align: center;
+			}
 
-		li:first-child {
-			order: 2;
-		}
+			li:nth-child(-n + 3) {
+				order: 1;
+			}
 
-		li:nth-last-child(-n + 2) {
-			order: 3;
+			li:first-child {
+				order: 2;
+			}
+
+			li:nth-last-child(-n + 2) {
+				order: 3;
+			}
 		}
 
 		button {

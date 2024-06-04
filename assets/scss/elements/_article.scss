@@ -1,0 +1,11 @@
+article {
+	margin-block: 2rem;
+
+	&:first-child {
+		margin-block-start: 0;
+	}
+
+	&:last-child {
+		margin-block-end: 0;
+	}
+}

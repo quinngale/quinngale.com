@@ -1,0 +1,17 @@
+h2 {
+	font-size: 1.479rem;
+	margin-block: 1rem;
+	background-color: var(--h2-background-color, var(--color-light));
+	color: var(--h2-text-color, var(--color-dark));
+	padding: 0.25rem;
+
+	&::before {
+		display: inline-block;
+		counter-increment: section;
+		content: counter(section, decimal-leading-zero);
+		font-variant-numeric: tabular-nums;
+		color: var(--h2-pre-color, var(--color-light--alt));
+		height: 100%;
+		font-weight: bold;
+	}
+}

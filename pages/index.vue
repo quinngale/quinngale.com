@@ -1,6 +1,6 @@
 <template>
     <main class="grid">
-        <section class="full-width --shade">
+        <article class="full-width --inverted">
             <div class="columns">
                 <div class="column" id="profile-image-container">
                     <img src="/profile.jpg" id="profile-image" />
@@ -19,9 +19,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </article>
 
-        <section class="full-width">
+        <article class="full-width">
             <h2>Skills</h2>
 
             <p>
@@ -29,6 +29,7 @@
                 technical communication and troubleshooting. I have been told that I am good at communicating technical
                 information to my end users in a way that they understand.
             </p>
+
             <p>
                 My philosophy on that point is that as a rule, people work better when they have information about how
                 the system they are using works. Further: Anytime someone doesn't understand an application or process
@@ -173,9 +174,9 @@
                     VueJS
                 </Tag>
             </Tags>
-        </section>
+        </article>
 
-        <section>
+        <article class="">
             <h2>Education</h2>
             <Columns>
                 <Column>
@@ -216,9 +217,9 @@
                     </Card>
                 </Column>
             </Columns>
-        </section>
+        </article>
 
-        <section>
+        <article>
             <h2>Work</h2>
 
             <ListGroup>
@@ -263,7 +264,7 @@
                     </ListGroupItemSection>
                 </ListGroupItem>
             </ListGroup>
-        </section>
+        </article>
     </main>
 </template>
 

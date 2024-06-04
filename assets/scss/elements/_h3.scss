@@ -1,0 +1,8 @@
+h3 {
+	line-height: 1;
+	font-size: 1.521rem;
+	border-block-end: 2px solid var(--h3-border-color, var(--color-light--alt));
+	padding-block-end: 0.5rem;
+	color: var(--h3-color, var(--color-light));
+	margin-block-end: 1rem;
+}

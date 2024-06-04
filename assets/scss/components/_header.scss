@@ -3,12 +3,12 @@
 .header {
 	text-align: center;
 	color: var(--heading-color);
-	margin-bottom: map.get($space, 'large');
+	margin-bottom: var(--space-large);
 }
 
 .header:has(.header__image) {
 	margin: unset;
-	padding: map.get($space, 'large');
+	padding: var(--space-large);
 }
 
 .header .header__title {

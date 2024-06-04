@@ -1,38 +1,29 @@
 @use 'sass:map';
-
-$primary: 'blue';
-$light: 'light';
-$dark: 'dark';
+@use 'sass:color';
 
 :root {
-	--text-color: #{map.get($colors, $dark, '50')};
+	--color-dark: #{map.get($colors, 'dark')};
+	--color-dark--alt: #{color.mix(map.get($colors, 'light'), map.get($colors, 'dark'), 5%)};
 
-	--background-color: #{map.get($colors, $light, '50')};
+	--color-light: #{map.get($colors, 'light')};
+	--color-light--alt: #{color.mix(map.get($colors, 'light'), map.get($colors, 'dark'), 50%)};
 
-	--main--background: #{map.get($colors, $light, '55')};
+	.--inverted {
+		--color-dark: #{map.get($colors, 'light')};
+		--color-dark--alt: #{color.mix(map.get($colors, 'light'), map.get($colors, 'dark'), 90%)};
 
-	--heading-color: #{map.get($colors, $primary, '40')};
+		--color-light: #{map.get($colors, 'dark')};
+		--color-light--alt: #{color.mix(map.get($colors, 'light'), map.get($colors, 'dark'), 50%)};
 
-	--shade-background: #{map.get($colors, $primary, '90')};
+		background-color: var(--color-dark);
+		padding-block: 1rem;
 
-	--link-hover-opacity: 0.7;
-	--link-color: #{map.get($colors, $primary, '35')};
-	--link-color--hover: #{map.get($colors, $primary, '25')};
-	--link-color--visited: #{map.get($colors, $primary, '35 ')};
+		> :first-child {
+			margin-block-start: 0;
+		}
 
-	--card-background: #{map.get($colors, $primary, '90')};
-	--card-color: #{map.get($colors, $primary, '25')};
-	--card--emphasis-background: #{map.get($colors, $primary, '40')};
-	--card--emphasis-color: #{map.get($colors, $primary, '100')};
-	--card__title--separator-color: var(--background-color);
-
-	--tag-background: #{map.get($colors, $primary, '90')};
-	--tag-color: #{map.get($colors, $primary, '15')};
-	--tag--emphasis-background: #{map.get($colors, $primary, '40')};
-	--tag--emphasis-color: #{map.get($colors, $primary, '100')};
-
-	--icon-color: #{map.get($colors, $primary, '35')};
-
-	--code-background: #{map.get($colors, $light, '45')};
-	--code-color: #{map.get($colors, $dark, '60')};
+		> :last-child {
+			margin-block-end: 0;
+		}
+	}
 }
