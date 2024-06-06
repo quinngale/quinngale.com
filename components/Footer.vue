@@ -3,16 +3,18 @@
         <section class="grid">
             <p>
                 <NuxtLink href="mailto:q.gale@live.com" class="link">
-                    <span class="link__icon">
+                    <Icon>
                         <FontAwesomeIcon :icon="['solid', 'envelope']" />
-                    </span>
+                    </Icon>
                     <span>q.gale@live.com</span>
                 </NuxtLink>
             </p>
             <p>
                 <NuxtLink href="https://github.com/quinngale/quinngale.com" class="link">
                     <span class="link__icon">
-                        <FontAwesomeIcon :icon="['brands', 'github']" />
+                        <Icon>
+                            <FontAwesomeIcon :icon="['brands', 'github']" />
+                        </Icon>
                     </span>
                     <span>GitHub</span>
                 </NuxtLink>
