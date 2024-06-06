@@ -31,6 +31,10 @@
 		overflow: hidden;
 		display: grid;
 		align-content: center;
+
+		> * {
+			z-index: 1;
+		}
 	}
 
 	> .card__icon--overlay {
@@ -41,7 +45,6 @@
 		top: 50%;
 		transform-origin: center center;
 		transform: translate(37%, -57%);
-		z-index: -9999;
 	}
 }
 
