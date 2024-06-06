@@ -21,6 +21,36 @@
             </div>
         </article>
 
+        <article>
+            <h2>Contact</h2>
+            <Columns>
+                <Column>
+                    <Card>
+                        <CardIconOverlay>
+                            <Icon>
+                                <fontAwesomeIcon :icon="['fas', 'envelope']" />
+                            </Icon>
+                        </CardIconOverlay>
+                        <CardSection>
+                            <strong>Email:</strong> <a href="mailto:quinn@quinngale.com">quinn@quinngale.com</a>
+                        </CardSection>
+                    </Card>
+                </Column>
+                <Column>
+                    <Card>
+                        <CardIconOverlay>
+                            <Icon>
+                                <fontAwesomeIcon :icon="['fab', 'github']" />
+                            </Icon>
+                        </CardIconOverlay>
+                        <CardSection>
+                            <strong>GitHub:</strong> <a href="https://github.com/quinngale">@quinngale</a>
+                        </CardSection>
+                    </Card>
+                </Column>
+            </Columns>
+        </article>
+
         <article class="full-width">
             <h2>Skills</h2>
 
@@ -183,17 +213,11 @@
                     <Card emphasis>
                         <CardTitle>
                             <strong>
-                                <Icon>
-                                    <FontAwesomeIcon :icon="['fas', 'graduation-cap']" />
-                                </Icon>
                                 Bachelor of Science in Web and User Experience
                             </strong>
                         </CardTitle>
                         <CardSection>
-                            <em>April 2023</em>
-                        </CardSection>
-                        <CardSection>
-                            <a href="http://weber.edu">Weber State University</a>
+                            April 2023 - <a href="http://weber.edu">Weber State University</a>
                         </CardSection>
                     </Card>
                 </Column>
@@ -201,18 +225,11 @@
                     <Card>
                         <CardTitle>
                             <strong>
-
-                                <Icon>
-                                    <FontAwesomeIcon :icon="['fas', 'file-certificate']" />
-                                </Icon>
                                 Certificate of Proficiency in Web and User Experience
                             </strong>
                         </CardTitle>
                         <CardSection>
-                            <em>April 2022</em>
-                        </CardSection>
-                        <CardSection>
-                            <a href="http://weber.edu">Weber State University</a>
+                            April 2022 - <a href="http://weber.edu">Weber State University</a>
                         </CardSection>
                     </Card>
                 </Column>
@@ -225,18 +242,12 @@
             <ListGroup>
                 <ListGroupItem>
                     <ListGroupItemSection>
-                        <Icon>
-                            <FontAwesomeIcon :icon="['solid', 'headset']" fixed-width />
-                        </Icon>
-                        <strong>Technical Support Specialist</strong>
+                        <strong>
+                            Technical Support Specialist
+                        </strong>
                     </ListGroupItemSection>
                     <ListGroupItemSection>
-                        <em>
-                            2016–Now
-                        </em>
-                    </ListGroupItemSection>
-                    <ListGroupItemSection>
-                        <a href="http://weber.edu">Weber State University</a>
+                        2016–Now - <a href="http://weber.edu">Weber State University</a>
                     </ListGroupItemSection>
                     <ListGroupItemSection>
                         <p>
@@ -245,22 +256,36 @@
                             support questions. They could come in through a phone call, an email, a chat, a ticket
                             that they created through the website, or pretty much any other way that we could take
                             action with. The help requests themselves were just as varied. Some of the most common calls
-                            we get include helping people with account access, Wi-Fi troubleshooting, and setting up
-                            computers for new employees. Often, we were in employee's offices helping them resolve the
-                            issue they called us about.
+                            we get include helping people with account issues, Wi-Fi troubleshooting, and setting up
+                            computers for the employees on campus.
                         </p>
                         <p>
                             In early 2020 I was promoted to a tech lead position, and while this didn't majorly impact
-                            what my day-to-day schedule looked like it did add a few extra responsibilities, namely
-                            making sure that the rest of the techs were able to do their job effectively and acting as a
-                            communicator between them and my manager when problems arose.
+                            my day-to-day schedule it did add a few extra responsibilities—making sure that the rest of
+                            the techs were able to do their job effectively and working on some of the harder tickets
+                            that worked their way into the queue.
                         </p>
                         <p>
-                            Moving on to the tail end of 2022, I applied for and got a new-to-the-department full time
-                            position within the same team that is an extension on the tech lead position I held before.
-                            My job descrition shifted a little bit from being a strictly front-line support position to
-                            also including some level 2 support, resolving harder tickets, and quality assurance.
+                            In August of 2022 the tech lead duties were shifted to a full-time position with some shiny
+                            new responsibilities:
                         </p>
+                        <ul>
+                            <li>
+                                Quality assurance
+                            </li>
+                            <li>
+                                Helping keep our knowledgebase up-to-date and complete
+                            </li>
+                            <li>
+                                "Problem recognition" or bringing up problems as they arise to my manager and
+                                administrators
+                                that they might not have noticed
+                            </li>
+                            <li>
+                                Compiling ticket reports
+                            </li>
+                            <li>Filling in on the front-desk duties as needed</li>
+                        </ul>
                     </ListGroupItemSection>
                 </ListGroupItem>
             </ListGroup>

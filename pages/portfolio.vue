@@ -28,8 +28,7 @@
 
                 <ListGroup class="full-width grid">
                     <ContentList path="/one-off" v-slot="{ list }">
-                        <ListGroupItem v-for="(item, index) in list" :key="index"
-                            :class="{ 'super-right': index % 2, 'super-left': (index + 1) % 2 }">
+                        <ListGroupItem v-for="(item, index) in list" :key="index">
                             <div class="columns" :class="{ 'columns--reverse': index % 2 }">
                                 <div class="column">
                                     <ListGroupItemSection>
@@ -61,5 +60,4 @@ const components = {
 }
 </script>
 
-<style>
-</style>
+<style></style>

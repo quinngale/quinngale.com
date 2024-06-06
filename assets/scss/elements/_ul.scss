@@ -12,6 +12,9 @@ ul {
 		font-weight: bold;
 		color: var(--ul-counter-color, var(--color-light--alt));
 	}
+	li {
+		display: block;
+	}
 
 	&:last-child {
 		margin-block-end: 0;

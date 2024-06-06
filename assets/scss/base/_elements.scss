@@ -1,19 +1,5 @@
 @use 'sass:map';
 
-figure {
-	margin: calc(-1 * var(--space-normal));
-	width: calc(100% + 2 * var(--space-normal));
-	padding: 1rem;
-
-	img,
-	table {
-		margin: 0 calc(-1 * var(--space-normal));
-		width: calc(100% + 2 * var(--space-normal));
-	}
-}
-
-
-
 pre {
 	margin-block: var(--space-normal);
 	overflow-x: scroll;

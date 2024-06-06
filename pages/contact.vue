@@ -9,11 +9,11 @@
                 <div class="columns">
                     <div class="column">
                         <Card>
-                            <CardIcon>
+                            <CardIconOverlay>
                                 <Icon>
                                     <fontAwesomeIcon :icon="['fas', 'envelope']" />
                                 </Icon>
-                            </CardIcon>
+                            </CardIconOverlay>
                             <CardSection>
                                 <strong>Email:</strong> <a href="mailto:quinn@quinngale.com">quinn@quinngale.com</a>
                             </CardSection>
@@ -21,11 +21,11 @@
                     </div>
                     <div class="column">
                         <Card>
-                            <CardIcon>
+                            <CardIconOverlay>
                                 <Icon>
                                     <fontAwesomeIcon :icon="['fab', 'github']" />
                                 </Icon>
-                            </CardIcon>
+                            </CardIconOverlay>
                             <CardSection>
                                 <strong>GitHub:</strong> <a href="https://github.com/quinngale">@quinngale</a>
                             </CardSection>

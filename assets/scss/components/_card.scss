@@ -13,6 +13,7 @@
 	border: 2px solid var(--card-text-color, var(--color-light));
 	gap: var(--space-small);
 	border-block: 4px solid var(--card-text-color, var(--color-light));
+	position: relative;
 
 	> * {
 		margin: 0.5rem;
@@ -24,9 +25,23 @@
 		margin: 0;
 	}
 
-	.card__icon {
+	&:has(.card__icon--overlay) {
+		min-height: 6rem;
+		place-items: middle;
+		overflow: hidden;
+		display: grid;
+		align-content: center;
+	}
+
+	> .card__icon--overlay {
 		font-size: 6rem;
-		text-align: center;
+		color: var(--color-light--alt);
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform-origin: center center;
+		transform: translate(37%, -57%);
+		z-index: -9999;
 	}
 }
 
