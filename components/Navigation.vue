@@ -6,20 +6,21 @@
             </li>
             <li>
                 <NuxtLink href="/" @click="isNavExpanded = false" active-class="--active"
-                    exact-active-class="--active-exact">Home</NuxtLink>
+                    exact-active-class="--active-exact">
+                    Home
+                </NuxtLink>
             </li>
             <li>
                 <NuxtLink href="/portfolio" @click="isNavExpanded = false" active-class="--active"
-                    exact-active-class="--active-exact">Portfolio
+                    exact-active-class="--active-exact">
+                    Portfolio
                 </NuxtLink>
             </li>
             <li>
                 <NuxtLink href="/blog" @click="isNavExpanded = false" active-class="--active"
-                    exact-active-class="--active-exact">Blog</NuxtLink>
-            </li>
-            <li>
-                <NuxtLink href="/contact" @click="isNavExpanded = false" active-class="--active"
-                    exact-active-class="--active-exact">Contact</NuxtLink>
+                    exact-active-class="--active-exact">
+                    Blog
+                </NuxtLink>
             </li>
         </ul>
         <button @click="isNavExpanded = !isNavExpanded">
