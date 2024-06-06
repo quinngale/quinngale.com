@@ -2,38 +2,37 @@
 description: Results from putting 9 USB drives into various RAID configurations.
 thumbnail: https://assets.quinngale.com/blog/raid/usb-raid-array-thumbnail.jpg
 alt_text: An image of 9 USB drives plugged into a USB hub that has been strapped to the side of a computer
-draft: false
+draft: true
 ---
 
 # RAID-ing things that shouldn't be RAID-ed
 
-![A USB hub full of flash drives](https://assets.quinngale.com/blog/raid/usb-raid-array.jpg)
+![A ten-port USB hub full of flash drives](https://assets.quinngale.com/blog/raid/usb-raid-array.jpg)
 
 ## What am I looking at?
 
 First things first, there's a 10-port Sabrent USB 3.0 hub (https://a.co/d/6v8RTMt) strapped to the side of the computer I have running it. The hub gets pretty hot under load, so to hopefully fix that I have attached a fan to the back side of the case blowing air out of the case and over the hub.
 
-The USB drives aren't anything special. They _were_ 10x 32GB SanDisk flash drives, like the one here: https://a.co/d/a1MCj78. Unfortunately, one of them stopped working while I was moving places and putting this together so now there's just 9 of them.
+The USB drives aren't anything special. They _were_ 10x 32GB SanDisk flash drives, like the one here: https://a.co/d/a1MCj78. Unfortunately, one of them stopped working while I was moving and putting this together so now there's just 9 of them.
 
-The computer is my former desktop repurposed as a fileshare and media server. The specs are:
+The computer is my former desktop repurposed as a media, game, and file share server. For the nerds, the specs are:
 
 -   Intel i5 7500
 -   32GB of 3200MHz RAM
--   500GB Samsung SSD 970 EVO NVMe drive—This will be important later
--   Running Ubuntu Server 23.04
+-   500GB Samsung SSD 970 EVO NVMe drive
+-   Ubuntu Server 23.04
 
 The drive is important because of how I set up the tests.
 
 ## Why?
 
-Two reasons:
+One reason:
 
-1. I was inspired by this post: https://asperti.com/2018/raid-666/ by Paolo Asperti.
-2. Why not?
-
-The goal of this is to benchmark USB drives in a series of different RAID configurations and see how they perform.
+1. Why not?
 
 ## Methodology
+
+The goal of this is to benchmark USB drives in a series of different RAID configurations and see how they perform.
 
 1. We are using lvm to create logical volumes for RAID0, RAID4, RAID5, and RAID6, so we first need to set up the volume group with:
 
