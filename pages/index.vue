@@ -19,36 +19,63 @@
                     </div>
                 </div>
             </div>
+
+            <div class="grid">
+
+                <Columns>
+                    <Column>
+                        <Card>
+                            <CardIconOverlay>
+                                <Icon>
+                                    <fontAwesomeIcon :icon="['fas', 'envelope']" />
+                                </Icon>
+                            </CardIconOverlay>
+                            <CardSection>
+                                <strong>Email:</strong> <a href="mailto:q.gale@live.com">q.gale@live.com</a>
+                            </CardSection>
+                        </Card>
+                    </Column>
+                    <Column>
+                        <Card>
+                            <CardIconOverlay>
+                                <Icon>
+                                    <fontAwesomeIcon :icon="['fab', 'github']" />
+                                </Icon>
+                            </CardIconOverlay>
+                            <CardSection>
+                                <strong>GitHub:</strong> <a href="https://github.com/quinngale">@quinngale</a>
+                            </CardSection>
+                        </Card>
+                    </Column>
+                </Columns>
+            </div>
         </article>
 
         <article>
-            <h2>Contact</h2>
-            <Columns>
-                <Column>
-                    <Card>
-                        <CardIconOverlay>
-                            <Icon>
-                                <fontAwesomeIcon :icon="['fas', 'envelope']" />
-                            </Icon>
-                        </CardIconOverlay>
-                        <CardSection>
-                            <strong>Email:</strong> <a href="mailto:quinn@quinngale.com">quinn@quinngale.com</a>
-                        </CardSection>
-                    </Card>
-                </Column>
-                <Column>
-                    <Card>
-                        <CardIconOverlay>
-                            <Icon>
-                                <fontAwesomeIcon :icon="['fab', 'github']" />
-                            </Icon>
-                        </CardIconOverlay>
-                        <CardSection>
-                            <strong>GitHub:</strong> <a href="https://github.com/quinngale">@quinngale</a>
-                        </CardSection>
-                    </Card>
-                </Column>
-            </Columns>
+            <h2>What I'm doing</h2>
+
+            <ListGroup>
+                <ContentDoc path="/blog/raid" v-slot="{ doc }">
+                    <ListGroupItem>
+                        <ListGroupItemSection>
+                            <h3>{{ doc.title }}</h3>
+                        </ListGroupItemSection>
+                        <div class="columns">
+                            <div class="column">
+                                <figure>
+                                    <img :src="doc.thumbnail" :alt="doc.alt_text">
+                                </figure>
+                            </div>
+                            <div class="column">
+                                <p>{{ doc.description }}</p>
+                                <p>
+                                    <a :href="doc._path">Read more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </ListGroupItem>
+                </ContentDoc>
+            </ListGroup>
         </article>
 
         <article class="full-width">
