@@ -5,4 +5,8 @@ h3 {
 	padding-block-end: 0.5rem;
 	color: var(--h3-color, var(--color-light));
 	margin-block-end: 1rem;
+
+	> a {
+		text-decoration: none;
+	}
 }
