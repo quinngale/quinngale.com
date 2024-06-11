@@ -42,7 +42,12 @@
                                         <h3>{{ item.title }}</h3>
                                         <p>{{ item.description }}</p>
                                         <br />
-                                        <a :href="item._path">Read more</a>
+                                        <a :href="item._path" class="button">
+                                            Read more
+                                            <Icon>
+                                                <FontAwesomeIcon :icon="['solid', 'chevron-right']" />
+                                            </Icon>
+                                        </a>
                                     </ListGroupItemSection>
                                 </div>
                             </div>
@@ -58,6 +63,9 @@
 const components = {
     h1: 'strong'
 }
+useHead({
+    title: "Portfolio"
+})
 </script>
 
 <style></style>
