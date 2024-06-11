@@ -6,14 +6,14 @@
 	--color-dark--alt: #{color.mix(map.get($colors, 'light'), map.get($colors, 'dark'), 5%)};
 
 	--color-light: #{map.get($colors, 'light')};
-	--color-light--alt: #{color.mix(map.get($colors, 'light'), map.get($colors, 'dark'), 50%)};
+	--color-light--alt: #{color.mix(map.get($colors, 'light'), map.get($colors, 'dark'), 60%)};
 
 	.--inverted {
 		--color-dark: #{map.get($colors, 'light')};
 		--color-dark--alt: #{color.mix(map.get($colors, 'light'), map.get($colors, 'dark'), 90%)};
 
 		--color-light: #{map.get($colors, 'dark')};
-		--color-light--alt: #{color.mix(map.get($colors, 'light'), map.get($colors, 'dark'), 50%)};
+		--color-light--alt: #{color.mix(map.get($colors, 'light'), map.get($colors, 'dark'), 35%)};
 
 		background-color: var(--color-dark);
 		padding-block: 1rem;

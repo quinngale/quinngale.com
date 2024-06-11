@@ -1,0 +1,29 @@
+.button {
+	&,
+	&:visited {
+		border: 0.125rem solid var(--button-border, var(--color-light));
+		background-color: var(--button-background-color, var(--color-light));
+		color: var(--button-text-color, var(--color-dark));
+		padding: 0.25rem 0.5rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1.15rem;
+		display: block;
+		width: fit-content;
+	}
+
+	&:hover {
+		background-color: var(--button-text-color, var(--color-dark));
+		color: var(--button-background-color, var(--color-light));
+		border: 0.125rem solid var(--button-accent-color, var(--color-light--alt));
+
+		> .icon {
+			color: var(--button-accent-color, var(--color-light--alt));
+		}
+	}
+
+	> .icon {
+		display: inline-block;
+	}
+}

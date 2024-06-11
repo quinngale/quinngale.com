@@ -11,14 +11,14 @@ nav {
 		width: fit-content;
 		flex: 0 0 auto;
 		font-size: 1.15rem;
-
-		li::before {
-			content: unset;
-		}
 	}
 
 	li {
 		display: none;
+
+		&::before {
+			all: unset;
+		}
 
 		&:first-child a {
 			margin: 0;
@@ -29,24 +29,8 @@ nav {
 		a:visited {
 			text-decoration: none;
 			color: var(--nav-color, var(--color-light));
-			display: block;
-			padding: 0.5rem 0;
-			border-inline-start: 4px solid transparent;
-			padding-inline-start: 8px;
-			margin-inline-start: -12px;
-		}
-
-		a:hover {
-			opacity: unset;
-			border-color: var(--nav-hover-color, var(--color-light--alt));
-		}
-
-		a.--active {
-			border-color: var(--nav-color, var(--color-light));
-		}
-
-		&:not(:first-child) {
-			color: red !important;
+			display: flex;
+			align-items: center;
 		}
 	}
 
@@ -65,10 +49,13 @@ nav {
 			padding: 0;
 			border: unset;
 		}
+
+		a::after {
+			content: unset;
+		}
 	}
 
 	li:nth-child(2) {
-		margin-top: 0.5rem;
 	}
 
 	&.nav--expanded li {
@@ -100,7 +87,7 @@ nav {
 
 		ul {
 			display: flex;
-			gap: 1.5rem;
+			gap: 1rem;
 			flex-direction: row;
 			align-items: baseline;
 			justify-items: stretch;
@@ -111,17 +98,41 @@ nav {
 				display: block;
 				margin: 0;
 				text-align: center;
+
 				a {
-					border-block-end: 4px solid transparent;
-					border-inline-start: unset;
+					display: inline-block;
+					flex-direction: column;
 					margin: unset;
-					padding: 0.5rem 0;
+					padding: 0.25rem 0.5rem;
+
+					&:hover {
+						background-color: var(--nav-text-color, var(--color-light));
+						color: var(--nav-background-color, var(--color-dark));
+					}
+
+					&.--active {
+						background-color: var(--nav-active-color, var(--color-light--alt));
+						color: var(--nav-active-text-color, var(--color-dark));
+
+						&:hover {
+							background-color: var(--nav-text-color, var(--color-light));
+							color: var(--nav-background-color, var(--color-dark));
+						}
+					}
 				}
 			}
 
 			li:first-child {
 				a {
+					all: unset;
+
+					cursor: pointer;
 					font-size: 1.749rem;
+					width: max-content;
+
+					&::after {
+						content: unset;
+					}
 				}
 			}
 		}

@@ -1,20 +1,15 @@
 ol {
-	list-style: none;
-	list-style-position: inside;
+	list-style: decimal-leading-zero;
+	list-style-position: outside;
 	margin-block: 1rem;
-	counter-reset: ol;
+	margin-inline-start: 3rem;
 
 	li {
-		counter-increment: ol;
-	}
-
-	li::before {
-		content: counter(ol, decimal-leading-zero);
-		display: inline-block;
-		font-variant-numeric: tabular-nums;
-		width: 2.5ch;
-		font-weight: bold;
-		color: var(--ol-counter-color, var(--color-light--alt));
+		&::marker {
+			font-variant-numeric: tabular-nums;
+			font-weight: bold;
+			color: var(--ol-counter-color, var(--color-light--alt));
+		}
 	}
 
 	&:last-child {

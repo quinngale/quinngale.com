@@ -10,23 +10,20 @@
 .tag--emphasis {
 	display: flex;
 	align-items: center;
-	gap: 0.25rem;
-	background: var(--tag-background, var(--color-dark));
+	gap: 8px;
+	background: var(--tag-background, transparent);
 	font-size: 1em;
 	color: var(--tag-text-color, var(--color-light));
-	border: 2px solid var(--tag-text-color, var(--color-light));
+	border: 0.125rem solid var(--tag-text-color, var(--color-light));
 	line-height: 1;
-	padding-inline-end: 0.25rem;
-
-	&:has(.icon) {
-		clip-path: polygon(0 0.5rem, 0.5rem 0, 100% 0, 100% 100%, 0.5rem 100%, 0 calc(100% - 0.5rem));
-	}
+	padding: 0.25rem;
+	padding-inline-end: 8px;
 
 	> .icon {
 		display: block;
 		background-color: var(--tag-text-color, var(--color-light));
 		color: var(--tag-background, var(--color-dark));
-		padding: 0.25rem;
-		margin-inline-end: 0.25rem;
+		padding: 4px;
+		margin: unset;
 	}
 }

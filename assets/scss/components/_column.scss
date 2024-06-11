@@ -16,14 +16,14 @@
 			}
 		}
 	}
-
-	&.columns--reverse > :last-child {
-		order: -1;
-	}
 }
 
 @media screen and (min-width: map.get($breakpoint, 'large')) {
 	.columns {
 		grid-template-columns: repeat(2, 1fr);
+
+		&.columns--reverse > :last-child {
+			order: -1;
+		}
 	}
 }
