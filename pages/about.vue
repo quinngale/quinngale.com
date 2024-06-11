@@ -5,6 +5,19 @@
         </header>
 
         <article>
+            <h2>Who I am</h2>
+            <p>
+                My name is Quinn. Outside of work, I'm usually learning new things, experimenting, and <small>attempting
+                    to</small> push
+                the envelope. Hobbies include 3D modeling in <a href="blender.org">Blender</a> (mostly hard-surface
+                things),
+                building and playing with web
+                technologies, fidling with my desktop-computer-turned-linux-server, cooking, and playing mostly
+                single-player computer games.
+            </p>
+        </article>
+
+        <article>
             <h2>Contact</h2>
 
             <Columns>
@@ -270,6 +283,19 @@
                             </li>
                             <li>Filling in on the front-desk duties as needed</li>
                         </ul>
+                        <hr />
+                        <p>
+                            My first priority is always helping the students that reach out to us—making sure they have
+                            the
+                            technology
+                            and tools to be succesful with their education. When possible, I will try to help the
+                            student
+                            understand at
+                            least at a high level what and why we are doing what we are through the course of
+                            troubleshooting
+                            and
+                            solving the problem they are calling about.
+                        </p>
                     </ListGroupItemSection>
                 </ListGroupItem>
             </ListGroup>
