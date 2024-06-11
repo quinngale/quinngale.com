@@ -1,10 +1,9 @@
 hr {
-	--hr-gap: 2rem;
-	--hr-width: 4px;
+	--hr-width: 0.125rem;
 
 	height: var(--hr-width);
 	background-color: var(--hr-color, var(--color-light--alt));
 	border: none;
 	width: 100%;
-	margin: 8px auto;
+	margin: 1rem auto;
 }
