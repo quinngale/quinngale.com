@@ -22,6 +22,12 @@
                     Blog
                 </NuxtLink>
             </li>
+            <li>
+                <NuxtLink href="/about" @click="isNavExpanded = false" active-class="--active"
+                    exact-active-class="--active-exact">
+                    About
+                </NuxtLink>
+            </li>
         </ul>
         <button @click="isNavExpanded = !isNavExpanded">
             <FontAwesomeIcon :icon="['fa-regular', 'angle-down']"
