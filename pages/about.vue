@@ -7,13 +7,18 @@
         <article>
             <h2>Who I am</h2>
             <p>
-                My name is Quinn. Outside of work, I'm usually learning new things, experimenting, and <small>attempting
+                My name is Quinn.
+                Outside of work, I'm usually learning
+                new things, experimenting, and <small>attempting
                     to</small> push
-                the envelope. Hobbies include 3D modeling in <a href="blender.org">Blender</a> (mostly hard-surface
-                things),
+                the envelope. Hobbies include 3D modeling in <a href="blender.org">Blender</a> (hard-surface
+                things. <a
+                    href="https://medium.com/@bawagupta69/overview-of-hard-surface-modelling-in-blender-4795b99c6a66">An
+                    explanation of hard surface modeling can be found here</a>),
                 building and playing with web
                 technologies, fidling with my desktop-computer-turned-linux-server, cooking, and playing mostly
-                single-player computer games.
+                single-player computer games. Learning from and sharing with other humans is my favorite part of any
+                project.
             </p>
         </article>
 
