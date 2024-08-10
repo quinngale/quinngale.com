@@ -1,6 +1,5 @@
 <template>
     <main>
-        <article class="grid">
             <header class="header">
                 <h1 class="header__title">Portfolio</h1>
             </header>
@@ -17,7 +16,7 @@
                 </section>
             </ContentList> -->
 
-            <section class="full-width grid">
+            <article class="full-width grid">
                 <h2>One-offs</h2>
 
                 <p>
@@ -54,8 +53,7 @@
                         </ListGroupItem>
                     </ContentList>
                 </ListGroup>
-            </section>
-        </article>
+            </article>
     </main>
 </template>
 

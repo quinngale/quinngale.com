@@ -1,16 +1,14 @@
 <template>
-    <main>
-        <article class="grid">
+    <main class="grid">
             <header class="header">
                 <h1 class="header__title">Blog</h1>
             </header>
 
-            <section>
+            <article>
                 <p>
                     Project updates, <small>(informal and unscientific)</small> experiment results, and documentation of
                     processes.
                 </p>
-            </section>
 
             <ListGroup>
                 <ContentList path="/blog" v-slot="{ list }">
@@ -39,7 +37,7 @@
                     </ListGroupItem>
                 </ContentList>
             </ListGroup>
-        </article>
+            </article>
     </main>
 </template>
 
