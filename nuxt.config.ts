@@ -7,7 +7,6 @@ export default defineNuxtConfig({
 	},
 
 	css: ['@fortawesome/fontawesome-svg-core/styles.css', '~/assets/scss/main.scss'],
-
 	modules: ['@nuxt/content'],
 
 	app: {
@@ -21,4 +20,6 @@ export default defineNuxtConfig({
 			],
 		},
 	},
+
+	compatibilityDate: '2024-07-26',
 });
