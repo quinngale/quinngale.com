@@ -23,6 +23,7 @@
 @import 'elements/br';
 @import 'elements/code';
 @import 'elements/pre';
+@import 'elements/section';
 
 @import 'layouts/body';
 @import 'layouts/nav';
@@ -36,5 +37,8 @@
 @import 'components/icon';
 @import 'components/card';
 @import 'components/column';
+@import 'components/logo';
 
 @import 'themes/default';
+
+@import 'pages/home';

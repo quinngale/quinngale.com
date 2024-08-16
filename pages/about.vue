@@ -16,8 +16,9 @@
                     href="https://medium.com/@bawagupta69/overview-of-hard-surface-modelling-in-blender-4795b99c6a66">An
                     explanation of hard surface modeling can be found here</a>),
                 building and playing with web
-                technologies, fidling with my desktop-computer-turned-linux-server, cooking, and playing mostly
-                single-player computer games. Learning from and sharing with other humans is my favorite part of any
+                technologies, fidling with my desktop-computer-turned-into-a-linux-server, cooking, and playing
+                <small>usually</small>
+                single-player games. Learning and sharing with other people is my favorite part of any
                 project.
             </p>
         </article>
@@ -57,30 +58,14 @@
             <h2>Skills</h2>
 
             <p>
-                Through my work and school experience I have picked up a set of soft skills—mostly centered around
-                technical communication and troubleshooting. I have been told that I am good at communicating technical
-                information to my end users in a way that they understand.
+                Through my work and school experience I have learned a set of soft skills—mostly centered around
+                technical communication and troubleshooting. When possible, I want the people I'm helping to leave
+                with a better understanding of what went wrong with whatever it is that they are contacting me about
+                and to hopefully leave the interaction with the ability to be a little more self-sufficient.
             </p>
 
             <p>
-                My philosophy on that point is that as a rule, people work better when they have information about how
-                the system they are using works. Further: Anytime someone doesn't understand an application or process
-                in their system it is an education issue and not a user issue. To put that another way, anyone can write
-                a program in Python that prints "Hello world!"—copy and paste <code>print("Hello world!")</code> into a
-                file with a .py extension—but understanding why that works and how Python makes that happen behind the
-                curtains allows one to write better scripts and programs. To that end, I have geared my
-                processes toward prioritizing education.
-            </p>
-
-            <p>
-                Education is a two-way street. Just like the person on the other end of your phone call doesn't usually
-                have
-                your context, you don't have theirs. It is your responsiblity to understand their life and how
-                you fit into it <em>before</em> any meaningful problem solving and solutions can start happening.
-            </p>
-
-            <p>
-                With that in mind, here's the obligatory list of hard skills. Pick and choose from that list what you
+                With that in mind, here's the obligatory list of "hard" skills. Pick and choose from that list what you
                 want.
             </p>
 
@@ -239,71 +224,39 @@
         </article>
 
         <article>
-            <h2>Work</h2>
-
-            <ListGroup>
-                <ListGroupItem>
-                    <ListGroupItemSection>
-                        <strong>
-                            Technical Support Specialist
-                        </strong>
-                    </ListGroupItemSection>
-                    <ListGroupItemSection>
-                        2016–Now - <a href="http://weber.edu">Weber State University</a>
-                    </ListGroupItemSection>
-                    <ListGroupItemSection>
-                        <p>
-                            The brief version of the job description is to assist faculty, staff, and students with
-                            their technical
-                            support questions. They could come in through a phone call, an email, a chat, a ticket
-                            that they created through the website, or pretty much any other way that we could take
-                            action with. The help requests themselves were just as varied. Some of the most common calls
-                            we get include helping people with account issues, Wi-Fi troubleshooting, and setting up
-                            computers for the employees on campus.
-                        </p>
-                        <p>
-                            In early 2020 I was promoted to a tech lead position, and while this didn't majorly impact
-                            my day-to-day schedule it did add a few extra responsibilities—making sure that the rest of
-                            the techs were able to do their job effectively and working on some of the harder tickets
-                            that worked their way into the queue.
-                        </p>
-                        <p>
-                            In August of 2022 the tech lead duties were shifted to a full-time position with some shiny
-                            new responsibilities:
-                        </p>
-                        <ul>
-                            <li>
-                                Quality assurance
-                            </li>
-                            <li>
-                                Helping keep our knowledgebase up-to-date and complete
-                            </li>
-                            <li>
-                                "Problem recognition" or bringing up problems as they arise to my manager and
-                                administrators
-                                that they might not have noticed
-                            </li>
-                            <li>
-                                Compiling ticket reports
-                            </li>
-                            <li>Filling in on the front-desk duties as needed</li>
-                        </ul>
-                        <hr />
-                        <p>
-                            My first priority is always helping the students that reach out to us—making sure they have
-                            the
-                            technology
-                            and tools to be succesful with their education. When possible, I will try to help the
-                            student
-                            understand at
-                            least at a high level what and why we are doing what we are through the course of
-                            troubleshooting
-                            and
-                            solving the problem they are calling about.
-                        </p>
-                    </ListGroupItemSection>
-                </ListGroupItem>
-            </ListGroup>
+            <section>
+                <h2>Work Experience</h2>
+                <p>
+                    <strong>
+                        Technical Support Specialist
+                    </strong>
+                </p>
+                <p>
+                    2016–Now - <a href="http://weber.edu">Weber State University</a>
+                </p>
+                <div>
+                    <p>
+                        This is a fairly typical technical support position. We helped our students and employees with
+                        software issues via calls, chats, emails, tickets, and almost any other way they wanted to reach
+                        out to us with.
+                    </p>
+                    <p>
+                        I started out in 2016 in an hourly position before being promoted to an hourly tech lead in
+                        early 2020.
+                        And near the end of 2022 I was promoted to a full-time tech lead. This added a few
+                        responsibilities to
+                        my day-to-day duties:
+                    </p>
+                    <ul>
+                        <li>A new-to-the-department level 1.5 tech with some expanded system access to
+                            fix common problems</li>
+                        <li>Quality assurance to ensure our tickets are properly documented and that we are giving out
+                            the right
+                            information</li>
+                        <li>Highlighting trends and problems in our tickets to leadership</li>
+                    </ul>
+                </div>
+            </section>
         </article>
     </main>
 </template>

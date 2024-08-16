@@ -1,5 +1,5 @@
 <template>
-    <section class="list-group__item">
+    <div class="list-group__item">
         <slot></slot>
-    </section>
+    </div>
 </template>

@@ -25,12 +25,26 @@ nav {
 			padding: 0;
 		}
 
-		a,
-		a:visited {
+		a:not(.logo),
+		a:visited:not(.logo) {
+			border: 0.125rem solid transparent;
 			text-decoration: none;
 			color: var(--nav-color, var(--color-light));
 			display: flex;
 			align-items: center;
+			padding: 0.25rem 0.5rem;
+			font-weight: 600;
+
+			&.--active {
+				background-color: var(--nav-active-color, var(--color-light));
+				color: var(--nav-active-text-color, var(--color-dark));
+			}
+
+			&:hover {
+				border-color: var(--nav-text-color, var(--color-light--alt));
+				background-color: var(--nav-active-color, var(--color-dark));
+				color: var(--nav-text-color, var(--color-light));
+			}
 		}
 	}
 
@@ -39,23 +53,6 @@ nav {
 		font-size: 1.749rem;
 		margin: 0;
 		padding: 0;
-
-		a,
-		a:visited,
-		a:hover {
-			text-decoration: none;
-			color: var(--nav-color, var(--color-light));
-			display: block;
-			padding: 0;
-			border: unset;
-		}
-
-		a::after {
-			content: unset;
-		}
-	}
-
-	li:nth-child(2) {
 	}
 
 	&.nav--expanded li {
@@ -104,35 +101,6 @@ nav {
 					flex-direction: column;
 					margin: unset;
 					padding: 0.25rem 0.5rem;
-
-					&:hover {
-						background-color: var(--nav-text-color, var(--color-light));
-						color: var(--nav-background-color, var(--color-dark));
-					}
-
-					&.--active {
-						background-color: var(--nav-active-color, var(--color-light--alt));
-						color: var(--nav-active-text-color, var(--color-dark));
-
-						&:hover {
-							background-color: var(--nav-text-color, var(--color-light));
-							color: var(--nav-background-color, var(--color-dark));
-						}
-					}
-				}
-			}
-
-			li:first-child {
-				a {
-					all: unset;
-
-					cursor: pointer;
-					font-size: 1.749rem;
-					width: max-content;
-
-					&::after {
-						content: unset;
-					}
 				}
 			}
 		}
