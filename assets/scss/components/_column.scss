@@ -1,5 +1,6 @@
 @use 'sass:map';
 @use 'sass:math';
+@use '../abstracts/variables';
 
 .columns {
 	display: grid;
@@ -18,7 +19,7 @@
 	}
 }
 
-@media screen and (min-width: map.get($breakpoint, 'large')) {
+@media screen and (min-width: map.get(variables.$breakpoint, 'large')) {
 	.columns {
 		grid-template-columns: repeat(2, 1fr);
 
