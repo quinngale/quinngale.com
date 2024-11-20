@@ -7,7 +7,7 @@
    viewBox="0 0 48 42"
    version="1.1"
    id="svg1"
-   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    sodipodi:docname="background.svg"
    inkscape:export-filename="background.svg"
    inkscape:export-xdpi="96"
@@ -32,14 +32,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      inkscape:zoom="38.565217"
-     inkscape:cx="23.998309"
+     inkscape:cx="24.011274"
      inkscape:cy="20.990417"
-     inkscape:window-width="3804"
-     inkscape:window-height="2000"
-     inkscape:window-x="2567"
-     inkscape:window-y="16"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+     inkscape:window-width="2560"
+     inkscape:window-height="2846"
+     inkscape:window-x="-11"
+     inkscape:window-y="2149"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showgrid="false" />
   <defs
      id="defs1" />
   <g
@@ -48,47 +49,48 @@
      id="layer1"
      style="display:inline">
     <circle
-       style="fill:#232320;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+       style="fill:#2a2a27;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
        id="g"
        cx="24"
        cy="21"
        r="1" />
     <circle
-       style="fill:#232320;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+       style="fill:#2a2a27;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
        id="f"
        cx="0"
        cy="21"
        r="1" />
     <circle
-       style="fill:#232320;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+       style="fill:#2a2a27;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
        id="c"
        cx="48"
        cy="21"
        r="1" />
     <circle
-       style="display:inline;fill:#232320;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+       style="display:inline;fill:#2a2a27;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
        id="e"
        cx="12"
        cy="42"
        r="1" />
     <circle
-       style="display:inline;fill:#232320;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+       style="display:inline;fill:#2a2a27;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
        id="d"
        cx="36"
        cy="42"
        r="1" />
     <circle
-       style="display:inline;fill:#232320;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+       style="display:inline;fill:#2a2a27;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
        id="a"
        cx="12"
        cy="0"
        r="1" />
     <circle
-       style="display:inline;fill:#232320;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+       style="display:inline;fill:#2a2a27;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
        id="b"
        cx="36"
        cy="0"
-       r="1" />
+       r="1"
+       transform="scale(1,-1)" />
   </g>
   <metadata
      id="metadata1">
