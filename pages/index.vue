@@ -22,13 +22,13 @@
                         <a href="/about" class="button" id="button-1">
                             About Me
                             <Icon>
-                                <FontAwesomeIcon :icon="['solid', 'chevron-right']" />
+                                <FontAwesomeIcon :icon="['solid', 'caret-right']" />
                             </Icon>
                         </a>
                         <a href="/portfolio" class="button" id="button-2">
                             My Work
                             <Icon>
-                                <FontAwesomeIcon :icon="['solid', 'chevron-right']" />
+                                <FontAwesomeIcon :icon="['solid', 'caret-right']" />
                             </Icon>
                         </a>
                     </section>

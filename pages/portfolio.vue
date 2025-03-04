@@ -39,7 +39,7 @@
                         <a :href="item._path" class="button">
                             Read more
                             <Icon>
-                                <FontAwesomeIcon :icon="['solid', 'chevron-right']" />
+                                <FontAwesomeIcon :icon="['solid', 'caret-right']" />
                             </Icon>
                         </a>
                     </div>

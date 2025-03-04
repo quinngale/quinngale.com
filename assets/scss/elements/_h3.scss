@@ -1,5 +1,5 @@
 h3 {
-	line-height: 1;
+	line-height: var(--h3-line-height, var(--line-height));
 	font-size: 1.521rem;
 	border-block-end: 2px solid var(--h3-border-color, var(--color-light--alt));
 	padding-block-end: 0.5rem;

@@ -3,7 +3,7 @@
 .header {
 	text-align: center;
 	color: var(--heading-color);
-	margin-bottom: var(--space-large);
+	margin-block-end: var(--space-large);
 }
 
 .header:has(.header__image) {

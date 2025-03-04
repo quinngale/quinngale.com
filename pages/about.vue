@@ -29,7 +29,7 @@
 					<Card>
 						<CardIconOverlay>
 							<Icon>
-								<fontAwesomeIcon :icon="['fas', 'envelope']" />
+								<fontAwesomeIcon :icon="['fass', 'envelope']" />
 							</Icon>
 						</CardIconOverlay>
 						<CardSection>
@@ -107,7 +107,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['fab', 'html5']" fixed-width />
+							<FontAwesomeIcon :icon="['brands', 'html5']" fixed-width />
 						</Icon>
 					</template>
 					HTML

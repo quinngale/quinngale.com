@@ -3,6 +3,7 @@
         <header class="header">
             <h1 class="header__title">Blog</h1>
         </header>
+        
         <p>
             Project updates, <small>(informal and unscientific)</small> experiment results, and documentation of
             processes.
@@ -23,7 +24,7 @@
                             <a :href="item._path" class="button">
                                 Read more
                                 <Icon>
-                                    <FontAwesomeIcon :icon="['solid', 'chevron-right']" />
+                                    <FontAwesomeIcon :icon="['solid', 'caret-right']" />
                                 </Icon>
                             </a>
                         </p>
