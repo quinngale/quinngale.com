@@ -118,7 +118,7 @@ The goal of this is to benchmark USB drives in a series of different RAID config
     done
     ```
 
-    Just a copule of notes: `$sectorsize` is 16kb to match the default sector size that got set up with the logical volumes. And because the files are come from an NVMe drive I'm not concerned about the write speeds on the USB drives outpacing the read speeds of the system drive.
+    Just a copule of notes: `$sectorsize` is 16kb to match the default sector size that got set up with the logical volumes. And because the files are coming from an NVMe drive I'm not concerned about the write speeds on the USB drives outpacing the read speeds of the system drive.
 
 ## Results
 
