@@ -3,6 +3,7 @@
 
 nav {
 	padding: 1rem 2rem;
+	display: flex;
 
 	ul {
 		list-style: none;
@@ -12,6 +13,7 @@ nav {
 		width: fit-content;
 		flex: 0 0 auto;
 		font-size: 1.15rem;
+		gap: 0.25rem;
 	}
 
 	li {
@@ -32,6 +34,8 @@ nav {
 			text-decoration: none;
 			color: var(--nav-color, var(--color-light));
 			display: flex;
+			flex-direction: row;
+			gap: 0.25rem;
 			align-items: center;
 			padding: 0.25rem 0.5rem;
 			font-weight: 600;
@@ -45,6 +49,15 @@ nav {
 				border-color: var(--nav-text-color, var(--color-light--alt));
 				background-color: var(--nav-active-color, var(--color-dark));
 				color: var(--nav-text-color, var(--color-light));
+
+				.icon {
+					color: var(--nav-text-color, var(--color-light--alt));
+				}
+			}
+
+			.icon {
+				display: block;
+				margin-inline: 0;
 			}
 		}
 	}
@@ -87,7 +100,7 @@ nav {
 			display: flex;
 			gap: 1rem;
 			flex-direction: row;
-			align-items: baseline;
+			align-items: center;
 			justify-items: stretch;
 			margin: 1rem 0;
 
@@ -96,12 +109,14 @@ nav {
 				display: block;
 				margin: 0;
 				text-align: center;
+				margin-block: 0 !important;
 
-				a {
-					display: inline-block;
+				a:not(.logo),
+				a:visited:not(.logo) {
 					flex-direction: column;
 					margin: unset;
 					padding: 0.25rem 0.5rem;
+					width: 10ch;
 				}
 			}
 		}

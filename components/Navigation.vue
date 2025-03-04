@@ -7,31 +7,46 @@
             <li>
                 <NuxtLink href="/" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
+                    <Icon>
+                        <FontAwesomeIcon :icon="['solid', 'house']" fixed-width />
+                    </Icon>
+
                     Home
                 </NuxtLink>
             </li>
             <li>
                 <NuxtLink href="/portfolio" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
+                    <Icon>
+                        <FontAwesomeIcon :icon="['solid', 'display-code']" fixed-width />
+                    </Icon>
+
                     Portfolio
                 </NuxtLink>
             </li>
             <li>
                 <NuxtLink href="/blog" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
+                    <Icon>
+                        <FontAwesomeIcon :icon="['solid', 'newspaper']" fixed-width />
+                    </Icon>
+
                     Blog
                 </NuxtLink>
             </li>
             <li>
                 <NuxtLink href="/about" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
+                    <Icon>
+                        <FontAwesomeIcon :icon="['solid', 'user']" fixed-width />
+                    </Icon>
+
                     About
                 </NuxtLink>
             </li>
         </ul>
         <button @click="isNavExpanded = !isNavExpanded">
-            <FontAwesomeIcon :icon="['fa-regular', 'angle-down']"
-                :transform="isNavExpanded ? 'rotate-180' : 'rotate-0'" />
+            <FontAwesomeIcon :icon="['solid', 'caret-down']" :transform="isNavExpanded ? 'rotate-180' : 'rotate-0'" />
             Menu
         </button>
     </nav>
