@@ -2,7 +2,7 @@
 description: Results from putting 9 USB drives into various RAID configurations.
 thumbnail: https://assets.quinngale.com/blog/raid/usb-raid-array-thumbnail.jpg
 alt_text: An image of 9 USB drives plugged into a USB hub that has been strapped to the side of a computer
-draft: true
+draft: false
 ---
 
 # RAID-ing things that shouldn't be RAID-ed
