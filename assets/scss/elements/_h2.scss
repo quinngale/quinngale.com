@@ -1,12 +1,15 @@
+@use 'sass:map';
+@use '../abstracts/variables';
+
 h2 {
 	font-size: 1.479rem;
-	margin-block: 1rem;
+	margin-block: map.get(variables.$space, 'normal');
 	background-color: var(--h2-background-color, var(--color-light));
 	color: var(--h2-text-color, var(--color-dark));
 	font-family: 'Fira Code var', 'Courier New', Courier, monospace;
-	padding: 0.25rem;
+	padding: map.get(variables.$space, 'x-small');
 	letter-spacing: 0.125rem;
-	word-spacing: -0.25rem;
+	word-spacing: -1 * map.get(variables.$space, 'x-small');
 
 	> a {
 		text-decoration: none;
@@ -19,6 +22,6 @@ h2 {
 		font-variant-numeric: tabular-nums;
 		color: var(--h2-pre-color, var(--color-light--alt));
 		font-weight: bold;
-		padding-inline-end: 0.25rem;
+		padding-inline-end: map.get(variables.$space, 'x-small');
 	}
 }
