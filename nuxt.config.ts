@@ -6,6 +6,18 @@ export default defineNuxtConfig({
 		transpile: ['@fortawesome/vue-fontawesome', '@fortawesome/fontawesome-svg-core', '@fortawesome/pro-regular-svg-icons'],
 	},
 
+	content: {
+		build: {
+			markdown: {
+				highlight: {
+					theme: {
+						default: 'github-dark'
+					}
+				}
+			}
+		}
+	},
+
 	css: ['@fortawesome/fontawesome-svg-core/styles.css', '~/assets/scss/main.scss'],
 	modules: ['@nuxt/content'],
 
