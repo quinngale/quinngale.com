@@ -53,7 +53,7 @@ const components = {
 useHead({
     title: "Portfolio"
 })
-const { data: oneoffs } = await useAsyncData(`blog`, () => {
+const { data: oneoffs } = await useAsyncData(`portfolio`, () => {
     return queryCollection('oneoff').all()
 })
 </script>
