@@ -5,25 +5,6 @@ $card--emphasis_foreground-color: $skyblue;
 
 .card,
 .card--emphasis {
-<<<<<<< HEAD
-	background-color: $card_background-color;
-	color: $card_foreground-color;
-	padding: 1rem;
-
-	a {
-		color: $card_foreground-color;
-	}
-}
-
-.card--emphasis {
-	background-color: $card--emphasis_background-color;
-	color: $card--emphasis_foreground-color;
-
-	a {
-		color: $card--emphasis_foreground-color;
-	}
-}
-=======
 	color: var(--card-text-color, var(--color-light));
 	padding: 0.25rem;
 	border: 0.125rem solid var(--card-text-color, var(--color-light));
@@ -64,4 +45,3 @@ $card--emphasis_foreground-color: $skyblue;
 		transform: translate(37%, -50%);
 	}
 }
->>>>>>> main

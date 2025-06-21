@@ -1,28 +1,4 @@
 {
-<<<<<<< HEAD
-    "private": true,
-    "scripts": {
-        "build": "nuxt build",
-        "dev": "nuxt dev --host",
-        "generate": "nuxt generate",
-        "preview": "nuxt preview",
-        "postinstall": "nuxt prepare"
-    },
-    "devDependencies": {
-        "@nuxt/content": "^2.3.0",
-        "nuxt": "^3.7.4",
-        "sass": "^1.62.1",
-        "sass-loader": "^13.2.2"
-    },
-    "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "^6.2.1",
-        "@fortawesome/free-brands-svg-icons": "^6.2.1",
-        "@fortawesome/pro-regular-svg-icons": "^6.2.1",
-        "@fortawesome/pro-solid-svg-icons": "^6.2.1",
-        "@fortawesome/vue-fontawesome": "^3.0.2"
-    }
-}
-=======
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -46,4 +22,3 @@
     "better-sqlite3": "^11.10.0"
   }
 }
->>>>>>> main
