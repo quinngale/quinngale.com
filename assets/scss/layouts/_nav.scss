@@ -69,9 +69,11 @@ nav {
 		padding: 0;
 	}
 
-	&.nav--expanded li {
-		display: block;
-		margin-block-end: 0.25rem;
+	&.nav--expanded {
+		li {
+			display: block;
+			margin-block-end: 0.25rem;
+		}
 	}
 
 	button {
