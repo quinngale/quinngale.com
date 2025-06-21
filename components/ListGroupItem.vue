@@ -1,5 +1,5 @@
 <template>
-    <li class="list-group__item">
+    <div class="list-group__item">
         <slot></slot>
-    </li>
+    </div>
 </template>

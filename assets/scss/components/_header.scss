@@ -1,0 +1,18 @@
+@use 'sass:map';
+@use '../abstracts/variables';
+
+.header {
+	text-align: center;
+	color: var(--heading-color);
+	margin-block: map.get(variables.$space, 'large');
+}
+
+.header:has(.header__image) {
+	margin: unset;
+	padding: map.get(variables.$space, 'large');
+}
+
+.header .header__title {
+	margin: 0 !important;
+	color: var(--heading-color);
+}

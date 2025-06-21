@@ -6,8 +6,19 @@ export default defineNuxtConfig({
 		transpile: ['@fortawesome/vue-fontawesome', '@fortawesome/fontawesome-svg-core', '@fortawesome/pro-regular-svg-icons'],
 	},
 
-	css: ['@fortawesome/fontawesome-svg-core/styles.css', '~/assets/scss/main.scss'],
+	content: {
+		build: {
+			markdown: {
+				highlight: {
+					theme: {
+						default: 'github-dark'
+					}
+				}
+			}
+		}
+	},
 
+	css: ['@fortawesome/fontawesome-svg-core/styles.css', '~/assets/scss/main.scss'],
 	modules: ['@nuxt/content'],
 
 	app: {
@@ -21,4 +32,6 @@ export default defineNuxtConfig({
 			],
 		},
 	},
+
+	compatibilityDate: '2024-07-26',
 });

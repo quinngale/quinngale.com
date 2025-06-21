@@ -1,0 +1,13 @@
+h1 {
+	text-transform: uppercase;
+	font-size: 2.011rem;
+	font-weight: 900;
+	color: var(--h1-color, var(--color-light));
+	font-family: 'Fira Code var', 'Courier New', Courier, monospace;
+	letter-spacing: 0.25rem;
+	word-spacing: -0.5rem;
+
+	> a {
+		text-decoration: none;
+	}
+}

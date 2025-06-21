@@ -1,0 +1,28 @@
+@use 'sass:map';
+
+.list-group {
+	list-style: none;
+
+	.list-group__item {
+		margin-block: var(--space-normal);
+
+		margin-inline: 0;
+		padding-inline: 0;
+
+		&:first-of-type {
+			margin-top: 0;
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	& h1,
+	& h2,
+	& h3,
+	& h4,
+	& h5,
+	& h6 {
+		margin-block-start: 0;
+	}
+}

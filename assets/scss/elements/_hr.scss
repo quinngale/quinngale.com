@@ -1,0 +1,9 @@
+hr {
+	--hr-width: 0.125rem;
+
+	height: var(--hr-width);
+	background-color: var(--hr-color, var(--color-light--alt));
+	border: none;
+	width: 100%;
+	margin: 1rem auto;
+}

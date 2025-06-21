@@ -2,6 +2,7 @@ $content-width: 80ch;
 $super-width: 100ch;
 $padding: 1rem;
 
+<<<<<<< HEAD
 $super-overhang: calc(($super-width - $content-width) / 2);
 
 .grid,
@@ -19,18 +20,49 @@ $super-overhang: calc(($super-width - $content-width) / 2);
 		minmax(0, $super-overhang)
 		[super-end super-right-end]
 		minmax($padding, 1fr)
+=======
+.grid,
+.grid > .full-width {
+	display: grid;
+	grid-template-columns:
+		[full-width-start]
+		minmax(1rem, 1fr)
+		[super-left-start]
+		0
+		[super-start]
+		minmax(0, 10ch)
+		[super-right-start]
+		0
+		[content-start]
+		min(calc(100% - (1rem * 2)), 80ch)
+		[content-end]
+		0
+		[super-left-end]
+		minmax(0, 10ch)
+		[super-end]
+		0
+		[super-right-end]
+		minmax(1rem, 1fr)
+>>>>>>> main
 		[full-width-end];
-}
 
+<<<<<<< HEAD
 .grid > :not(.super, .full-width),
 .full-width > :not(.super, .full-width) {
 	grid-column: content;
 }
+=======
+	> * {
+		grid-column: content;
+		grid-template-columns: subgrid;
+	}
+>>>>>>> main
 
-.grid > .super {
-	grid-column: super;
-}
+	> .super {
+		grid-column: super;
+	}
 
+<<<<<<< HEAD
 .grid > .full-width {
 	grid-column: full-width;
 
@@ -42,4 +74,17 @@ img.full-width {
 	width: 100%;
 	max-height: 45vh;
 	object-fit: cover;
+=======
+	> .super-left {
+		grid-column: super-left;
+	}
+
+	> .super-right {
+		grid-column: super-right;
+	}
+
+	> .full-width {
+		grid-column: full-width;
+	}
+>>>>>>> main
 }

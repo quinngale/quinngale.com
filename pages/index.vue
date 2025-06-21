@@ -1,26 +1,50 @@
 <template>
     <main class="grid">
-        <section class="full-width">
-            <div class="columns">
-                <div class="column" id="profile-image-container">
+        <div class="full-width --inverted">
+            <article class="content">
+                <section id="section-1">
                     <img src="/profile.jpg" id="profile-image" />
+<<<<<<< HEAD
                 </div>
                 <div class="column" id="header-text">
                     <div>
                         <h1 class="no-highlight">
                             Hello
+=======
+                </section>
+                <div id="text-content">
+                    <section id="intro-text">
+                        <h1>
+                            Hello,
+>>>>>>> main
                             <br>
-                            My name is Quinn.
+                            My name is Quinn
                         </h1>
                         <p>
-                            I am a Web and User Experience major in the Salt Lake City, Utah area. I also have a
-                            strong background in technical support and customer service.
+                            I am a Web and User Experience student. I also have a strong background in technical support
+                            and customer service.
                         </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </section>
 
+                    <section id="buttons">
+                        <a href="/about" class="button" id="button-1">
+                            About Me
+                            <Icon>
+                                <FontAwesomeIcon :icon="['solid', 'caret-right']" />
+                            </Icon>
+                        </a>
+                        <a href="/portfolio" class="button" id="button-2">
+                            My Work
+                            <Icon>
+                                <FontAwesomeIcon :icon="['solid', 'caret-right']" />
+                            </Icon>
+                        </a>
+                    </section>
+                </div>
+            </article>
+        </div>
+
+<<<<<<< HEAD
         <section>
             <h2>Recent Project</h2>
 
@@ -288,3 +312,22 @@
         </section>
     </main>
 </template>
+=======
+
+    </main>
+</template>
+
+<script setup lang="ts">
+definePageMeta(
+    {
+        layout: 'home'
+    }
+);
+
+useHead(
+    {
+        title: null
+    }
+)
+</script>
+>>>>>>> main

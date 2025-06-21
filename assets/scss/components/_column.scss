@@ -1,0 +1,30 @@
+@use 'sass:map';
+@use 'sass:math';
+@use '../abstracts/variables';
+
+.columns {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 1rem;
+	margin-block-end: 1rem;
+
+	.column {
+		width: 100%;
+
+		@for $span from 1 through 3 {
+			&--span-#{$span} {
+				grid-column: span math.min($span, 1);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: map.get(variables.$breakpoint, 'large')) {
+	.columns {
+		grid-template-columns: repeat(2, 1fr);
+
+		&.columns--reverse > :last-child {
+			order: -1;
+		}
+	}
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //@import 'utilities';
 @import 'utilities/variables';
 @import 'utilities/mixins';
@@ -32,3 +33,49 @@ $nav_background-color: $teal;
 @import 'components/button';
 //@import 'pages';
 //@import 'themes';
+=======
+@use 'abstracts/variables';
+
+//@import 'vendors';
+
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/elements';
+
+@use 'elements/html';
+@use 'elements/h1';
+@use 'elements/h2';
+@use 'elements/h3';
+@use 'elements/h4';
+@use 'elements/h5';
+@use 'elements/hr';
+@use 'elements/p';
+@use 'elements/article';
+@use 'elements/a';
+@use 'elements/img';
+@use 'elements/ol';
+@use 'elements/ul';
+@use 'elements/footer';
+@use 'elements/br';
+@use 'elements/code';
+@use 'elements/pre';
+@use 'elements/section';
+
+@use 'layouts/body';
+@use 'layouts/nav';
+@use 'layouts/grid';
+
+@use 'components/button';
+@use 'components/header';
+@use 'components/link';
+@use 'components/list-group';
+@use 'components/tag';
+@use 'components/icon';
+@use 'components/card';
+@use 'components/column';
+@use 'components/logo';
+
+@use 'themes/default';
+
+@use 'pages/home';
+>>>>>>> main

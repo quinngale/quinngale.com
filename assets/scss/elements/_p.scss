@@ -1,3 +1,12 @@
 p {
+<<<<<<< HEAD
 	margin-bottom: 0.5rem;
+=======
+	color: var(--text-color, var(--color-light));
+	margin-block: 0.35rem;
+
+	&:last-child {
+		margin-block-end: 0;
+	}
+>>>>>>> main
 }

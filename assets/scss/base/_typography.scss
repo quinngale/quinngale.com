@@ -4,7 +4,7 @@
 	font-display: swap;
 	font-style: normal;
 	font-named-instance: 'Regular';
-	src: url('assets/fonts/Inter/Inter-roman.var.woff2?v=3.19') format('woff2');
+	src: url('assets/fonts/inter/Inter-roman.var.woff2') format('woff2');
 	font-feature-settings: 'ss01', 'frac';
 }
 
@@ -14,10 +14,19 @@
 	font-display: swap;
 	font-style: italic;
 	font-named-instance: 'Italic';
-	src: url('assets/fonts/Inter/Inter-italic.var.woff2?v=3.19') format('woff2');
+	src: url('assets/fonts/inter/Inter-italic.var.woff2') format('woff2');
 	font-feature-settings: 'ss01', 'frac';
 }
 
+<<<<<<< HEAD
 body {
 	font-family: 'Inter';
+=======
+@font-face {
+	font-family: 'Fira Code var';
+	src: url('assets/fonts/fira-code/FiraCode-VF.woff2') format('woff2-variations');
+	/* font-weight requires a range: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide#Using_a_variable_font_font-face_changes */
+	font-weight: 300 700;
+	font-style: normal;
+>>>>>>> main
 }

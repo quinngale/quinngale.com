@@ -1,0 +1,77 @@
+@use 'sass:color';
+@use 'sass:map';
+@use 'sass:math';
+
+/*********************************/
+/* Breakpoints                   */
+/*********************************/
+
+$breakpoint: (
+	'small': 400px,
+	'medium': 600px,
+	'large': 800px,
+);
+
+/*********************************/
+/* Color definitions             */
+/*********************************/
+
+$colors: (
+	'light': hsl(49, 47%, 91%),
+	'dark': hsl(60, 4%, 12%),
+	//'dark': hsl(60, 4%, 9%)
+	'red': hsl(0, 85%, 42%),
+);
+
+/*********************************/
+/* Spacing                       */
+/*********************************/
+
+$space: (
+	'1px': 1px,
+	'2px': 2px,
+	'4px': 4px,
+	'x-small': 0.25rem,
+	'small': 0.5rem,
+	'normal': 1rem,
+	'medium': 1.5rem,
+	'large': 2rem,
+	'x-large': 4rem,
+	'xx-large': 6rem,
+);
+
+/*********************************/
+/* Text styles                   */
+/*********************************/
+
+$font-weight: (
+	'thin': 100,
+	'extra-light': 200,
+	'light': 300,
+	'normal': 400,
+	'medium': 500,
+	'semi-bold': 600,
+	'bold': 700,
+	'extra-bold': 800,
+	'black': 900,
+	'text': 400,
+	'heading': 800,
+);
+
+$font-size: (
+	'small': 0.8em,
+	'normal': 1rem,
+	'large': 1.15em,
+	'h6': 1rem,
+	'h5': 1.15rem,
+	'h4': 1.323rem,
+	'h3': 1.521rem,
+	'h2': 1.749rem,
+	'h1': 2.011rem,
+);
+
+$font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+/*********************************/
+/* Font choices                  */
+/*********************************/

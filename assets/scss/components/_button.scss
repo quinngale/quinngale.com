@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $button--inline_background-color: $black !default;
 $button--inline_foreground-color: $pink !default;
 
@@ -15,4 +16,34 @@ $button--inline_foreground-color: $pink !default;
 			color: $button--inline_background-color;
 		}
 	}
+=======
+.button {
+	&,
+	&:visited {
+		border: 0.125rem solid var(--button-border, var(--color-light));
+		background-color: var(--button-background-color, var(--color-light));
+		color: var(--button-text-color, var(--color-dark));
+		padding: 0.25rem 0.5rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 1.1rem;
+		display: block;
+		width: fit-content;
+	}
+
+	&:hover {
+		background-color: var(--button-text-color, var(--color-dark));
+		color: var(--button-background-color, var(--color-light));
+		border: 0.125rem solid var(--button-accent-color, var(--color-light--alt));
+
+		> .icon {
+			color: var(--button-accent-color, var(--color-light--alt));
+		}
+	}
+
+	> .icon {
+		display: inline-block;
+	}
+>>>>>>> main
 }

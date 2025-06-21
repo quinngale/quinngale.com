@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="grid">
         <header class="header">
             <h1 class="header__title">Portfolio</h1>
         </header>
@@ -16,41 +16,33 @@
                 </section>
             </ContentList> -->
 
-        <section class="full-width grid">
-            <h2>One-offs</h2>
+        <h2>One-offs</h2>
 
-            <p>
-                A collection of small projects and nearly-one-liners that I have created. None of these are very
-                technically challenging, but they solved a need I had at that moment in time. I'm making them public
-                here in hopes that maybe someone else will find them useful in the future.
-            </p>
-
-            <ListGroup class="full-width grid">
-                <ContentList path="/one-off" v-slot="{ list }">
-                    <ListGroupItem v-for="(item, index) in list" :key="index">
-                        <ListGroupItemSection>
-                            <h3>{{ item.title }}</h3>
-                        </ListGroupItemSection>
-                        <div class="columns" :class="{ 'super-left': index % 2 }">
-                            <div class="column">
-                                <ListGroupItemSection>
-                                    <figure>
-                                        <img :src="item.thumbnail" :alt="item.alt_text">
-                                    </figure>
-                                </ListGroupItemSection>
-                            </div>
-                            <div class="column">
-                                <ListGroupItemSection>
-                                    <p>{{ item.description }}</p>
-                                    <br />
-                                    <a class="button--inline" :href="item._path">Read more</a>
-                                </ListGroupItemSection>
-                            </div>
-                        </div>
-                    </ListGroupItem>
-                </ContentList>
-            </ListGroup>
-        </section>
+        <p>
+            A collection of small projects and nearly-one-liners that I have created. None of these are very
+            technically challenging, but they solved a need I had at that moment in time. I'm making them public
+            here in hopes that maybe someone else will find them useful in the future.
+        </p>
+        <article v-for="(item, index) in oneoffs" :key="index">
+            <div class="columns" :class="{ 'columns--reverse': index % 2 }">
+                <div class="column">
+                    <figure>
+                        <img :src="item.meta.thumbnail" :alt="item.alt_text">
+                    </figure>
+                </div>
+                <div class="column">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description }}</p>
+                    <br />
+                    <NuxtLink :to="item.path" class="button">
+                        Read more
+                        <Icon>
+                            <FontAwesomeIcon :icon="['solid', 'caret-right']" />
+                        </Icon>
+                    </NuxtLink>
+                </div>
+            </div>
+        </article>
     </main>
 </template>
 
@@ -58,4 +50,10 @@
 const components = {
     h1: 'strong'
 }
+useHead({
+    title: "Portfolio"
+})
+const { data: oneoffs } = await useAsyncData(`portfolio`, () => {
+    return queryCollection('oneoff').all()
+})
 </script>
