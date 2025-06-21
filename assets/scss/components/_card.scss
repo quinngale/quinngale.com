@@ -1,8 +1,3 @@
-$card_background-color: $skyblue;
-$card_foreground-color: $navy;
-$card--emphasis_background-color: $navy;
-$card--emphasis_foreground-color: $skyblue;
-
 .card,
 .card--emphasis {
 	color: var(--card-text-color, var(--color-light));
