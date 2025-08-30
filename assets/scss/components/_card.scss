@@ -1,42 +1,11 @@
-.card,
-.card--emphasis {
-	color: var(--card-text-color, var(--color-light));
-	padding: 0.25rem;
-	border: 0.125rem solid var(--card-text-color, var(--color-light));
-	gap: 6px;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-
-	> .card__title {
-		background-color: var(--card-text-color, var(--color-light));
-		color: var(--card-background-color, var(--color-dark));
-		padding: 0.25rem;
-	}
-
-	> :not(.card__title) {
-		padding: 0.25rem;
-	}
-
-	&:has(.card__icon--overlay) {
-		min-height: 6rem;
-		place-items: middle;
-		overflow: hidden;
-		display: grid;
-		align-content: center;
-
-		> * {
-			z-index: 1;
-		}
-	}
-
-	> .card__icon--overlay {
-		font-size: 6rem;
-		color: var(--color-light--alt);
-		position: absolute;
-		right: 0;
-		top: 50%;
-		transform-origin: center center;
-		transform: translate(37%, -50%);
-	}
+.card {
+	border: 2.5rem solid blue;
+	background-image: url('/public/panel-background.svg');
+	border-image: url('/public/panel.svg') 14;
+	border-image-width: 3rem;
+	border-image-repeat: repeat;
+	min-height: 4rem;
+	background-position: center center;
+	background-size: 1rem;
+	color: #b3ff80;
 }

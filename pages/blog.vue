@@ -1,41 +1,45 @@
 <template>
-    <main>
-        <article class="container">
-            <header class="header">
-                <h1 class="header__title">Blog</h1>
-            </header>
+    <main class="grid">
+        <header class="header">
+            <h1 class="header__title">Blog</h1>
+        </header>
 
-            <section>
-                <p>
-                    Project updates, <small>(informal and unscientific)</small> experiment results, and documentation of
-                    processes.
-                </p>
-            </section>
+        <p>
+            Project updates, <small>(informal and unscientific)</small> experiment results, and documentation of
+            processes.
+        </p>
 
-            <section>
-                <ListGroup>
-                    <ContentList path="/blog" v-slot="{ list }">
-                        <ListGroupItem v-for="(item, index) in list" :key="index">
-                            <ListGroupItemSection>
-                                <h3>{{ item.title }}</h3>
-                            </ListGroupItemSection>
-                            <div class="columns">
-                                <div class="column">
-                                    <figure>
-                                        <img :src="item.thumbnail" :alt="item.alt_text">
-                                    </figure>
-                                </div>
-                                <div class="column">
-                                    <p>{{ item.description }}</p>
-                                    <p>
-                                        <a class="button--inline" :href="item._path">Read more</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </ListGroupItem>
-                    </ContentList>
-                </ListGroup>
-            </section>
+        <article v-for="page in pages" :key="page.id">
+            <div class="columns">
+                <div class="column">
+                    <figure>
+                        <img :src="page.meta.thumbnail" :alt="page.meta.alt_text">
+                    </figure>
+                </div>
+                <div class="column">
+                    <h3>{{ page.title }}</h3>
+                    <p>{{ page.description }}</p>
+                    <p>
+                        <NuxtLink :to="page.path" class="button">
+                            Read more
+                            <Icon>
+                                <FontAwesomeIcon :icon="['solid', 'caret-right']" />
+                            </Icon>
+                        </NuxtLink>
+                    </p>
+                </div>
+            </div>
         </article>
+
+
     </main>
 </template>
+
+<script setup>
+useHead({
+    title: "Blog"
+})
+const { data: pages } = await useAsyncData(`blog`, () => {
+    return queryCollection('blog').all()
+})
+</script>

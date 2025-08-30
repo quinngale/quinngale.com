@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 100 100.00001"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1">
+      <path
+         id="path3"
+         style="fill:#ff00ff;stroke-width:1.85"
+         d="M 3.7499994,3.7499994 V 96.249998 H 96.249998 V 3.7499994 Z M 16.699999,12.999999 h 66.599999 a 3.6999989,3.6999989 0 0 1 3.7,3.7 v 66.599999 a 3.6999989,3.6999989 0 0 1 -3.7,3.7 H 16.699999 a 3.6999989,3.6999989 0 0 1 -3.7,-3.7 V 16.699999 a 3.6999989,3.6999989 0 0 1 3.7,-3.7 z"
+         transform="matrix(1.0810811,0,0,1.0810811,-4.0540535,-4.0540535)" />
+    </clipPath>
+  </defs>
+  <g
+     id="layer1"
+     clip-path="url(#clipPath1)">
+    <path
+       id="rect1"
+       style="fill:#373e48;stroke-width:2"
+       d="M 0,0 H 100 V 100 H 0 Z" />
+    <g
+       id="layer4">
+      <rect
+         style="fill:#535d6c;stroke:none;stroke-width:0.221072;-inkscape-stroke:none"
+         id="rect9"
+         width="22.725986"
+         height="2"
+         x="42.447685"
+         y="2"
+         transform="matrix(0,1.7600996,-46.5,0,189.5,-44.712154)" />
+      <rect
+         style="fill:#535d6c;stroke:none;stroke-width:0.221072;-inkscape-stroke:none"
+         id="rect7"
+         width="22.725986"
+         height="2"
+         x="42.447685"
+         y="2"
+         transform="matrix(1.7600996,0,0,46.5,-44.712154,-89.5)" />
+    </g>
+    <g
+       id="layer5">
+      <path
+         id="rect1-8"
+         style="fill:#b7bec8;stroke-width:2"
+         d="m 6.0000001,9.9999998 3.9999999,-4 h 80 l 4,4 V 90 l -4,4 H 10 L 6.0000001,90 Z" />
+      <path
+         id="rect5"
+         style="fill:#1c1f24;stroke-width:1.91075"
+         d="M 9.9135115,12.769977 12.78378,9.9079897 h 74.626944 l 2.870267,2.8619873 v 74.411604 l -2.870267,2.861985 H 12.78378 L 9.9135115,87.181581 Z"
+         transform="matrix(1.0451989,0,0,1.0482236,-2.3615924,-2.3857908)" />
+    </g>
+    <g
+       id="layer3">
+      <g
+         id="g2-5-1"
+         transform="translate(88,88)"
+         style="stroke-width:1">
+        <ellipse
+           style="fill:#b7bec8;stroke:none;stroke-width:2.19552;-inkscape-stroke:none"
+           id="path1-5-4"
+           transform="matrix(0.82981884,0,0,1,0.70181175,-1)"
+           ry="2"
+           rx="2.4101646"
+           cy="8"
+           cx="7.5898352" />
+        <path
+           style="fill:#6f7c91;stroke:none;stroke-width:3.2;-inkscape-stroke:none"
+           id="path2-1-2"
+           d="M 9,7 8,8.7320508 H 6 L 5,7 6,5.2679492 l 2,0 z"
+           transform="matrix(0.625,0,0,0.625,2.625,2.625)" />
+      </g>
+      <g
+         id="g2-52"
+         transform="translate(-2,88)"
+         style="stroke-width:1">
+        <ellipse
+           style="fill:#b7bec8;stroke:none;stroke-width:2.19552;-inkscape-stroke:none"
+           id="path1-7"
+           transform="matrix(0.82981884,0,0,1,0.70181175,-1)"
+           ry="2"
+           rx="2.4101646"
+           cy="8"
+           cx="7.5898352" />
+        <path
+           style="fill:#6f7c91;stroke:none;stroke-width:3.2;-inkscape-stroke:none"
+           id="path2-6"
+           d="M 9,7 8,8.7320508 H 6 L 5,7 6,5.2679492 l 2,0 z"
+           transform="matrix(0.625,0,0,0.625,2.625,2.625)" />
+      </g>
+      <g
+         id="g2-5"
+         transform="translate(88,-2)"
+         style="stroke-width:1">
+        <ellipse
+           style="fill:#b7bec8;stroke:none;stroke-width:2.19552;-inkscape-stroke:none"
+           id="path1-5"
+           transform="matrix(0.82981884,0,0,1,0.70181175,-1)"
+           ry="2"
+           rx="2.4101646"
+           cy="8"
+           cx="7.5898352" />
+        <path
+           style="fill:#6f7c91;stroke:none;stroke-width:3.2;-inkscape-stroke:none"
+           id="path2-1"
+           d="M 9,7 8,8.7320508 H 6 L 5,7 6,5.2679492 l 2,0 z"
+           transform="matrix(0.625,0,0,0.625,2.625,2.625)" />
+      </g>
+      <g
+         id="g2"
+         transform="translate(-2,-2)"
+         style="stroke-width:1">
+        <ellipse
+           style="fill:#b7bec8;stroke:none;stroke-width:2.19552;-inkscape-stroke:none"
+           id="path1"
+           transform="matrix(0.82981884,0,0,1,0.70181175,-1)"
+           ry="2"
+           rx="2.4101646"
+           cy="8"
+           cx="7.5898352" />
+        <path
+           style="fill:#6f7c91;stroke:none;stroke-width:3.2;-inkscape-stroke:none"
+           id="path2"
+           d="M 9,7 8,8.7320508 H 6 L 5,7 6,5.2679492 l 2,0 z"
+           transform="matrix(0.625,0,0,0.625,2.625,2.625)" />
+      </g>
+    </g>
+  </g>
+</svg>

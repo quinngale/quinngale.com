@@ -6,24 +6,15 @@
 	gap: 0.5rem;
 }
 
-.tag,
-.tag--emphasis {
+.tag {
+	border-image-source: url('/public/tag.svg');
+	border-image-slice: 0 14 fill;
+	border-image-width: 0rem 3rem;
+	border-image-repeat: repeat;
 	display: flex;
 	align-items: center;
-	gap: 8px;
-	background: var(--tag-background, transparent);
-	font-size: 1em;
-	color: var(--tag-text-color, var(--color-light));
-	border: 0.125rem solid var(--tag-text-color, var(--color-light));
-	line-height: 1;
-	padding: 0.25rem;
-	padding-inline-end: 8px;
-
-	> .icon {
-		display: block;
-		background-color: var(--tag-text-color, var(--color-light));
-		color: var(--tag-background, var(--color-dark));
-		padding: 4px;
-		margin: unset;
-	}
+	border-width: 0 2rem;
+	border-color: blue;
+	border-style: solid;
+	gap: 0.5ch;
 }
