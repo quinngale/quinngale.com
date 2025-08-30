@@ -19,6 +19,6 @@
     "@fortawesome/pro-regular-svg-icons": "^6.7.2",
     "@fortawesome/pro-solid-svg-icons": "^6.7.2",
     "@fortawesome/vue-fontawesome": "^3.0.2",
-    "better-sqlite3": "^11.10.0"
+    "better-sqlite3": "^12.2.0"
   }
 }
