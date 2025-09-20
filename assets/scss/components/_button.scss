@@ -1,26 +1,55 @@
+@use 'sass:map';
+@use 'sass:color';
+
+@use '../abstracts/variables';
+
+button,
 .button {
+	--button-border-radius: #{map.get(variables.$space, 'small')};
+	--button-depth: #{map.get(variables.$space, 'small')};
+
 	&,
 	&:visited {
-		border: 0.125rem solid var(--button-border, var(--color-light));
-		background-color: var(--button-background-color, var(--color-light));
+		appearance: none;
+		border: none;
+		background-color: var(--button-background-color, var(--color-primary));
 		color: var(--button-text-color, var(--color-dark));
-		padding: 0.25rem 0.5rem;
+		padding: map.get(variables.$space, 'small') map.get(variables.$space, 'normal');
+		border-radius: map.get(variables.$space, 'small');
 		text-decoration: none;
-		text-transform: uppercase;
-		font-weight: 500;
+		text-transform: capitalize;
+		font-weight: bold;
 		font-size: 1.1rem;
+		width: 20ch;
+		text-align: center;
+		position: relative;
+		display: grid;
+		justify-content: stretch;
+		grid-template-columns: 1fr auto;
+	}
+
+	&::after {
+		content: '';
+		inset: 0px;
+		bottom: calc(-1 * var(--button-depth));
+		top: var(--button-depth);
 		display: block;
-		width: fit-content;
+		position: absolute;
+		border-radius: inherit;
+		background-color: var(--button-background-color, var(--color-primary));
+		background-image: linear-gradient(90deg, hsla(0, 0, 50%, 50%), hsla(0, 0, 85%, 50%) var(--button-border-radius) calc(100% - var(--button-border-radius)), hsl(0, 0, 85%));
+		background-blend-mode: multiply;
+		z-index: -1;
+		box-shadow: 0 calc(var(--button-depth) * 1.25) 0 grey;
 	}
 
 	&:hover {
-		background-color: var(--button-text-color, var(--color-dark));
-		color: var(--button-background-color, var(--color-light));
-		border: 0.125rem solid var(--button-accent-color, var(--color-light--alt));
+		--button-depth: #{map.get(variables.$space, 'small') * 0.5};
+		top: var(--button-depth);
+	}
 
-		> .icon {
-			color: var(--button-accent-color, var(--color-light--alt));
-		}
+	&:active {
+		--button-depth: #{map.get(variables.$space, 'small') * 0.25};
 	}
 
 	> .icon {

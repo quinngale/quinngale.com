@@ -10,6 +10,8 @@
 	--color-light: #{map.get(variables.$colors, 'light')};
 	--color-light--alt: #{color.mix(map.get(variables.$colors, 'light'), map.get(variables.$colors, 'dark'), 60%)};
 
+	--color-primary: #{map.get(variables.$colors, 'primary')};
+
 	--line-height: 1.35;
 
 	.--inverted {

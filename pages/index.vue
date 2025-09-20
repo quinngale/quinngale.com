@@ -1,6 +1,6 @@
 <template>
     <main class="grid">
-        <div class="full-width --inverted">
+        <div class="full-width">
             <article class="content">
                 <section id="section-1">
                     <img src="/profile.jpg" id="profile-image" />
@@ -20,13 +20,17 @@
 
                     <section id="buttons">
                         <a href="/about" class="button" id="button-1">
-                            About Me
+                            <span>
+                                About Me
+                            </span>
                             <Icon>
                                 <FontAwesomeIcon :icon="['solid', 'caret-right']" />
                             </Icon>
                         </a>
                         <a href="/portfolio" class="button" id="button-2">
-                            My Work
+                            <span>
+                                My Work
+                            </span>
                             <Icon>
                                 <FontAwesomeIcon :icon="['solid', 'caret-right']" />
                             </Icon>
