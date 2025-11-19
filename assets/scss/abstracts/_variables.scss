@@ -19,9 +19,49 @@ $breakpoint: (
 $colors: (
 	'light': hsl(49, 47%, 91%),
 	'dark': hsl(60, 4%, 12%),
-	//'dark': hsl(60, 4%, 9%)
-	'red': hsl(0, 85%, 42%),
 );
+
+$shades: (
+	'light': color.mix(map.get($colors, 'dark'), map.get($colors, 'light'), 0%),
+	'mid': color.mix(map.get($colors, 'dark'), map.get($colors, 'light'), 40%),
+	'dark': color.mix(map.get($colors, 'dark'), map.get($colors, 'light'), 90%),
+	'darker': color.mix(map.get($colors, 'dark'), map.get($colors, 'light'), 100%),
+);
+@debug $shades;
+
+$mix-colors: (
+	'neutral': hsl(0, 100%, 100%),
+	'red': hsl(0, 100%, 65%),
+	'yellow': hsl(60, 100%, 65%),
+	'green': hsl(120, 100%, 65%),
+	'cyan': hsl(180, 100%, 65%),
+	'blue': hsl(240, 100%, 65%),
+	'magenta': hsl(300, 100%, 65%),
+);
+
+@each $name, $value in $mix-colors {
+	$color-tones: ();
+
+	@each $shade-name, $shade-value in $shades {
+		$red1: math.div(color.channel($shade-value, 'red', $space: rgb), 255);
+		$green1: math.div(color.channel($shade-value, 'green', $space: rgb), 255);
+		$blue1: math.div(color.channel($shade-value, 'blue', $space: rgb), 255);
+
+		$red2: math.div(color.channel($value, 'red', $space: rgb), 255);
+		$green2: math.div(color.channel($value, 'green', $space: rgb), 255);
+		$blue2: math.div(color.channel($value, 'blue', $space: rgb), 255);
+
+		$mixedRed: math.round($red1 * $red2 * 255);
+		$mixedGreen: math.round($green1 * $green2 * 255);
+		$mixedBlue: math.round($blue1 * $blue2 * 255);
+
+		$color-tones: map.set($color-tones, $shade-name, rgb($mixedRed, $mixedGreen, $mixedBlue));
+	}
+
+	$colors: map.set($colors, $name, $color-tones);
+}
+
+@debug $colors;
 
 /*********************************/
 /* Spacing                       */
@@ -70,7 +110,19 @@ $font-size: (
 	'h1': 2.011rem,
 );
 
-$font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$font-family:
+	'Inter var',
+	system-ui,
+	-apple-system,
+	BlinkMacSystemFont,
+	'Segoe UI',
+	Roboto,
+	Oxygen,
+	Ubuntu,
+	Cantarell,
+	'Open Sans',
+	'Helvetica Neue',
+	sans-serif;
 
 /*********************************/
 /* Font choices                  */

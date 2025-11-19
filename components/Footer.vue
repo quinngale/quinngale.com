@@ -30,7 +30,7 @@
 				</NuxtLink>
 			</p>
 
-			<p>© 2024 Quinn Gale</p>
+			<p>© 2025 Quinn Gale</p>
 		</section>
 	</footer>
 </template>

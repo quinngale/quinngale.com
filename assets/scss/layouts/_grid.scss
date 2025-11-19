@@ -1,4 +1,6 @@
-@use 'sass:map';
+$content-width: 80ch;
+$super-width: 100ch;
+$padding: 1rem;
 
 .grid,
 .grid > .full-width {

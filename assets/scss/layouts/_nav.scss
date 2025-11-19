@@ -2,8 +2,10 @@
 @use '../abstracts/variables';
 
 nav {
-	padding: 1rem 2rem;
+	padding-block: map.get(variables.$space, 'medium');
 	display: flex;
+	width: min-content;
+	margin: auto;
 
 	ul {
 		list-style: none;
@@ -13,11 +15,13 @@ nav {
 		width: fit-content;
 		flex: 0 0 auto;
 		font-size: 1.15rem;
-		gap: 0.25rem;
+		gap: map.get(variables.$space, 'small');
+		margin-bottom: map.get(variables.$space, 'small');
 	}
 
 	li {
 		display: none;
+		margin: 0 !important;
 
 		&::before {
 			all: unset;
@@ -35,29 +39,31 @@ nav {
 			color: var(--nav-color, var(--color-light));
 			display: flex;
 			flex-direction: row;
-			gap: 0.5rem;
+			gap: 0.25rem;
 			align-items: center;
 			padding: 0.25rem 0.5rem;
 			font-weight: 600;
+			background-color: var(--nav-item-background-color, var(--color-dark--alt));
 
 			&.--active {
 				background-color: var(--nav-active-color, var(--color-light));
-				color: var(--nav-active-text-color, var(--color-dark));
+				color: var(--nav-active-text-color, var(--color-dark--alt));
 			}
 
 			&:hover {
 				border-color: var(--nav-text-color, var(--color-light--alt));
-				background-color: var(--nav-active-color, var(--color-dark));
-				color: var(--nav-text-color, var(--color-light));
+				background-color: var(--nav-active-color, var(--color-light--alt));
+				color: var(--nav-text-color, var(--color-dark));
 
 				.icon {
-					color: var(--nav-text-color, var(--color-light--alt));
+					color: var(--nav-text-color, var(--color-dark--alt));
 				}
 			}
 
 			.icon {
 				display: block;
-				margin-inline: 0;
+				margin-inline-start: 0;
+				margin-inline-end: map.get(variables.$space, 'x-small');
 			}
 		}
 	}
@@ -72,16 +78,15 @@ nav {
 	&.nav--expanded {
 		li {
 			display: block;
-			margin-block-end: 0.25rem;
 		}
 	}
 
 	button {
 		border: none;
-		background-color: transparent;
+		background-color: var(--nav-button-background-color, var(--nav-item-background-color, var(--color-dark--alt)));
 		display: block;
 		width: 100%;
-		font-size: 1.5rem;
+		font-size: 1.35rem;
 		color: var(--color-light);
 		cursor: pointer;
 		padding: 0.5rem 1rem;
@@ -124,7 +129,7 @@ nav {
 		}
 
 		button {
-			display: none;
+			display: none !important;
 		}
 	}
 }

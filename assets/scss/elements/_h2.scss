@@ -7,21 +7,36 @@ h2 {
 	background-color: var(--h2-background-color, var(--color-light));
 	color: var(--h2-text-color, var(--color-dark));
 	font-family: 'Fira Code var', 'Courier New', Courier, monospace;
-	padding: map.get(variables.$space, 'x-small');
 	letter-spacing: 0.125rem;
 	word-spacing: -1 * map.get(variables.$space, 'x-small');
+	display: grid;
+	grid-template-columns: [heading-number-start] auto [heading-number-end heading-text-start] 1fr [heading-text-end] !important;
+	justify-content: start;
+	align-items: center;
+	gap: map.get(variables.$space, 'small');
 
 	> a {
+		display: block;
 		text-decoration: none;
+		grid-column: heading-text;
 	}
 
 	&::before {
-		display: inline-block;
+		grid-column: heading-number;
+		display: grid;
+		align-items: center;
+		justify-items: center;
 		counter-increment: section;
 		content: counter(section, decimal-leading-zero);
 		font-variant-numeric: tabular-nums;
-		color: var(--h2-pre-color, var(--color-light--alt));
+		color: var(--h2-pre-color, var(--color-dark));
 		font-weight: bold;
-		padding-inline-end: map.get(variables.$space, 'x-small');
+		margin-inline-end: 0;
+		font-size: 0.75em;
+		background-color: var(--color-light--alt);
+		padding: map.get(variables.$space, 'x-small');
+		width: 2rem;
+		height: 2rem;
+		text-align: center;
 	}
 }
