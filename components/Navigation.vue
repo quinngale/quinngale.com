@@ -1,5 +1,5 @@
 <template>
-    <nav id="site-nav" class="grid" :class="{ 'nav--expanded': isNavExpanded }">
+    <nav id="site-nav" class="full-width" :class="{ 'nav--expanded': isNavExpanded }">
         <ul class="">
             <li>
                 <Logo @click="isNavExpanded = false" />
