@@ -64,7 +64,7 @@
 			</Columns>
 		</article>
 
-		<article class="full-width">
+		<article>
 			<h2>Skills</h2>
 
 			<p>

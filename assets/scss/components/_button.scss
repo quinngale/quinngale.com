@@ -3,7 +3,7 @@
 	&:visited {
 		border: 0.125rem solid var(--button-border, var(--color-light));
 		background-color: var(--button-background-color, var(--color-light));
-		color: var(--button-text-color, var(--color-dark));
+		color: var(--button-text-color, var(--color-dark--alt));
 		padding: 0.25rem 0.5rem;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -14,12 +14,12 @@
 	}
 
 	&:hover {
-		background-color: var(--button-text-color, var(--color-dark));
-		color: var(--button-background-color, var(--color-light));
+		background-color: var(--button-text-color, var(--color-light--alt));
+		color: var(--button-background-color, var(--color-dark));
 		border: 0.125rem solid var(--button-accent-color, var(--color-light--alt));
 
 		> .icon {
-			color: var(--button-accent-color, var(--color-light--alt));
+			color: var(--button-accent-color, var(--color-dark));
 		}
 	}
 

@@ -1,25 +1,28 @@
+@use 'sass:map';
+@use '../abstracts/variables';
+
 .card,
 .card--emphasis {
 	color: var(--card-text-color, var(--color-light));
-	padding: 0.25rem;
-	border: 0.125rem solid var(--card-text-color, var(--color-light));
-	gap: 6px;
+	gap: map.get(variables.$space, 'x-small');
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	background-color: var(--card-background-color, var(--color-dark--alt));
 
 	> .card__title {
-		background-color: var(--card-text-color, var(--color-light));
-		color: var(--card-background-color, var(--color-dark));
-		padding: 0.25rem;
+		padding: map.get(variables.$space, 'small');
+		background-color: var(--card-title-background-color, var(--color-light--alt));
+		color: var(--card-title-color, var(--color-dark));
 	}
 
 	> :not(.card__title) {
-		padding: 0.25rem;
+		padding: map.get(variables.$space, 'small');
+		padding-block-start: 0;
 	}
 
 	&:has(.card__icon--overlay) {
-		min-height: 6rem;
+		min-height: map.get(variables.$space, 'x-large');
 		place-items: middle;
 		overflow: hidden;
 		display: grid;
@@ -31,12 +34,12 @@
 	}
 
 	> .card__icon--overlay {
-		font-size: 6rem;
+		font-size: map.get(variables.$space, 'x-large');
 		color: var(--color-light--alt);
 		position: absolute;
 		right: 0;
-		top: 50%;
+		top: 45%;
 		transform-origin: center center;
-		transform: translate(37%, -50%);
+		transform: translate(-0%, -50%);
 	}
 }
