@@ -27,7 +27,6 @@ $shades: (
 	'dark': color.mix(map.get($colors, 'dark'), map.get($colors, 'light'), 90%),
 	'darker': color.mix(map.get($colors, 'dark'), map.get($colors, 'light'), 100%),
 );
-@debug $shades;
 
 $mix-colors: (
 	'neutral': hsl(0, 100%, 100%),
@@ -60,8 +59,6 @@ $mix-colors: (
 
 	$colors: map.set($colors, $name, $color-tones);
 }
-
-@debug $colors;
 
 /*********************************/
 /* Spacing                       */
