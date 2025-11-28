@@ -27,11 +27,11 @@
 			<Columns>
 				<Column>
 					<Card>
-						<CardIconOverlay>
+						<CardIcon>
 							<Icon>
 								<fontAwesomeIcon :icon="['fass', 'envelope']" />
 							</Icon>
-						</CardIconOverlay>
+						</CardIcon>
 						<CardSection>
 							<strong>Email:</strong> <a href="mailto:q.gale@live.com">q.gale@live.com</a>
 						</CardSection>
@@ -39,11 +39,11 @@
 				</Column>
 				<Column>
 					<Card>
-						<CardIconOverlay>
+						<CardIcon>
 							<Icon>
 								<fontAwesomeIcon :icon="['fab', 'github']" />
 							</Icon>
-						</CardIconOverlay>
+						</CardIcon>
 						<CardSection>
 							<strong>GitHub:</strong> <a href="https://github.com/quinngale">@quinngale</a>
 						</CardSection>
@@ -51,11 +51,11 @@
 				</Column>
 				<Column>
 					<Card>
-						<CardIconOverlay>
+						<CardIcon>
 							<Icon>
 								<fontAwesomeIcon :icon="['fab', 'linkedin']" />
 							</Icon>
-						</CardIconOverlay>
+						</CardIcon>
 						<CardSection>
 							<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/quinngale/">Quinn Gale</a>
 						</CardSection>

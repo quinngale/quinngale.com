@@ -46,8 +46,13 @@
             </li>
         </ul>
         <button @click="isNavExpanded = !isNavExpanded" aria-label="Show or hide the navigation">
-            <FontAwesomeIcon :icon="['solid', 'caret-down']" :transform="isNavExpanded ? 'rotate-180' : 'rotate-0'" />
-            Menu
+            <Icon>
+                <FontAwesomeIcon :icon="['solid', 'caret-down']"
+                    :transform="isNavExpanded ? 'rotate-180' : 'rotate-0'" />
+            </Icon>
+            <span>
+                Menu
+            </span>
         </button>
     </nav>
 </template>

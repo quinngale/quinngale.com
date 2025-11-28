@@ -85,7 +85,11 @@ nav {
 	button {
 		border: none;
 		background-color: var(--nav-button-background-color, var(--nav-item-background-color, var(--color-dark--alt)));
-		display: block;
+		display: grid;
+		grid-template-columns: [icon-start] auto [icon-end text-start] auto [text-end];
+		justify-content: center;
+		gap: map.get(variables.$space, 'small');
+		align-items: center;
 		width: 100%;
 		font-size: 1.35rem;
 		color: var(--color-light);
@@ -94,6 +98,10 @@ nav {
 
 		&:hover {
 			opacity: var(--hover-opacity);
+		}
+
+		.icon {
+			margin: 0;
 		}
 	}
 }

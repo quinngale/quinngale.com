@@ -1,6 +1,23 @@
+@use 'sass:map';
+@use '../abstracts/variables';
+
 html {
+	--grid-color: hsl(0, 0%, 15%);
 	color: var(--color-light);
-	font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	background: var(--color-dark) url('/background.svg') center center/4rem repeat fixed;
+	font-family:
+		'Inter var',
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		'Open Sans',
+		'Helvetica Neue',
+		sans-serif;
+	background-color: var(--color-dark);
+	background-size: map.get(variables.$space, 'large') map.get(variables.$space, 'large');
 	counter-reset: section;
 }

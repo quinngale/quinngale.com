@@ -33,6 +33,13 @@
 		}
 	}
 
+	> .card__icon {
+		font-size: map.get(variables.$space, 'x-large');
+		text-align: center;
+		color: var(--card-icon-color, var(--color-light--alt));
+		padding: 0;
+	}
+
 	> .card__icon--overlay {
 		font-size: map.get(variables.$space, 'x-large');
 		color: var(--color-light--alt);
