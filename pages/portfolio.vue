@@ -38,7 +38,7 @@
                         <NuxtLink :to="item.path" class="button">
                             Read more
                             <Icon>
-                                <FontAwesomeIcon :icon="byPrefixAndName.fas['caret-right']" />
+                                <FontAwesomeIcon :icon="byPrefixAndName.fas['caret-large-right']" />
                             </Icon>
                         </NuxtLink>
                     </div>

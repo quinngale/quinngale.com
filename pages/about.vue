@@ -201,6 +201,14 @@
 					</template>
 					VueJS
 				</Tag>
+				<Tag>
+					<template #icon>
+						<Icon>
+							<FontAwesomeIcon :icon="byPrefixAndName.fas['rectangle-terminal']" fixed-width />
+						</Icon>
+					</template>
+					SSH
+				</Tag>
 			</Tags>
 		</article>
 

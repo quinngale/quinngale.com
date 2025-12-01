@@ -22,13 +22,13 @@
                         <NuxtLink to="/about" class="button" id="button-1">
                             About Me
                             <Icon>
-                                <FontAwesomeIcon :icon="byPrefixAndName.fas['caret-right']" />
+                                <FontAwesomeIcon :icon="byPrefixAndName.fas['caret-large-right']" />
                             </Icon>
                         </NuxtLink>
                         <NuxtLink to="/portfolio" class="button" id="button-2">
                             My Work
                             <Icon>
-                                <FontAwesomeIcon :icon="byPrefixAndName.fas['caret-right']" />
+                                <FontAwesomeIcon :icon="byPrefixAndName.fas['caret-large-right']" />
                             </Icon>
                         </NuxtLink>
                     </section>
