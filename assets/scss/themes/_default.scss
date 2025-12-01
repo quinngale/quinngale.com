@@ -7,10 +7,7 @@
 :root {
 	@each $name, $value in variables.$colors {
 		@each $shade-name, $shade-value in $value {
-			@debug meta.type-of($shade-value);
-
 			@if meta.type-of($shade-value) == color {
-				@debug 'true';
 				--color-#{$name}-#{$shade-name}: #{$shade-value};
 			}
 		}
