@@ -1,12 +1,18 @@
 @use 'sass:map';
 @use 'sass:color';
+@use 'sass:meta';
 
 @use '../abstracts/variables';
 
 :root {
 	@each $name, $value in variables.$colors {
 		@each $shade-name, $shade-value in $value {
-			--color-#{$name}-#{$shade-name}: #{$shade-value};
+			@debug meta.type-of($shade-value);
+
+			@if meta.type-of($shade-value) == color {
+				@debug 'true';
+				--color-#{$name}-#{$shade-name}: #{$shade-value};
+			}
 		}
 	}
 
