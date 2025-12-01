@@ -36,7 +36,8 @@ h2 {
 		background-color: var(--color-light--alt);
 		padding: map.get(variables.$space, 'x-small');
 		width: 2rem;
-		height: 2rem;
+		min-height: 2rem;
+		height: calc(100% - map.get(variables.$space, 'x-small') * 2);
 		text-align: center;
 	}
 }
