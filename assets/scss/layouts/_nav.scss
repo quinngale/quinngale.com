@@ -88,7 +88,7 @@ nav {
 		display: grid;
 		grid-template-columns: [icon-start] auto [icon-end text-start] auto [text-end];
 		justify-content: center;
-		gap: map.get(variables.$space, 'small');
+		gap: map.get(variables.$space, 'x-small');
 		align-items: center;
 		width: 100%;
 		font-size: 1.35rem;

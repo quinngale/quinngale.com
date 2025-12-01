@@ -1,0 +1,13 @@
+@use 'sass:meta';
+@use '../abstracts/variables';
+
+@each $color-name, $color-values in variables.$colors {
+	@if meta.type-of($color-values) == 'map' {
+		.--#{$color-name}-flavored {
+			--color-light: var(--color-#{$color-name}-light);
+			--color-light--alt: var(--color-#{$color-name}-mid);
+			--color-dark: var(--color-#{$color-name}-darker);
+			--color-dark--alt: var(--color-#{$color-name}-dark);
+		}
+	}
+}

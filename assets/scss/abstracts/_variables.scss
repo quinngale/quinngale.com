@@ -36,11 +36,11 @@ $mix-colors: (
 	'green': hsl(120, 100%, 70%),
 	'cyan': hsl(180, 100%, 70%),
 	'blue': hsl(240, 100%, 70%),
+	'purple': hsl(270, 100%, 70%),
 	'magenta': hsl(300, 100%, 70%),
 );
 
 @each $name, $value in $mix-colors {
-
 	$red1: math.div(color.channel(map.get($colors, 'light'), 'red', $space: rgb), 255);
 	$green1: math.div(color.channel(map.get($colors, 'light'), 'green', $space: rgb), 255);
 	$blue1: math.div(color.channel(map.get($colors, 'light'), 'blue', $space: rgb), 255);

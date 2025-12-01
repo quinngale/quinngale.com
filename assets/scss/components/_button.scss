@@ -15,11 +15,11 @@
 
 	&:hover {
 		background-color: var(--button-text-color, var(--color-light--alt));
-		color: var(--button-background-color, var(--color-dark));
+		color: var(--button-background-color, var(--color-dark--alt));
 		border: 0.125rem solid var(--button-accent-color, var(--color-light--alt));
 
 		> .icon {
-			color: var(--button-accent-color, var(--color-dark));
+			color: var(--button-accent-color, var(--color-dark--alt));
 		}
 	}
 
