@@ -8,7 +8,7 @@
                 <NuxtLink href="/" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
                     <Icon>
-                        <FontAwesomeIcon :icon="['solid', 'house']" fixed-width />
+                        <FontAwesomeIcon :icon="byPrefixAndName.fas['house']" fixed-width />
                     </Icon>
 
                     Home
@@ -18,7 +18,7 @@
                 <NuxtLink href="/portfolio" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
                     <Icon>
-                        <FontAwesomeIcon :icon="['solid', 'display-code']" fixed-width />
+                        <FontAwesomeIcon :icon="byPrefixAndName.fas['display-code']" fixed-width />
                     </Icon>
 
                     Portfolio
@@ -28,7 +28,7 @@
                 <NuxtLink href="/blog" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
                     <Icon>
-                        <FontAwesomeIcon :icon="['solid', 'newspaper']" fixed-width />
+                        <FontAwesomeIcon :icon="byPrefixAndName.fas['newspaper']" fixed-width />
                     </Icon>
 
                     Blog
@@ -38,7 +38,7 @@
                 <NuxtLink href="/about" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
                     <Icon>
-                        <FontAwesomeIcon :icon="['solid', 'user']" fixed-width />
+                        <FontAwesomeIcon :icon="byPrefixAndName.fas['user']" fixed-width />
                     </Icon>
 
                     About
@@ -47,7 +47,7 @@
         </ul>
         <button @click="isNavExpanded = !isNavExpanded" aria-label="Show or hide the navigation">
             <Icon>
-                <FontAwesomeIcon :icon="['solid', 'caret-down']"
+                <FontAwesomeIcon :icon="byPrefixAndName.fas['caret-down']"
                     :transform="isNavExpanded ? 'rotate-180' : 'rotate-0'" />
             </Icon>
             <span>
@@ -57,12 +57,11 @@
     </nav>
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            isNavExpanded: false
-        }
-    }
-}
+<script setup>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { byPrefixAndName } from '@awesome.me/kit-3587f0af61/icons';
+
+import { ref } from 'vue';
+
+const isNavExpanded = ref({});
 </script>

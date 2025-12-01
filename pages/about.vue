@@ -11,7 +11,8 @@
 				Outside of work, I'm usually learning
 				new things, experimenting, and <small>attempting
 					to</small> push
-				the envelope. Hobbies include 3D modeling in <a href="blender.org">Blender</a> (mostly hard-surface
+				the envelope. Hobbies include 3D modeling in <a href="https://blender.org">Blender</a> (mostly
+				hard-surface
 				things, with a focus on science fiction settings),
 				building and playing with web
 				technologies, fidling with my desktop-computer-turned-into-a-linux-server, cooking, and playing
@@ -29,7 +30,7 @@
 					<Card>
 						<CardIcon>
 							<Icon>
-								<fontAwesomeIcon :icon="['fass', 'envelope']" />
+								<fontAwesomeIcon :icon="byPrefixAndName.fas['envelope']" />
 							</Icon>
 						</CardIcon>
 						<CardSection>
@@ -41,7 +42,7 @@
 					<Card>
 						<CardIcon>
 							<Icon>
-								<fontAwesomeIcon :icon="['fab', 'github']" />
+								<fontAwesomeIcon :icon="byPrefixAndName.fab['github']" />
 							</Icon>
 						</CardIcon>
 						<CardSection>
@@ -53,7 +54,7 @@
 					<Card>
 						<CardIcon>
 							<Icon>
-								<fontAwesomeIcon :icon="['fab', 'linkedin']" />
+								<fontAwesomeIcon :icon="byPrefixAndName.fab['linkedin']" />
 							</Icon>
 						</CardIcon>
 						<CardSection>
@@ -83,7 +84,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['brands', 'css3']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fab['css3']" fixed-width />
 						</Icon>
 					</template>
 					CSS
@@ -91,7 +92,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['brands', 'git']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fab['git']" fixed-width />
 						</Icon>
 					</template>
 					Git
@@ -99,7 +100,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['solid', 'cat']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fas['cat']" fixed-width />
 						</Icon>
 					</template>
 					Herding cats
@@ -107,7 +108,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['brands', 'html5']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fab['html5']" fixed-width />
 						</Icon>
 					</template>
 					HTML
@@ -115,7 +116,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['brands', 'apple']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fab['apple']" fixed-width />
 						</Icon>
 					</template>
 					iOS
@@ -123,7 +124,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['brands', 'js']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fab['js']" fixed-width />
 						</Icon>
 					</template>
 					Javascript
@@ -131,7 +132,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['brands', 'linux']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fab['linux']" fixed-width />
 						</Icon>
 					</template>
 					Linux
@@ -139,7 +140,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['brands', 'apple']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fab['apple']" fixed-width />
 						</Icon>
 					</template>
 					macOS
@@ -147,7 +148,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['brands', 'microsoft']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fab['microsoft']" fixed-width />
 						</Icon>
 					</template>
 					Microsoft Office
@@ -155,7 +156,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['brands', 'windows']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fab['microsoft']" fixed-width />
 						</Icon>
 					</template>
 					Microsoft Windows
@@ -163,7 +164,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['brands', 'php']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fab['php']" fixed-width />
 						</Icon>
 					</template>
 					PHP
@@ -171,7 +172,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['brands', 'python']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fab['python']" fixed-width />
 						</Icon>
 					</template>
 					Python
@@ -179,7 +180,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['brands', 'sass']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fab['sass']" fixed-width />
 						</Icon>
 					</template>
 					SASS
@@ -187,7 +188,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['solid', 'database']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fas['database']" fixed-width />
 						</Icon>
 					</template>
 					SQL
@@ -195,7 +196,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="['brands', 'vuejs']" fixed-width />
+							<FontAwesomeIcon :icon="byPrefixAndName.fab['vuejs']" fixed-width />
 						</Icon>
 					</template>
 					VueJS
@@ -272,7 +273,10 @@
 </template>
 
 <script setup>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { byPrefixAndName } from '@awesome.me/kit-3587f0af61/icons';
+
 useHead({
 	title: 'About'
-})
+});
 </script>

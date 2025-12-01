@@ -19,18 +19,18 @@
                     </section>
 
                     <section id="buttons">
-                        <a href="/about" class="button" id="button-1">
+                        <NuxtLink to="/about" class="button" id="button-1">
                             About Me
                             <Icon>
-                                <FontAwesomeIcon :icon="['solid', 'caret-right']" />
+                                <FontAwesomeIcon :icon="byPrefixAndName.fas['caret-right']" />
                             </Icon>
-                        </a>
-                        <a href="/portfolio" class="button" id="button-2">
+                        </NuxtLink>
+                        <NuxtLink to="/portfolio" class="button" id="button-2">
                             My Work
                             <Icon>
-                                <FontAwesomeIcon :icon="['solid', 'caret-right']" />
+                                <FontAwesomeIcon :icon="byPrefixAndName.fas['caret-right']" />
                             </Icon>
-                        </a>
+                        </NuxtLink>
                     </section>
                 </div>
             </article>
@@ -41,11 +41,8 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta(
-    {
-        layout: 'home'
-    }
-);
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { byPrefixAndName } from '@awesome.me/kit-3587f0af61/icons';
 
 useHead(
     {
@@ -53,3 +50,18 @@ useHead(
     }
 )
 </script>
+
+<style>
+#profile-image {
+    width: 40vh;
+    max-width: 100%;
+    border-radius: 100%;
+    margin-inline: auto;
+    display: block;
+}
+
+#buttons {
+    display: grid;
+    gap: 1rem;
+}
+</style>
