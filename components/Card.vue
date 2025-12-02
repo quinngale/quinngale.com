@@ -1,11 +1,14 @@
 <template>
-    <div :class="emphasis ? 'card--emphasis' : 'card'">
+    <NuxtLink v-if="href" :to="href" class="card">
+        <slot></slot>
+    </NuxtLink>
+    <div v-else class="card">
         <slot></slot>
     </div>
 </template>
 
 <script setup>
 defineProps({
-    emphasis: Boolean
+    href: String
 })
 </script>
