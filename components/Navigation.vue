@@ -8,7 +8,7 @@
                 <NuxtLink href="/" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
                     <Icon>
-                        <FontAwesomeIcon icon="fa-solid fa-house" fixed-width />
+                        <FontAwesomeIcon :icon="faHouse" fixed-width />
                     </Icon>
 
                     Home
@@ -18,7 +18,7 @@
                 <NuxtLink href="/portfolio" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
                     <Icon>
-                        <FontAwesomeIcon icon="fa-solid fa-display-code" fixed-width />
+                        <FontAwesomeIcon :icon="faDisplayCode" fixed-width />
                     </Icon>
 
                     Portfolio
@@ -28,7 +28,7 @@
                 <NuxtLink href="/blog" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
                     <Icon>
-                        <FontAwesomeIcon icon="fa-solid fa-newspaper" fixed-width />
+                        <FontAwesomeIcon :icon="faNewspaper" fixed-width />
                     </Icon>
 
                     Blog
@@ -38,7 +38,7 @@
                 <NuxtLink href="/about" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
                     <Icon>
-                        <FontAwesomeIcon icon="fa-solid fa-user" fixed-width />
+                        <FontAwesomeIcon :icon="faUser" fixed-width />
                     </Icon>
 
                     About
@@ -47,7 +47,7 @@
         </ul>
         <button @click="isNavExpanded = !isNavExpanded" aria-label="Show or hide the navigation">
             <Icon>
-                <FontAwesomeIcon icon="fa-solid fa-caret-down" :transform="isNavExpanded ? 'rotate-180' : 'rotate-0'" />
+                <FontAwesomeIcon :icon="faCaretDown" :transform="isNavExpanded ? 'rotate-180' : 'rotate-0'" />
             </Icon>
             <span>
                 Menu
@@ -57,6 +57,7 @@
 </template>
 
 <script setup>
+import { faCaretDown, faDisplayCode, faHouse, faNewspaper, faUser } from '@fortawesome/pro-solid-svg-icons';
 import { ref } from 'vue';
 
 const isNavExpanded = ref(false);

@@ -30,7 +30,7 @@
 					<Card>
 						<CardIcon>
 							<Icon>
-								<fontAwesomeIcon icon="fa-solid fa-envelope" />
+								<fontAwesomeIcon :icon="faEnvelope" />
 							</Icon>
 						</CardIcon>
 						<CardSection>
@@ -42,7 +42,7 @@
 					<Card>
 						<CardIcon>
 							<Icon>
-								<fontAwesomeIcon icon="fa-brands fa-github" />
+								<fontAwesomeIcon :icon="faGithub" />
 							</Icon>
 						</CardIcon>
 						<CardSection>
@@ -54,7 +54,7 @@
 					<Card>
 						<CardIcon>
 							<Icon>
-								<fontAwesomeIcon icon="fa-brands fa-linkedin" />
+								<fontAwesomeIcon :icon="faLinkedin" />
 							</Icon>
 						</CardIcon>
 						<CardSection>
@@ -84,7 +84,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-css3" fixed-width />
+							<FontAwesomeIcon :icon="faCss3" fixed-width />
 						</Icon>
 					</template>
 					CSS
@@ -92,7 +92,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-git" fixed-width />
+							<FontAwesomeIcon :icon="faGit" fixed-width />
 						</Icon>
 					</template>
 					Git
@@ -100,7 +100,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-solid fa-cat" fixed-width />
+							<FontAwesomeIcon :icon="faCat" fixed-width />
 						</Icon>
 					</template>
 					Herding cats
@@ -108,7 +108,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-html5" fixed-width />
+							<FontAwesomeIcon :icon="faHtml5" fixed-width />
 						</Icon>
 					</template>
 					HTML
@@ -116,7 +116,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-apple" fixed-width />
+							<FontAwesomeIcon :icon="faApple" fixed-width />
 						</Icon>
 					</template>
 					iOS
@@ -124,7 +124,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-js" fixed-width />
+							<FontAwesomeIcon :icon="faJs" fixed-width />
 						</Icon>
 					</template>
 					Javascript
@@ -132,7 +132,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-linux" fixed-width />
+							<FontAwesomeIcon :icon="faLinux" fixed-width />
 						</Icon>
 					</template>
 					Linux
@@ -140,7 +140,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-apple" fixed-width />
+							<FontAwesomeIcon :icon="faApple" fixed-width />
 						</Icon>
 					</template>
 					macOS
@@ -148,7 +148,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-microsoft" fixed-width />
+							<FontAwesomeIcon :icon="faMicrosoft" fixed-width />
 						</Icon>
 					</template>
 					Microsoft Office
@@ -156,7 +156,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-microsoft" fixed-width />
+							<FontAwesomeIcon :icon="faMicrosoft" fixed-width />
 						</Icon>
 					</template>
 					Microsoft Windows
@@ -164,7 +164,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-php" fixed-width />
+							<FontAwesomeIcon :icon="faPhp" fixed-width />
 						</Icon>
 					</template>
 					PHP
@@ -172,7 +172,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-python" fixed-width />
+							<FontAwesomeIcon :icon="faPython" fixed-width />
 						</Icon>
 					</template>
 					Python
@@ -180,7 +180,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-sass" fixed-width />
+							<FontAwesomeIcon :icon="faSass" fixed-width />
 						</Icon>
 					</template>
 					SASS
@@ -188,7 +188,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-solid fa-database" fixed-width />
+							<FontAwesomeIcon :icon="faDatabase" fixed-width />
 						</Icon>
 					</template>
 					SQL
@@ -196,7 +196,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-vuejs" fixed-width />
+							<FontAwesomeIcon :icon="faVuejs" fixed-width />
 						</Icon>
 					</template>
 					VueJS
@@ -273,6 +273,9 @@
 </template>
 
 <script setup>
+import { faApple, faCss3, faGit, faGithub, faHtml5, faJs, faLinkedin, faLinux, faMicrosoft, faPhp, faPython, faSass, faVuejs } from '@fortawesome/free-brands-svg-icons';
+import { faCat, faDatabase, faEnvelope } from '@fortawesome/pro-solid-svg-icons';
+
 useHead({
 	title: 'About'
 });
