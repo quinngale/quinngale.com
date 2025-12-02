@@ -4,8 +4,6 @@
 h3 {
 	line-height: var(--h3-line-height, var(--line-height));
 	font-size: 1.521rem;
-	border-inline-start: map.get(variables.$space, 'x-small') solid var(--h3-border-color, var(--color-light));
-	padding-inline-start: map.get(variables.$space, 'small');
 	color: var(--h3-color, var(--color-light));
 	font-family: 'Fira Code var', 'Courier New', Courier, monospace;
 	margin-block-end: 1rem;
