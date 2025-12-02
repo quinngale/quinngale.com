@@ -23,7 +23,7 @@
                         <NuxtLink :to="page.path" class="button">
                             Read more
                             <Icon>
-                                <FontAwesomeIcon :icon="byPrefixAndName.fas['caret-large-right']" />
+                                <FontAwesomeIcon icon="fa-solid fa-caret-large-right" />
                             </Icon>
                         </NuxtLink>
                     </p>
@@ -36,9 +36,6 @@
 </template>
 
 <script setup>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { byPrefixAndName } from '@awesome.me/kit-3587f0af61/icons';
-
 useHead({
     title: "Blog"
 })
