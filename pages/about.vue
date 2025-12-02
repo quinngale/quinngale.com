@@ -27,38 +27,38 @@
 
 			<Columns>
 				<Column>
-					<Card>
+					<Card href="mailto:q.gale@live.com">
 						<CardIcon>
 							<Icon>
 								<fontAwesomeIcon :icon="faEnvelope" />
 							</Icon>
 						</CardIcon>
 						<CardSection>
-							<strong>Email:</strong> <a href="mailto:q.gale@live.com">q.gale@live.com</a>
+							<strong>Email:</strong> q.gale@live.com
 						</CardSection>
 					</Card>
 				</Column>
 				<Column>
-					<Card>
+					<Card href="https://github.com/quinngale">
 						<CardIcon>
 							<Icon>
 								<fontAwesomeIcon :icon="faGithub" />
 							</Icon>
 						</CardIcon>
 						<CardSection>
-							<strong>GitHub:</strong> <a href="https://github.com/quinngale">@quinngale</a>
+							<strong>GitHub:</strong> /quinngale
 						</CardSection>
 					</Card>
 				</Column>
 				<Column>
-					<Card>
+					<Card href="https://www.linkedin.com/in/quinngale/">
 						<CardIcon>
 							<Icon>
 								<fontAwesomeIcon :icon="faLinkedin" />
 							</Icon>
 						</CardIcon>
 						<CardSection>
-							<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/quinngale/">Quinn Gale</a>
+							<strong>LinkedIn:</strong> Quinn Gale
 						</CardSection>
 					</Card>
 				</Column>

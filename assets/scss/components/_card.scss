@@ -1,14 +1,27 @@
 @use 'sass:map';
 @use '../abstracts/variables';
 
-.card,
-.card--emphasis {
+.card {
 	color: var(--card-text-color, var(--color-light));
 	gap: map.get(variables.$space, 'x-small');
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	background-color: var(--card-background-color, var(--color-dark--alt));
+	text-decoration: none;
+
+	&[href] {
+		text-align: center;
+	}
+
+	&[href]:hover {
+		color: var(--card-text-color--hover, var(--color-dark));
+		background-color: var(--card-background-color--hover, var(--color-light));
+
+		.card__icon {
+			color: var(--card-icon-color--hover, var(--color-dark--alt));
+		}
+	}
 
 	> .card__title {
 		padding: map.get(variables.$space, 'small');
