@@ -2,20 +2,20 @@
 export default defineNuxtConfig({
 	ssr: true,
 
-	build: {
-		transpile: ['@fortawesome/vue-fontawesome', '@fortawesome/fontawesome-svg-core', '@fortawesome/pro-regular-svg-icons'],
-	},
+	// build: {
+	// 	transpile: ['@fortawesome/vue-fontawesome', '@fortawesome/fontawesome-svg-core', '@fortawesome/pro-regular-svg-icons'],
+	// },
 
 	content: {
 		build: {
 			markdown: {
 				highlight: {
 					theme: {
-						default: 'github-dark'
-					}
-				}
-			}
-		}
+						default: 'github-dark',
+					},
+				},
+			},
+		},
 	},
 
 	css: ['@fortawesome/fontawesome-svg-core/styles.css', '~/assets/scss/main.scss'],
@@ -33,5 +33,5 @@ export default defineNuxtConfig({
 		},
 	},
 
-	compatibilityDate: '2024-07-26',
+	compatibilityDate: '2025-12-01',
 });

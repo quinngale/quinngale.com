@@ -22,13 +22,13 @@
                         <NuxtLink to="/about" class="button" id="button-1">
                             About Me
                             <Icon>
-                                <FontAwesomeIcon :icon="byPrefixAndName.fas['caret-large-right']" />
+                                <FontAwesomeIcon icon="fa-solid fa-caret-large-right" />
                             </Icon>
                         </NuxtLink>
                         <NuxtLink to="/portfolio" class="button" id="button-2">
                             My Work
                             <Icon>
-                                <FontAwesomeIcon :icon="byPrefixAndName.fas['caret-large-right']" />
+                                <FontAwesomeIcon icon="fa-solid fa-caret-large-right" />
                             </Icon>
                         </NuxtLink>
                     </section>
@@ -41,9 +41,6 @@
 </template>
 
 <script setup lang="ts">
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { byPrefixAndName } from '@awesome.me/kit-3587f0af61/icons';
-
 useHead(
     {
         title: null
