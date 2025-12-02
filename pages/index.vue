@@ -22,13 +22,13 @@
                         <NuxtLink to="/about" class="button" id="button-1">
                             About Me
                             <Icon>
-                                <FontAwesomeIcon icon="fa-solid fa-caret-large-right" />
+                                <FontAwesomeIcon :icon="faCaretLargeRight" />
                             </Icon>
                         </NuxtLink>
                         <NuxtLink to="/portfolio" class="button" id="button-2">
                             My Work
                             <Icon>
-                                <FontAwesomeIcon icon="fa-solid fa-caret-large-right" />
+                                <FontAwesomeIcon :icon="faCaretLargeRight" />
                             </Icon>
                         </NuxtLink>
                     </section>
@@ -41,6 +41,8 @@
 </template>
 
 <script setup lang="ts">
+import { faCaretLargeRight } from '@fortawesome/pro-solid-svg-icons';
+
 useHead(
     {
         title: null

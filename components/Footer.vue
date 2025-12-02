@@ -1,10 +1,16 @@
+<script setup lang="ts">
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/pro-solid-svg-icons';
+
+</script>
+
 <template>
 	<footer>
 		<section class="grid">
 			<p>
 				<NuxtLink href="mailto:q.gale@live.com" class="link">
 					<Icon>
-						<FontAwesomeIcon icon="fa-solid fa-envelope" />
+						<FontAwesomeIcon :icon="faEnvelope" />
 					</Icon>
 					<span>q.gale@live.com</span>
 				</NuxtLink>
@@ -13,7 +19,7 @@
 				<NuxtLink href="https://github.com/quinngale/quinngale.com" class="link">
 					<span class="link__icon">
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-github" />
+							<FontAwesomeIcon :icon="faGithub" />
 						</Icon>
 					</span>
 					<span>GitHub - @quinngale</span>
@@ -23,7 +29,7 @@
 				<NuxtLink href="https://www.linkedin.com/in/quinngale/" class="link">
 					<span class="link__icon">
 						<Icon>
-							<FontAwesomeIcon icon="fa-brands fa-linkedin" />
+							<FontAwesomeIcon :icon="faLinkedin" />
 						</Icon>
 					</span>
 					<span>LinkedIn - quinngale</span>
