@@ -7,72 +7,33 @@
 		<article>
 			<h2>Who I am</h2>
 			<p>
-				My name is Quinn.
-				Outside of work, I'm usually learning
-				new things, experimenting, and <small>attempting
-					to</small> push
-				the envelope. Hobbies include 3D modeling in <a href="https://blender.org">Blender</a> (mostly
-				hard-surface
-				things, with a focus on science fiction settings),
-				building and playing with web
-				technologies, fidling with my desktop-computer-turned-into-a-linux-server, cooking, and playing
-				<small>usually</small>
-				single-player games. Learning and sharing with other people is my favorite part of any
-				project.
+				My name is Quinn. When I'm not working, I'm usually trying to learn new things and push my skills and
+				abilities to new places.
 			</p>
-		</article>
-
-		<article>
-			<h2>Contact</h2>
-
-			<Columns>
-				<Column>
-					<Card href="mailto:q.gale@live.com">
-						<CardIcon>
-							<Icon>
-								<fontAwesomeIcon :icon="faEnvelope" />
-							</Icon>
-						</CardIcon>
-						<CardSection>
-							<strong>q.gale@live.com</strong>
-						</CardSection>
-					</Card>
-				</Column>
-				<Column>
-					<Card href="https://github.com/quinngale">
-						<CardIcon>
-							<Icon>
-								<fontAwesomeIcon :icon="faGithub" />
-							</Icon>
-						</CardIcon>
-						<CardSection>
-							github.com/<strong>quinngale</strong>
-						</CardSection>
-					</Card>
-				</Column>
-				<Column>
-					<Card href="https://www.linkedin.com/in/quinngale/">
-						<CardIcon>
-							<Icon>
-								<fontAwesomeIcon :icon="faLinkedin" />
-							</Icon>
-						</CardIcon>
-						<CardSection>
-							linkedin.com/in/<strong>quinngale</strong>
-						</CardSection>
-					</Card>
-				</Column>
-			</Columns>
+			<p>
+				I do a lot of hard-surface modeling—inanimate objects and environments—in Blender. My current love is
+				near-future science fiction. If that doesn't sound familiar, this is similar to the set design of
+				The Expanse TV show. Over the past couple of years, I have been <small>(in fits and starts)</small>
+				developing a long-term exploration vessel with roots in real science that I plan to build fully in
+				Blender.
+			</p>
+			<img src="https://assets.quinngale.com/about/sci-fi-corridor.jpg"
+				alt="A 3D render of a hallway on a space station with a person working on a console">
+			<br>
+			<p>
+				I also have an older desktop computer running Ubuntu Server that I use as a network file share,
+				some very light home automation, and an experiment & development platform. For exmaple, the computer
+				compiles this website and then automatically pushes to the VPS hosting it when there are updates.
+			</p>
 		</article>
 
 		<article>
 			<h2>Skills</h2>
 
 			<p>
-				Through my work and school experience I have learned a set of soft skills—mostly centered around
-				technical communication and troubleshooting. When possible, I want the people I'm helping to leave
-				with a better understanding of what went wrong with whatever it is that they are contacting me about
-				and to hopefully leave the interaction with the ability to be a little more self-sufficient.
+				Through my work experience, I have developed a set of soft skills mostly centered around troubleshooting
+				deeply technical issues and communicating solutions and ideas with others in a way that they are able to
+				understand.
 			</p>
 
 			<p>
@@ -204,6 +165,14 @@
 				<Tag>
 					<template #icon>
 						<Icon>
+							<FontAwesomeIcon :icon="faListCheck" />
+						</Icon>
+					</template>
+					Troubleshooting
+				</Tag>
+				<Tag>
+					<template #icon>
+						<Icon>
 							<FontAwesomeIcon :icon="faVuejs" />
 						</Icon>
 					</template>
@@ -285,12 +254,55 @@
 				</div>
 			</section>
 		</article>
+
+		<article>
+			<h2>Contact</h2>
+
+			<Columns>
+				<Column>
+					<Card href="mailto:q.gale@live.com">
+						<CardIcon>
+							<Icon>
+								<fontAwesomeIcon :icon="faEnvelope" />
+							</Icon>
+						</CardIcon>
+						<CardSection>
+							<strong>q.gale@live.com</strong>
+						</CardSection>
+					</Card>
+				</Column>
+				<Column>
+					<Card href="https://github.com/quinngale">
+						<CardIcon>
+							<Icon>
+								<fontAwesomeIcon :icon="faGithub" />
+							</Icon>
+						</CardIcon>
+						<CardSection>
+							github.com/<strong>quinngale</strong>
+						</CardSection>
+					</Card>
+				</Column>
+				<Column>
+					<Card href="https://www.linkedin.com/in/quinngale/">
+						<CardIcon>
+							<Icon>
+								<fontAwesomeIcon :icon="faLinkedin" />
+							</Icon>
+						</CardIcon>
+						<CardSection>
+							linkedin.com/in/<strong>quinngale</strong>
+						</CardSection>
+					</Card>
+				</Column>
+			</Columns>
+		</article>
 	</main>
 </template>
 
 <script setup>
 import { faApple, faCss3Alt, faFigma, faGit, faGithub, faHtml5, faJs, faLinkedin, faLinux, faMicrosoft, faPhp, faPython, faSass, faVuejs, faWordpressSimple } from '@fortawesome/free-brands-svg-icons';
-import { faCat, faDatabase, faEnvelope } from '@fortawesome/pro-solid-svg-icons';
+import { faCat, faDatabase, faEnvelope, faListCheck } from '@fortawesome/pro-solid-svg-icons';
 
 useHead({
 	title: 'About'
