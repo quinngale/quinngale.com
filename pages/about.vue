@@ -22,8 +22,8 @@
 			<br>
 			<p>
 				I also have an older desktop computer running Ubuntu Server that I use as a network file share,
-				some very light home automation, and an experiment & development platform. For exmaple, the computer
-				compiles this website and then automatically pushes to the VPS hosting it when there are updates.
+				some very light home automation, and an experiment & development platform. This computer-turned-server
+				compiles this website and then automatically pushes it to the VPS hosting it when there are changes.
 			</p>
 		</article>
 
@@ -31,14 +31,14 @@
 			<h2>Skills</h2>
 
 			<p>
-				Through my work experience, I have developed a set of soft skills mostly centered around troubleshooting
-				deeply technical issues and communicating solutions and ideas with others in a way that they are able to
-				understand.
+				Through my work experience, I have developed a set of soft skills mostly centered around listening to
+				others explaining issues they are having with technology, troubleshooting those sometimes deeply
+				technical issues and communicating solutions and ideas in a way that they are able to understand.
 			</p>
 
 			<p>
-				With that in mind, here's the obligatory list of "hard" skills. Pick and choose from that list what you
-				want.
+				With that in mind, here's the obligatory list of computer skills. Pick and choose from that list what
+				you want.
 			</p>
 
 			<Tags>
