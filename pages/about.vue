@@ -31,21 +31,23 @@
 			<h2>Skills</h2>
 
 			<p>
-				Through my work experience, I have developed a set of soft skills mostly centered around listening to
-				others explaining issues they are having with technology, troubleshooting those sometimes deeply
-				technical issues and communicating solutions and ideas in a way that they are able to understand.
+				Through my work experience, I have developed a set of soft skills mostly centered around being extremely
+				detail oriented, listening to another person explain an problem they are having with their
+				technology, troubleshooting that sometimes deeply technical problem, and communicating ideas and
+				solutions in a way that they are able to understand.
 			</p>
 
 			<p>
-				For example: coming into a support call, I don't necessarily expect a colleague in accounting to
-				understand all the intricacies of how DNS functions and why a website may not be resolving in their
-				browser correctly. But I want them to leave it with a the understanding that it is like a phone book and
-				that clearing their computer's DNS cache fixed the problem by making it pull in a new copy of that phone
+				For example: going into a support call, I don't necessarily expect a colleague in accounting to
+				understand all the intricacies of how DNS works and why a website may not be resolving in their browser
+				correctly. But I want them to leave it with a the understanding that DNS is like a phone book and that
+				clearing their computer's DNS cache fixed the problem by making it pull in a "new copy" of that phone
 				book.
 			</p>
 
 			<p>
-				With that in mind, here's the obligatory list of computer skills. Pick and choose from that list what
+				With that in mind, here's the obligatory list of "hard" computer skills. Pick and choose from this list
+				what
 				you want.
 			</p>
 
