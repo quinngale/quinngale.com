@@ -84,7 +84,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faCss3" fixed-width />
+							<FontAwesomeIcon :icon="faCss3Alt" />
 						</Icon>
 					</template>
 					CSS
@@ -92,7 +92,15 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faGit" fixed-width />
+							<FontAwesomeIcon :icon="faFigma" />
+						</Icon>
+					</template>
+					Figma
+				</Tag>
+				<Tag>
+					<template #icon>
+						<Icon>
+							<FontAwesomeIcon :icon="faGit" />
 						</Icon>
 					</template>
 					Git
@@ -100,7 +108,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faCat" fixed-width />
+							<FontAwesomeIcon :icon="faCat" />
 						</Icon>
 					</template>
 					Herding cats
@@ -108,7 +116,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faHtml5" fixed-width />
+							<FontAwesomeIcon :icon="faHtml5" />
 						</Icon>
 					</template>
 					HTML
@@ -116,7 +124,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faApple" fixed-width />
+							<FontAwesomeIcon :icon="faApple" />
 						</Icon>
 					</template>
 					iOS
@@ -124,7 +132,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faJs" fixed-width />
+							<FontAwesomeIcon :icon="faJs" />
 						</Icon>
 					</template>
 					Javascript
@@ -132,7 +140,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faLinux" fixed-width />
+							<FontAwesomeIcon :icon="faLinux" />
 						</Icon>
 					</template>
 					Linux
@@ -140,7 +148,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faApple" fixed-width />
+							<FontAwesomeIcon :icon="faApple" />
 						</Icon>
 					</template>
 					macOS
@@ -148,7 +156,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faMicrosoft" fixed-width />
+							<FontAwesomeIcon :icon="faMicrosoft" />
 						</Icon>
 					</template>
 					Microsoft Office
@@ -156,7 +164,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faMicrosoft" fixed-width />
+							<FontAwesomeIcon :icon="faMicrosoft" />
 						</Icon>
 					</template>
 					Microsoft Windows
@@ -164,7 +172,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faPhp" fixed-width />
+							<FontAwesomeIcon :icon="faPhp" />
 						</Icon>
 					</template>
 					PHP
@@ -172,7 +180,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faPython" fixed-width />
+							<FontAwesomeIcon :icon="faPython" />
 						</Icon>
 					</template>
 					Python
@@ -180,7 +188,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faSass" fixed-width />
+							<FontAwesomeIcon :icon="faSass" />
 						</Icon>
 					</template>
 					SASS
@@ -188,7 +196,7 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faDatabase" fixed-width />
+							<FontAwesomeIcon :icon="faDatabase" />
 						</Icon>
 					</template>
 					SQL
@@ -196,10 +204,18 @@
 				<Tag>
 					<template #icon>
 						<Icon>
-							<FontAwesomeIcon :icon="faVuejs" fixed-width />
+							<FontAwesomeIcon :icon="faVuejs" />
 						</Icon>
 					</template>
 					VueJS
+				</Tag>
+				<Tag>
+					<template #icon>
+						<Icon>
+							<FontAwesomeIcon :icon="faWordpressSimple" />
+						</Icon>
+					</template>
+					Wordpress
 				</Tag>
 			</Tags>
 		</article>
@@ -273,7 +289,7 @@
 </template>
 
 <script setup>
-import { faApple, faCss3, faGit, faGithub, faHtml5, faJs, faLinkedin, faLinux, faMicrosoft, faPhp, faPython, faSass, faVuejs } from '@fortawesome/free-brands-svg-icons';
+import { faApple, faCss3Alt, faFigma, faGit, faGithub, faHtml5, faJs, faLinkedin, faLinux, faMicrosoft, faPhp, faPython, faSass, faVuejs, faWordpressSimple } from '@fortawesome/free-brands-svg-icons';
 import { faCat, faDatabase, faEnvelope } from '@fortawesome/pro-solid-svg-icons';
 
 useHead({
