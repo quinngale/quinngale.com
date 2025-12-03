@@ -2,4 +2,12 @@
 	display: inline-block;
 	color: currentColor;
 	margin-inline: 0.5ch;
+
+	&:first-child {
+		margin-inline-start: 0;
+	}
+
+	&:last-child {
+		margin-inline-end: 0;
+	}
 }

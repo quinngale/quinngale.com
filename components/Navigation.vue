@@ -8,7 +8,7 @@
                 <NuxtLink href="/" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
                     <Icon>
-                        <FontAwesomeIcon :icon="faHouse" fixed-width />
+                        <FontAwesomeIcon :icon="faHouseChimney" fixed-width />
                     </Icon>
 
                     Home
@@ -18,7 +18,7 @@
                 <NuxtLink href="/portfolio" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
                     <Icon>
-                        <FontAwesomeIcon :icon="faDisplayCode" fixed-width />
+                        <FontAwesomeIcon :icon="faImageStack" fixed-width />
                     </Icon>
 
                     Portfolio
@@ -38,7 +38,7 @@
                 <NuxtLink href="/about" @click="isNavExpanded = false" active-class="--active"
                     exact-active-class="--active-exact">
                     <Icon>
-                        <FontAwesomeIcon :icon="faUser" fixed-width />
+                        <FontAwesomeIcon :icon="faPersonWaving" fixed-width />
                     </Icon>
 
                     About
@@ -57,7 +57,7 @@
 </template>
 
 <script setup>
-import { faCaretDown, faDisplayCode, faHouse, faNewspaper, faUser } from '@fortawesome/pro-solid-svg-icons';
+import { faCaretDown, faHouseChimney, faImageStack, faNewspaper, faPersonWaving } from '@fortawesome/pro-solid-svg-icons';
 import { ref } from 'vue';
 
 const isNavExpanded = ref(false);

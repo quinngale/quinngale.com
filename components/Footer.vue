@@ -22,7 +22,7 @@ import { faEnvelope } from '@fortawesome/pro-solid-svg-icons';
 							<FontAwesomeIcon :icon="faGithub" />
 						</Icon>
 					</span>
-					<span>GitHub - @quinngale</span>
+					<span>github.com/<strong>quinngale</strong></span>
 				</NuxtLink>
 			</p>
 			<p>
@@ -32,7 +32,7 @@ import { faEnvelope } from '@fortawesome/pro-solid-svg-icons';
 							<FontAwesomeIcon :icon="faLinkedin" />
 						</Icon>
 					</span>
-					<span>LinkedIn - quinngale</span>
+					<span>linkedin.com/in/<strong>quinngale</strong></span>
 				</NuxtLink>
 			</p>
 
