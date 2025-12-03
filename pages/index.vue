@@ -13,8 +13,8 @@
                             My name is Quinn
                         </h1>
                         <p>
-                            I am a Web and User Experience student. I also have a strong background in technical support
-                            and customer service.
+                            I have a bachelor's degree in web design and user experience. I also have a strong
+                            background in technical support and customer service.
                         </p>
                     </section>
 
