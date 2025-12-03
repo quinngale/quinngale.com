@@ -37,6 +37,14 @@
 			</p>
 
 			<p>
+				For example: coming into a support call, I don't necessarily expect a colleague in accounting to
+				understand all the intricacies of how DNS functions and why a website may not be resolving in their
+				browser correctly. But I want them to leave it with a the understanding that it is like a phone book and
+				that clearing their computer's DNS cache fixed the problem by making it pull in a new copy of that phone
+				book.
+			</p>
+
+			<p>
 				With that in mind, here's the obligatory list of computer skills. Pick and choose from that list what
 				you want.
 			</p>
