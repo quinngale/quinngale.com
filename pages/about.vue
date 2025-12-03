@@ -34,7 +34,7 @@
 							</Icon>
 						</CardIcon>
 						<CardSection>
-							<strong>Email:</strong> q.gale@live.com
+							<strong>q.gale@live.com</strong>
 						</CardSection>
 					</Card>
 				</Column>
@@ -46,7 +46,7 @@
 							</Icon>
 						</CardIcon>
 						<CardSection>
-							<strong>GitHub:</strong> /quinngale
+							github.com/<strong>quinngale</strong>
 						</CardSection>
 					</Card>
 				</Column>
@@ -58,7 +58,7 @@
 							</Icon>
 						</CardIcon>
 						<CardSection>
-							<strong>LinkedIn:</strong> Quinn Gale
+							linkedin.com/in/<strong>quinngale</strong>
 						</CardSection>
 					</Card>
 				</Column>
